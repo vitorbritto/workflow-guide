@@ -20,18 +20,18 @@ This guide consist with two parts:
 
 ## Workflow
 
-This is a simple table with tools, aproaches and methods that a used.
+This is a simple table with tools, aproaches and methods that a use.
 
-| Setup               | Develop        | Build                  | Automate | Deploy | Database |
-|---------------------|----------------|------------------------|----------|--------|----------|
-| Scaffolding         | Sass / Stylus  | Linting                | Grunt    | Rsync  | MySQL    |
-| Download Libraries  | Haml / Jade    | Unit Test              | Gulp     | Git    | MongoDB  |
-| Download Templates  | Browser-Sync   | Compile HTML/CSS/JS    | Guard    | FTP    | Redis    |
-| Download Frameworks | JS/CSS Linting | Minify and Concatenate | Bundler  |        |          |
-|                     |                | Optimize Performance   | Makefile |        |          |
-|                     |                | HTTP Server            | Rakefile |        |          |
-|                     |                | Deployment             | NPM      |        |          |
-|                     |                |                        | Bower    |        |          |
+| Setup       | Develop        | Build                  | Automate | Deploy | Database |
+|-------------|----------------|------------------------|----------|--------|----------|
+| Scaffolding | Sass / Stylus  | Linting                | Grunt    | Rsync  | MySQL    |
+| Libraries   | Haml / Jade    | Unit Test              | Gulp     | Git    | MongoDB  |
+| Templates   | Browser-Sync   | Compilation            | Guard    | FTP    | Redis    |
+| Frameworks  | JS/CSS Linting | Minify and Concatenate | Bundler  |        |          |
+|             |                | Optimize Performance   | Makefile |        |          |
+|             |                | HTTP Server            | Rakefile |        |          |
+|             |                | Deployment             | NPM      |        |          |
+|             |                |                        | Bower    |        |          |
 
 **[⬆ back to top](#table-of-contents)**
 
