@@ -1,4 +1,4 @@
-# Workflow Guide
+![Workflow Guide Logo](logo-wg.jpg "Workflow Guide")
 
 This guide consist with two parts:
 
