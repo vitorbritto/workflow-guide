@@ -1,6 +1,5 @@
 # Git Style Guide
 
-## General
 * Keep your repository clean. Don’t commit big files unless they absolutely
   require git. Even in this case, prefer storing all big files in a separate
   submodule. That’s because git history can become very big and it will be pain
@@ -40,21 +39,3 @@
           Examples: `topics/fix-fs-utils`, `topics/add-reddit-button`.
         * `versions/x.y` namespace for supporting old versions.
           Examples: `versions/1.0`, `versions/2.1`.
-
-
-## Commits
-
-Every commit message, pull request title or issue discussion must be in **English**.
-
-> Reason: English is the universal language nowadays, if you use any other language you're excluding potencial contributors.
-
-Don't use Past or Present Continuous tenses for commit messages, those should be in Imperative Present tense.
-
-```javascript
-// Good
-Add feature X
-
-// Bad
-Added feature X
-Adding feature X
-```
