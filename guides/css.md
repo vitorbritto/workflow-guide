@@ -13,7 +13,7 @@
 - [Pre-Processors](#pre-processors)
 - [Comments](#comments)
 
-### Syntax
+## Syntax
 
 Use soft tabs with 4 (four) spaces. You can configure your editor for this.
 
@@ -159,7 +159,9 @@ Use lowercase, shorthand hex values and avoid specifying units is zero-values.
 }
 ```
 
-### Declaration Order
+**[⬆ back to top](#table-of-contents)**
+
+## Declaration Order
 
 Related property declarations should be grouped together following the order:
 
@@ -197,7 +199,9 @@ Related property declarations should be grouped together following the order:
 }
 ```
 
-### Class Name
+**[⬆ back to top](#table-of-contents)**
+
+## Class Name
 
 Keep class lowercase and use dashes.
 
@@ -238,7 +242,9 @@ Avoid giving too short names for class and always choose meaningful names that p
 .block { ... }
 ```
 
-### Performance
+**[⬆ back to top](#table-of-contents)**
+
+## Performance
 
 Never use IDs.
 
@@ -308,7 +314,9 @@ Always minify the CSS code. Task builders like [Grunt](http://gruntjs.com/) leav
 }
 ```
 
-### Import
+**[⬆ back to top](#table-of-contents)**
+
+## Import
 
 Compared to <link>s, @import is slower, adds extra page requests, and can cause other unforeseen problems. Avoid them and instead opt for an alternate approach:
 
@@ -326,7 +334,9 @@ Compared to <link>s, @import is slower, adds extra page requests, and can cause 
 - Compile CSS with a preprocessor like Sass or Stylus into a single file
 - Concatenate CSS files with features provided in Rails, Jekyll, and other environments
 
-### Media Queries
+**[⬆ back to top](#table-of-contents)**
+
+## Media Queries
 
 Start the development with generic rules with and add media queries with mobile first.
 
@@ -382,7 +392,9 @@ Keep the media queries in a separate stylesheet.
 }
 ```
 
-### Prefixed properties
+**[⬆ back to top](#table-of-contents)**
+
+## Prefixed properties
 
 /* Prefixed properties */
 .selector {
@@ -390,7 +402,9 @@ Keep the media queries in a separate stylesheet.
           box-shadow: 0 1px 2px rgba(0,0,0,.15);
 }
 
-### Shorthand notation
+**[⬆ back to top](#table-of-contents)**
+
+## Shorthand notation
 
 Strive to limit use of shorthand declarations to instances where you must explicitly set all the available values. Common overused shorthand properties include:
 
@@ -420,7 +434,9 @@ Strive to limit use of shorthand declarations to instances where you must explic
 }
 ```
 
-### Pre-Processors
+**[⬆ back to top](#table-of-contents)**
+
+## Pre-Processors
 
 I use pre-processors in all projects. Today I use `Sass` on Ruby or PHP projects and `Stylus` on Full Stack JavaScript projects.
 
@@ -450,7 +466,9 @@ Provide semantic names for variables.
 @color-blue: #049cdb;
 ```
 
-### Comments
+**[⬆ back to top](#table-of-contents)**
+
+## Comments
 
 All comments must be made using the syntax of the preprocessor in use.
 

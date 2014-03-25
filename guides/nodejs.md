@@ -8,7 +8,7 @@
 - [Comments](#comments)
 - [Documentation](#documentation)
 
-### Syntax
+## Syntax
 
 Use soft tabs with 4 (four) spaces. You can configure your editor for this.
 
@@ -85,7 +85,7 @@ if (true)
 Also, notice the use of whitespace before and after the condition statement.
 
 
-### Variables
+## Variables
 
 Declare one variable for all var statement (or wherever they make sense).
 
@@ -166,7 +166,7 @@ function File() {
 File.fullPermissions = 0777;
 ```
 
-### Arrays and Objects
+## Arrays and Objects
 
 Use trailing commas and put short declarations on a single line. Only quote keys when your interpreter complains:
 
@@ -208,7 +208,7 @@ if (a.empty()) {
 }
 
 
-### Performance
+## Performance
 
 Any non-trivial conditions should be assigned to a descriptively named variable or function:
 
@@ -334,7 +334,7 @@ setTimeout(function() {
 }, 1000);
 
 
-### Comments
+## Comments
 
 Use slashes for both single line and multi line comments. Try to write comments that explain higher level mechanisms or clarify difficult segments of your code. Don't use comments to restate trivial things.
 
@@ -376,6 +376,6 @@ if (isSessionValid) {
 }
 ```
 
-### Documentation
+## Documentation
 
 > TODO

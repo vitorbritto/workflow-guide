@@ -9,7 +9,7 @@
 - [Performance](#performance)
 - [Base Code](#code-base)
 
-### Syntax
+## Syntax
 
 Use soft tabs with 4 (four) spaces. You can configure your editor for this.
 
@@ -79,7 +79,9 @@ Separate block element by a blank line and agroup the inners block elements.
 </div>
 ```
 
-### Comments
+**[⬆ back to top](#table-of-contents)**
+
+## Comments
 
 Follow this rule to add comments in HTML.
 
@@ -88,7 +90,9 @@ Follow this rule to add comments in HTML.
 <!-- /Closing a good example -->
 ```
 
-### Character Encoding
+**[⬆ back to top](#table-of-contents)**
+
+## Character Encoding
 
 Always use UTF-8 for character encoding.
 
@@ -98,7 +102,9 @@ Always use UTF-8 for character encoding.
 </head>
 ```
 
-### Attribute Order
+**[⬆ back to top](#table-of-contents)**
+
+## Attribute Order
 
 HTML attributes should be in this order for facilitate the reading.
 
@@ -117,7 +123,9 @@ HTML attributes should be in this order for facilitate the reading.
 <img class="img-rounded" src="..." alt="...">
 ```
 
-### Performance
+**[⬆ back to top](#table-of-contents)**
+
+## Performance
 
 No need to specify a type when including CSS and JavaScript files as `text/css` and `text/javascript`.
 
@@ -164,7 +172,9 @@ Always minify the code in projects only in HTML. Task builders like [Grunt](http
 </html>
 ```
 
-### Base Code
+**[⬆ back to top](#table-of-contents)**
+
+## Base Code
 
 The following code is a HTML base for faster start the projects.
 
@@ -205,3 +215,5 @@ For give support a olds Internet Explorer...
 <head>
 ...
 ```
+
+**[⬆ back to top](#table-of-contents)**
