@@ -114,7 +114,6 @@ This is a simple table with tools, aproaches and methods that a use.
 - [Naming this in nested functions](https://gist.github.com/4135065) - Christian Johansen
 - [Conditional Callbacks](https://github.com/airbnb/javascript/issues/52)
 - [Popular JavaScript Coding Conventions on Github](http://sideeffect.kr/popularconvention/#javascript)
-
 - [Understanding JavaScript Closures](http://javascriptweblog.wordpress.com/2010/10/25/understanding-javascript-closures/) - Angus Croll
 - [Basic JavaScript for the impatient programmer](http://www.2ality.com/2013/06/basic-javascript.html) - Dr. Axel Rauschmayer
 - [You Might Not Need jQuery](http://youmightnotneedjquery.com/) - Zack Bloom & Adam Schwartz
