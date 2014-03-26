@@ -25,10 +25,15 @@ var baz = function(res, error) {
 }
 
 <!-- Bad -->
-<nav class="nav">
-  <ul class="nav-menu">
-    <li class="nav-item">
-      <a class="nav-link">
+var foo = require('foo'),
+  bar = require('bar');
+
+var baz = function(res, error) {
+  ...
+  if (error) {
+    throw error;
+  }
+}
 ```
 
 ##### Newlines
