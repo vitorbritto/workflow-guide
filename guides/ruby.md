@@ -22,11 +22,6 @@
 - [Method definitions](#method-definitions)
 - [Variables](#variables)
 
-## Introduction
-
-This document defines the conventions for writing Ruby code at COOKPAD Inc.
-These regulations are formed with respect to readability and maintainability, such that developers familiar with Ruby can easily read the code.
-To ensure readability and consistency within the code, the guide presents a number of rules to follow. Some of these rules must be followed, while others are simply a recommendation for the developer.
 
 ## Ruby version
 - **[SHOULD]** Projects using Ruby 2.0 should prefer Ruby 2.0 syntax where possible: e.g. keyword arguments, symbol array literal notation(`%i`).
