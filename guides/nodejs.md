@@ -131,8 +131,6 @@ var admin_user = db.query('SELECT * FROM users ...');
 
 ##### Use PascalCase for Constructors or classes names
 
-Use PascalCase when naming constructors or classes.
-
 ```javascript
 // good
 function BankAccount() {
