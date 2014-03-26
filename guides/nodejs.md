@@ -178,7 +178,7 @@ Use trailing commas and put short declarations on a single line. Only quote keys
 var a = ['hello', 'world'];
 var b = {
     good: 'code',
-    'is generally': 'pretty',
+    'is generally': 'pretty'
 };
 
 // bad
