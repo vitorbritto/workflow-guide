@@ -6,11 +6,11 @@ Hello there! I 'm Vitor Britto, a Full Stack Web Developer extremely passionate 
 
 But, enough about me! I would like to present this project and why it was created.
 
-**First reason**
+**First reason:**
 
 Apply rules and be based on a principle and methodology of process which could maintain the structure of my standards.
 
-**Second reason**
+**Second reason:**
 
 Not only have a code style guide, but relevant informations about my Workflow. Thus I always keep the same logic process and can initiate the development of my projects without any questions when making a scaffolding, building process, automation rotines, unit testing and others tasks.
 
