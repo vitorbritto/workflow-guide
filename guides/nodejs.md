@@ -209,7 +209,7 @@ var a = [];
 if (a.empty()) {
     console.log('losing');
 }
-
+```
 
 ## Performance
 
