@@ -1,6 +1,18 @@
 ![Workflow Guide Logo](logo-wg.jpg "Workflow Guide")
 
-This guide consist with two parts:
+## Introduction
+
+Hello there! I 'm Vitor Britto, a Full Stack Web Developer extremely passionate about my work. I discovered the world of codes for almost two decades and keep the same passion from the first day of this discovery. Working full time as a freelancer for nearly 4 years developing projects for the web. Direct part of my time to researchs, collaborative projects, development of personal projects and write some articles for my blog.
+
+But, enough about me! I would like to present this project and why it was created.
+
+**First reason**
+Apply rules and be based on a principle and methodology of process which could maintain the structure of my standards.
+
+**Second reason**
+Not only have a code style guide, but relevant informations about my Workflow. Thus I always keep the same logic process and can initiate the development of my projects without any questions when making a scaffolding, building process, automation rotines, unit testing and others tasks.
+
+**This guide consist with two parts:**
 
 1. My workflow context with tools, approaches and methods that a use.
 2. My own code conventions. Which is inspired by what is popular within the community, and flavored with some personal opinions. :ghost:
@@ -13,7 +25,7 @@ This guide consist with two parts:
     - [Debug and Inspection](#debug-and-inspection)
     - [Unit Tests](#unit-tests)
     - [Cross Tests](#cross-tests)
-- [Code Guides](#code-guides)
+- [Guides](#guides)
 - [References](#references)
 
 
