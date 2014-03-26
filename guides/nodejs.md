@@ -335,7 +335,7 @@ setTimeout(function() {
         console.log('losing');
     });
 }, 1000);
-
+```
 
 ## Comments
 
