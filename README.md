@@ -16,7 +16,7 @@ Not only have a code style guide, but relevant informations about my Workflow. T
 
 **This guide consist with two parts:**
 
-1. My workflow context with tools, approaches and methods that a use.
+1. My workflow context with tools, approaches and methods that I use.
 2. My own code conventions. Which is inspired by what is popular within the community, and flavored with some personal opinions. :ghost:
 
 ## Table of Contents
