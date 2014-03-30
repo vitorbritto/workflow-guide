@@ -11,5 +11,9 @@ insert_final_newline = true
 indent_style = space
 indent_size = 4
 
-[{*.styl, *.jade, *.coffee, *.sass, *.haml, *.rb}]
+# Specific Files
+[{*.styl, *.jade, *.coffee, *.sass, *.haml, *.rb, *.json}]
 indent_size = 2
+tab_width = 2
+indent_style = space
+insert_final_newline = false
