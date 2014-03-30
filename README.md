@@ -30,16 +30,14 @@ Not only have a code style guide, but relevant informations about my Workflow. T
 
 This is a simple table with tools, aproaches and methods that a use.
 
-| Setup       | Develop        | Build                  | Automate | Deploy     | Database |
-|-------------|----------------|------------------------|----------|------------|----------|
-| Scaffolding | Sass / Stylus  | Linting                | Grunt    | Rsync      | MySQL    |
-| Libraries   | Haml / Jade    | Unit Test              | Gulp     | Git        | MongoDB  |
-| Templates   | Browser-Sync   | Compilation            | Guard    | FTP        | Redis    |
-| Frameworks  |                | Minify and Concatenate | Bundler  | Capistrano |          |
-|             |                | Optimize Performance   | Makefile |            |          |
-|             |                | HTTP Server            | Rakefile |            |          |
-|             |                | Deployment             | NPM      |            |          |
-|             |                |                        | Bower    |            |          |
+| Setup       | Develop        | Build                | Automation | Managers   | Deploy     | Database |
+|-------------|----------------|----------------------|------------|------------|------------|----------|
+| Scaffolding | Sass / Stylus  | Linting              | Grunt      | NPM        | Rsync      | MySQL    |
+| Libraries   | Haml / Jade    | Unit Test            | Gulp       | Bower      | Git        | MongoDB  |
+| Templates   | Browser-Sync   | Compilation          | Guard      | Component  | FTP        | Redis    |
+| Frameworks  |                | Minify and Concat    | Bundler    |            | Capistrano |          |
+|             |                | Optimize Performance | Makefile   |            |            |          |
+|             |                | Deployment           | Rakefile   |            |            |          |
 
 **[⬆ back to top](#table-of-contents)**
 
