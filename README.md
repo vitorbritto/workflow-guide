@@ -22,11 +22,6 @@ Not only have a code style guide, but relevant informations about my Workflow. T
 ## Table of Contents
 
 - [Workflow](#workflow)
-    - [Scaffolding and Build](#scaffolding-and-build)
-    - [Linting](#linting)
-    - [Debug and Inspection](#debug-and-inspection)
-    - [Unit Tests](#unit-tests)
-    - [Cross Tests](#cross-tests)
 - [Guides](#guides)
 - [References](#references)
 
@@ -35,16 +30,16 @@ Not only have a code style guide, but relevant informations about my Workflow. T
 
 This is a simple table with tools, aproaches and methods that a use.
 
-| Setup       | Develop        | Build                  | Automate | Deploy | Database |
-|-------------|----------------|------------------------|----------|--------|----------|
-| Scaffolding | Sass / Stylus  | Linting                | Grunt    | Rsync  | MySQL    |
-| Libraries   | Haml / Jade    | Unit Test              | Gulp     | Git    | MongoDB  |
-| Templates   | Browser-Sync   | Compilation            | Guard    | FTP    | Redis    |
-| Frameworks  | JS/CSS Linting | Minify and Concatenate | Bundler  |        |          |
-|             |                | Optimize Performance   | Makefile |        |          |
-|             |                | HTTP Server            | Rakefile |        |          |
-|             |                | Deployment             | NPM      |        |          |
-|             |                |                        | Bower    |        |          |
+| Setup       | Develop        | Build                  | Automate | Deploy     | Database |
+|-------------|----------------|------------------------|----------|------------|----------|
+| Scaffolding | Sass / Stylus  | Linting                | Grunt    | Rsync      | MySQL    |
+| Libraries   | Haml / Jade    | Unit Test              | Gulp     | Git        | MongoDB  |
+| Templates   | Browser-Sync   | Compilation            | Guard    | FTP        | Redis    |
+| Frameworks  |                | Minify and Concatenate | Bundler  | Capistrano |          |
+|             |                | Optimize Performance   | Makefile |            |          |
+|             |                | HTTP Server            | Rakefile |            |          |
+|             |                | Deployment             | NPM      |            |          |
+|             |                |                        | Bower    |            |          |
 
 **[⬆ back to top](#table-of-contents)**
 
@@ -57,15 +52,10 @@ This is a simple table with tools, aproaches and methods that a use.
 
 **[⬆ back to top](#table-of-contents)**
 
-### Linting
+### Debug and Inspection
 
 - [JSHint](https://github.com/vitorbritto/workflow-guide/blob/master/files/.jshintrc)
 - [CSSLint](https://github.com/vitorbritto/workflow-guide/blob/master/files/.csslintrc)
-
-**[⬆ back to top](#table-of-contents)**
-
-### Debug and Inspection
-
 - [DevTools](https://developers.google.com/chrome-developer-tools/)
 - [JSPerf](http://jsperf.com/)
 - [JSFiddle](http://jsfiddle.net/)
@@ -73,17 +63,12 @@ This is a simple table with tools, aproaches and methods that a use.
 
 **[⬆ back to top](#table-of-contents)**
 
-### Unit Tests
+### Tests
 
 - [Karma](http://karma-runner.github.io/)
 - [Jasmine](https://github.com/pivotal/jasmine)
 - [Mocha](https://github.com/visionmedia/mocha)
 - [Chai](http://chaijs.com/)
-
-**[⬆ back to top](#table-of-contents)**
-
-### Cross Tests
-
 - [DalekJS](http://dalekjs.com/)
 - [Browser-sync](http://browsersync.io/)
 - [PhantomJS](http://phantomjs.org/)
