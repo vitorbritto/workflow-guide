@@ -28,7 +28,7 @@ Not only have a code style guide, but relevant informations about my Workflow. T
 
 ## Workflow
 
-This is a simple table with tools, aproaches and methods that a use.
+This is a simple table with tools, aproaches and methods that I use.
 
 | Setup       | Develop        | Build                | Automation | Managers   | Deploy     | Database |
 |-------------|----------------|----------------------|------------|------------|------------|----------|
