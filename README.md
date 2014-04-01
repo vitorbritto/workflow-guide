@@ -1,5 +1,8 @@
 ![Workflow Guide Logo](logo-wg.jpg "Workflow Guide")
 
+> This is a work in progress and I will likely add (or replace) more functionality in the future.
+
+
 ## Introduction
 
 Hello there! I'm Vitor Britto, a Full Stack Web Developer extremely passionate about my work. I discovered the world of code almost two decades ago and kept the same passion from the first day of this discovery. I have worked full time as a freelancer for nearly 4 years developing projects for the web, and I direct part of my time to researchs, collaborative projects, development of personal projects and writing some articles for my blog.
@@ -14,15 +17,17 @@ Apply rules and be based on a principle and methodology of process which could m
 
 Not only have a code style guide, but relevant informations about my Workflow. Thus I always keep the same logic process and can initiate the development of my projects without any questions when making a scaffolding, building process, automation rotines, unit testing and others tasks.
 
-**This guide consist with two parts:**
+**This guide consist with three parts:** :ghost:
 
 1. My workflow context with tools, approaches and methods that I use.
-2. My own code conventions. Which is inspired by what is popular within the community, and flavored with some personal opinions. :ghost:
+2. My own code conventions. Which is inspired by what is popular within the community, and flavored with some personal opinions.
+3. Major dependencies that I use on Grunt, Gulp, Bower, Karma and Node/CLI.
 
 ## Table of Contents
 
 - [Workflow](#workflow)
 - [Guides](#guides)
+- [Dependencies](#dependencies)
 - [References](#references)
 
 
@@ -85,6 +90,17 @@ This is a simple table with tools, aproaches and methods that I use.
 - [C/C++](guides/c.md)
 - [Go](guides/go.md)
 - [Git](guides/git.md)
+
+**[⬆ back to top](#table-of-contents)**
+
+
+## Dependencies
+
+- [Grunt](https://gist.github.com/vitorbritto/6163803#file-grunt-md)
+- [Gulp](https://gist.github.com/vitorbritto/6163803#file-gulp-md)
+- [Bower](https://gist.github.com/vitorbritto/6163803#file-bower-md)
+- [Karma](https://gist.github.com/vitorbritto/6163803#file-karma-md)
+- [Node/CLI](https://gist.github.com/vitorbritto/6163803#file-cli-md)
 
 **[⬆ back to top](#table-of-contents)**
 
