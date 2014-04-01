@@ -2,9 +2,9 @@
 
 ## Introduction
 
-Hello there! I 'm Vitor Britto, a Full Stack Web Developer extremely passionate about my work. I discovered the world of codes for almost two decades and keep the same passion from the first day of this discovery. Working full time as a freelancer for nearly 4 years developing projects for the web. Direct part of my time to researchs, collaborative projects, development of personal projects and write some articles for my blog.
+Hello there! I'm Vitor Britto, a Full Stack Web Developer extremely passionate about my work. I discovered the world of code almost two decades ago and kept the same passion from the first day of this discovery. I have worked full time as a freelancer for nearly 4 years developing projects for the web, and I direct part of my time to researchs, collaborative projects, development of personal projects and writing some articles for my blog.
 
-But, enough about me! I would like to present this project and why it was created.
+But enough about me! I would like to present this project and why it was created.
 
 **First reason:**
 
