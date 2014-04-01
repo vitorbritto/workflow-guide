@@ -39,10 +39,11 @@ This is a simple table with tools, aproaches and methods that I use.
 |-------------|----------------|----------------------|------------|------------|------------|----------|
 | Scaffolding | Sass / Stylus  | Linting              | Grunt      | NPM        | Rsync      | MySQL    |
 | Libraries   | Haml / Jade    | Unit Test            | Gulp       | Bower      | Git        | MongoDB  |
-| Templates   | Browser-Sync   | Compilation          | Guard      | Component  | FTP        | Redis    |
-| Frameworks  |                | Minify and Concat    | Bundler    |            | Capistrano |          |
-|             |                | Optimize Performance | Makefile   |            |            |          |
-|             |                | Deployment           | Rakefile   |            |            |          |
+| Templates   | Browser-Sync   | Compilation          | Just       | Component  | FTP        | Redis    |
+| Frameworks  |                | Minify and Concat    | Guard      | Bundler    | Capistrano |          |
+|             |                | Deployment           | Makefile   |            |            |          |
+|             |                | Optimize Performance | Rakefile   |            |            |          |
+|             |                | Deployment           |            |            |            |          |
 
 **[⬆ back to top](#table-of-contents)**
 
