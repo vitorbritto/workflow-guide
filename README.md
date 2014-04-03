@@ -49,9 +49,10 @@ This is a simple table with tools, aproaches and methods that I use.
 
 ### Scaffolding and Build
 
-- [Skeleton](https://github.com/vitorbritto/skeleton)
+- [Skeleton](http://skeleton.vitorbritto.com.br/)
 - [Boilerplates](https://github.com/vitorbritto/boilerplates)
-- [Managers](https://github.com/vitorbritto/managers)
+- [Managers](http://managers.vitorbritto.com.br/)
+- [Just](http://vitorbritto.github.io/just/)
 - [Gone](https://github.com/vitorbritto/gone)
 
 **[⬆ back to top](#table-of-contents)**
