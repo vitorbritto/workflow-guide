@@ -33,17 +33,17 @@ Not only have a code style guide, but relevant informations about my Workflow. T
 
 ## Workflow
 
-This is a simple table with tools, aproaches and methods that I use.
+This is a simple table with tools, aproaches and methods that I use at my Workflow.
 
-| Setup       | Develop        | Build                | Automation | Managers   | Deploy     | Database |
-|-------------|----------------|----------------------|------------|------------|------------|----------|
-| Scaffolding | Sass / Stylus  | Linting              | Grunt      | NPM        | Rsync      | MySQL    |
-| Libraries   | Haml / Jade    | Unit Test            | Gulp       | Bower      | Git        | MongoDB  |
-| Templates   | Browser-Sync   | Compilation          | Just       | Component  | FTP        | Redis    |
-| Frameworks  |                | Minify and Concat    | Guard      | Bundler    | Capistrano |          |
-|             |                | Deployment           | Makefile   |            |            |          |
-|             |                | Optimize Performance | Rakefile   |            |            |          |
-|             |                | Deployment           |            |            |            |          |
+| Setup       | Develop          | Build Process        | Automation | Managers   | Deploy     | Database |
+|-------------|------------------|----------------------|------------|------------|------------|----------|
+| Scaffolding | Sass / Stylus    | Lint                 | Grunt      | NPM        | Rsync      | MySQL    |
+| Libraries   | Haml / Jade      | Unit Test            | Gulp       | Bower      | Git        | MongoDB  |
+| Templates   | Browser Sync     | Compile              | Just       | Component  | FTP        | Redis    |
+| Frameworks  | JS / CSS Linting | Minify               | Guard      | Bundler    | Capistrano |          |
+|             |                  | Concatenate          | Makefy     |            |            |          |
+|             |                  | Optimize             | Rakefile   |            |            |          |
+|             |                  | Deploy               |            |            |            |          |
 
 **[⬆ back to top](#table-of-contents)**
 
@@ -52,7 +52,9 @@ This is a simple table with tools, aproaches and methods that I use.
 - [Skeleton](http://skeleton.vitorbritto.com.br/)
 - [Boilerplates](https://github.com/vitorbritto/boilerplates)
 - [Managers](http://managers.vitorbritto.com.br/)
+- [Optimus](https://github.com/vitorbritto/optimus)
 - [Just](http://vitorbritto.github.io/just/)
+- [Makefy](http://vitorbritto.github.io/makefy/)
 - [Gone](https://github.com/vitorbritto/gone)
 
 **[⬆ back to top](#table-of-contents)**
@@ -74,7 +76,6 @@ This is a simple table with tools, aproaches and methods that I use.
 - [Jasmine](https://github.com/pivotal/jasmine)
 - [Mocha](https://github.com/visionmedia/mocha)
 - [Chai](http://chaijs.com/)
-- [DalekJS](http://dalekjs.com/)
 - [Browser-sync](http://browsersync.io/)
 - [PhantomJS](http://phantomjs.org/)
 
@@ -103,6 +104,8 @@ This is a simple table with tools, aproaches and methods that I use.
 - [Bower](https://gist.github.com/vitorbritto/6163803#file-bower-md)
 - [Karma](https://gist.github.com/vitorbritto/6163803#file-karma-md)
 - [Node/CLI](https://gist.github.com/vitorbritto/6163803#file-cli-md)
+- [Guard](https://gist.github.com/vitorbritto/6163803#file-guard-md)
+- [RubyGems](https://gist.github.com/vitorbritto/6163803#file-rubygems-md)
 
 **[⬆ back to top](#table-of-contents)**
 
