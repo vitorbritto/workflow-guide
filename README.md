@@ -79,6 +79,7 @@ This is a simple table with tools, aproaches and methods that I use at my Workfl
 - [Chai](http://chaijs.com/)
 - [Browser-sync](http://browsersync.io/)
 - [PhantomJS](http://phantomjs.org/)
+- [RSpec](http://rspec.info/)
 
 **[⬆ back to top](#table-of-contents)**
 
@@ -90,9 +91,10 @@ This is a simple table with tools, aproaches and methods that I use at my Workfl
 - [JavaScript](guides/javascript.md)
 - [NodeJS](guides/nodejs.md)
 - [Ruby](guides/ruby.md)
-- [Erlang](guides/erlang.md)
+- [Rails](guides/rails.md)
+- [Shell](guides/shell.md)
 - [C/C++](guides/c.md)
-- [Go](guides/go.md)
+- [Erlang](guides/erlang.md)
 - [Git](guides/git.md)
 
 **[⬆ back to top](#table-of-contents)**
@@ -120,9 +122,6 @@ This is a simple table with tools, aproaches and methods that I use at my Workfl
 
 ## References
 
-- [Annotated ECMAScript 5.1](http://es5.github.com/)
-- [Google JavaScript Style Guide](http://google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml)
-- [Douglas Crockford's Code Conventions for JavaScript](http://javascript.crockford.com/code.html)
 - [Code Guide by @mdo](https://github.com/mdo/code-guide)
 - [idiomatic CSS](https://github.com/necolas/idiomatic-css/)
 - [idiomatic.js](https://github.com/rwldrn/idiomatic.js/)
@@ -130,6 +129,12 @@ This is a simple table with tools, aproaches and methods that I use at my Workfl
 - [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript)
 - [Google JavaScript Style Guide](http://google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml)
 - [jQuery Core Style Guidelines](http://docs.jquery.com/JQuery_Core_Style_Guidelines)
+- [Airbnb Ruby Style Guide](https://github.com/airbnb/javascript)
+- [Bozhidar Batsov Style Guide](https://github.com/bbatsov/ruby-style-guide)
+- [Github Ruby Style Guide](https://github.com/styleguide/ruby)
+- [Annotated ECMAScript 5.1](http://es5.github.com/)
+- [Google JavaScript Style Guide](http://google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml)
+- [Douglas Crockford's Code Conventions for JavaScript](http://javascript.crockford.com/code.html)
 - [Principles of Writing Consistent, Idiomatic JavaScript](https://github.com/rwldrn/idiomatic.js/)
 - [Naming this in nested functions](https://gist.github.com/4135065) - Christian Johansen
 - [Conditional Callbacks](https://github.com/airbnb/javascript/issues/52)
@@ -138,6 +143,10 @@ This is a simple table with tools, aproaches and methods that I use at my Workfl
 - [Basic JavaScript for the impatient programmer](http://www.2ality.com/2013/06/basic-javascript.html) - Dr. Axel Rauschmayer
 - [You Might Not Need jQuery](http://youmightnotneedjquery.com/) - Zack Bloom & Adam Schwartz
 - [ES6 Features](https://github.com/lukehoban/es6features) - Luke Hoban
+* [The Rails 3 Way](http://www.amazon.com/Rails-Way-Addison-Wesley-Professional-Ruby/dp/0321601661)
+* [Ruby on Rails Guides](http://guides.rubyonrails.org/)
+* [The RSpec Book](http://pragprog.com/book/achbd/the-rspec-book)
+* [Everyday Rails Testing with RSpec](https://leanpub.com/everydayrailsrspec)
 
 **[⬆ back to top](#table-of-contents)**
 
