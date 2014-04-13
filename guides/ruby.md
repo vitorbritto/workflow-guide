@@ -2,7 +2,6 @@
 
 ## Table of Contents
 
-- [Ruby version](#ruby-version)
 - [Indentation](#indentation)
 - [Whitespaces](#whitespaces)
 - [Empty lines](#empty-lines)
@@ -22,11 +21,6 @@
 - [Method definitions](#method-definitions)
 - [Variables](#variables)
 
-
-## Ruby version
-- **[SHOULD]** Projects using Ruby 2.0 should prefer Ruby 2.0 syntax where possible: e.g. keyword arguments, symbol array literal notation(`%i`).
-
-**[⬆ back to top](#table-of-contents)**
 
 ## Indentation
 

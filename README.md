@@ -28,6 +28,7 @@ Not only have a code style guide, but relevant informations about my Workflow. T
 - [Workflow](#workflow)
 - [Guides](#guides)
 - [Dependencies](#dependencies)
+- [General Notes](#general-notes)
 - [References](#references)
 
 
@@ -106,6 +107,13 @@ This is a simple table with tools, aproaches and methods that I use at my Workfl
 - [Node/CLI](https://gist.github.com/vitorbritto/6163803#file-cli-md)
 - [Guard](https://gist.github.com/vitorbritto/6163803#file-guard-md)
 - [RubyGems](https://gist.github.com/vitorbritto/6163803#file-rubygems-md)
+
+**[⬆ back to top](#table-of-contents)**
+
+
+## General Notes
+
+- These files gets two spaces for indentation: `*.styl`, `*.jade`, `*.coffee`, `*.sass`, `*.haml`, `*.rb`, `*.json`.
 
 **[⬆ back to top](#table-of-contents)**
 
