@@ -1,687 +1,1095 @@
 # Ruby Style Guide
 
 ## Table of Contents
-
-- [Indentation](#indentation)
-- [Whitespaces](#whitespaces)
-- [Empty lines](#empty-lines)
-- [Magic comment](#character-encoding-and-magic-comments)
-- [Line columns](#line-columns)
-- [Numbers](#numbers)
-- [Strings](#strings)
-- [Regular expressions](#regular-expressions)
-- [Arrays](#arrays)
-- [Hashes](#hashes)
-- [Operations](#operations)
-- [Assignments](#assignments)
-- [Control structures](#control-structures)
-- [Method calls](#method-calls)
-- [BEGIN and END](#begin-and-end)
-- [Module and class definitions](#module-and-class-definitions)
-- [Method definitions](#method-definitions)
-- [Variables](#variables)
-
-
-## Indentation
-
-- **[MUST]** Use two spaces for 1-level of indent.  Do not use the horizontal tab character.
-- **[MUST]** When you want to pass a block in the last method call of a long method chain, you must extract the receiver of the last method call into a local variable. Afterwards, write the method call with block as a separate statement on the following line.
-
-    ```ruby
-    # good
-    posts = Post.joins(:user)
-      .merge(User.paid)
-      .where(created_at: target_date)
-    posts.each do |post|
-      next if stuff_ids.include?(post.user_id)
-      comment_count += post.comments.size
-    end
-
-    # bad
-    posts = Post.joins(:user)
-      .merge(User.paid)
-      .where(created_at: target_date).each do |post|
-        next if stuff_ids.include?(post.user_id)
-        comment_count += post.comments.size
-      end
-    ```
-
-- **[SHOULD]** When breaking an expression over multiple lines, you must increase the indentation level.
-
-    ```ruby
-    # good
-    User.active.
-      some_scope(foo).
-      other_scope(bar)
-
-    # bad
-    User.active.
-    some_scope(foo).
-    other_scope(bar)
-    ```
-
-**[⬆ back to top](#table-of-contents)**
+  1.  [Whitespace](#whitespace)
+      1. [Indentation](#indentation)
+      1. [Inline](#inline)
+      1. [Newlines](#newlines)
+  1.  [Line Length](#line-length)
+  1.  [Commenting](#commenting)
+      1. [File/class-level comments](#fileclass-level-comments)
+      1. [Function comments](#function-comments)
+      1. [Block and inline comments](#block-and-inline-comments)
+      1. [Punctuation, spelling, and grammar](#punctuation-spelling-and-grammar)
+      1. [TODO comments](#todo-comments)
+      1. [Commented-out code](#commented-out-code)
+  1.  [Methods](#methods)
+      1. [Method definitions](#method-definitions)
+      1. [Method calls](#method-calls)
+  1.  [Conditional Expressions](#conditional-expressions)
+      1. [Conditional keywords](#conditional-keywords)
+      1. [Ternary operator](#ternary-operator)
+  1.  [Syntax](#syntax)
+  1.  [Naming](#naming)
+  1.  [Classes](#classes)
+  1.  [Exceptions](#exceptions)
+  1.  [Collections](#collections)
+  1. [Strings](#strings)
+  1. [Regular Expressions](#regular-expressions)
+  1. [Percent Literals](#percent-literals)
+  1. [Rails Specific](#rails)
+  1. [Be Consistent](#be-consistent)
 
 ## Whitespace
 
-- **[MUST]** Do not put whitespace at the end of a line.
+### Indentation
 
-**[⬆ back to top](#table-of-contents)**
+* Use soft-tabs with a two space-indent.
 
-## Empty lines
+* Indent `when` as deep as `case`.
 
-- **[MUST]** Do not put empty lines at the end of a file.
+    ```Ruby
+    case
+    when song.name == 'Misty'
+      puts 'Not again!'
+    when song.duration > 120
+      puts 'Too long!'
+    when Time.now.hour > 21
+      puts "It's too late"
+    else
+      song.play
+    end
 
-**[⬆ back to top](#table-of-contents)**
-
-## Character encoding and magic comments
-
-- **[MUST]** Use UTF-8 as scripts' character encoding for no particular reason.
-- **[SHOULD]** Do not use magic comments on Ruby 2.0+ and UTF-8 encoding because UTF-8 is the default encoding after Ruby 2.0.
-- **[MUST]** Use the following style for magic comments when you need.
-
-    ```ruby
-    # coding: utf-8
+    kind = case year
+           when 1850..1889 then 'Blues'
+           when 1890..1909 then 'Ragtime'
+           when 1910..1929 then 'New Orleans Jazz'
+           when 1930..1939 then 'Swing'
+           when 1940..1950 then 'Bebop'
+           else 'Jazz'
+           end
     ```
 
-**[⬆ back to top](#table-of-contents)**
+* Align function arguments either all on the same line or one per line.
 
-## Line columns
+    ```ruby
+    # good
+    def self.create_translation(phrase_id,
+                                phrase_key,
+                                target_locale,
+                                value,
+                                user_id,
+                                do_xss_check,
+                                allow_verification)
+      ...
+    end
 
-- **[SHOULD]** Keep lines shorter than 80 characters.
-- **[MUST]** Keep lines shorter than 128 characters.
+    # bad
+    def self.create_translation(phrase_id, phrase_key, target_locale,
+                                value, user_id, do_xss_check, allow_verification)
+      ...
+    end
+    ```
 
-**[⬆ back to top](#table-of-contents)**
+### Inline
 
-## Numbers
+* Never leave trailing whitespace.
 
-- **[SHOULD]** Use underscores to separate every three-digits when writing long numbers.
-  - eg: `1_000_000.001_023`
-- **[SHOULD]** Use underscores to separate every four-digits when writing long binary and hexadecimal numbers.
-  - eg: `0xABCD_1234`
-- **[SHOULD]** Do not mix uppercase and lowercase letters in hexadecimal numbers.
-- **[SHOULD]** Use `r` suffix to write fractional numbers, if you are using Ruby 2.1+
-  - eg: `1/2r #=> (1/2)`
-- **[SHOULD]** Use `Integer#quo` method for writing fractional numbers, if you are using Ruby 2.0+
-  - eg: `1.quo(2) #=> (1/2)`
-- **[SHOULD]** Use `i` or `ri` suffix to write complex numbers, if you are using Ruby 2.1+
-  - eg: `1 + 2i #=> (1+2i)`
+* Use spaces around operators; after commas, colons, and semicolons; and around
+  `{` and before `}`.
 
-**[⬆ back to top](#table-of-contents)**
+    ```Ruby
+    sum = 1 + 2
+    a, b = 1, 2
+    1 > 2 ? true : false; puts 'Hi'
+    [1, 2, 3].each { |e| puts e }
+    ```
+
+* No spaces after `(`, `[` or before `]`, `)`.
+
+    ```Ruby
+    some(arg).other
+    [1, 2, 3].length
+    ```
+
+### Newlines
+
+* Add a new line after `if` conditions span multiple lines to help
+  differentiate between the conditions and the body.
+
+    ```ruby
+    if @reservation_alteration.checkin == @reservation.start_date &&
+       @reservation_alteration.checkout == (@reservation.start_date + @reservation.nights)
+
+      redirect_to_alteration @reservation_alteration
+    end
+    ```
+
+## Line Length
+
+Keep each line of code to a readable length. Unless you have a reason
+to, keep lines to fewer than 100 characters. Keeping code visually
+grouped together (as a 100-character line limit enforces) makes it
+easier to understand. For example, you don't have to scroll back and
+forth on one line to see what's going on -- you can view it all
+together.
+
+Here are examples from our codebase showing several techniques for
+breaking complex statements into multiple lines that are all < 100
+characters. Notice techniques like:
+
+* liberal use of linebreaks inside unclosed `(` `{` `[`
+* chaining methods, ending unfinished chains with a `.`
+* composing long strings by putting strings next to each other, separated
+  by a backslash-then-newline.
+* breaking long logical statements with linebreaks after operators like
+  `&&` and `||`
+
+
+```ruby
+scope = Translation::Phrase.includes(:phrase_translations).
+  joins(:phrase_screenshots).
+  where(:phrase_screenshots => {
+    :controller => controller_name,
+    :action => JAROMIR_JAGR_SALUTE,
+  })
+```
+
+```ruby
+translation = FactoryGirl.create(
+  :phrase_translation,
+  :locale => :is,
+  :phrase => phrase,
+  :key => 'phone_number_not_revealed_time_zone',
+  :value => 'Símanúmerið þitt verður ekki birt. Það er aðeins hægt að hringja á '\
+            'milli 9:00 og 21:00 %{time_zone}.'
+)
+```
+
+```ruby
+if @reservation_alteration.checkin == @reservation.start_date &&
+   @reservation_alteration.checkout == (@reservation.start_date + @reservation.nights)
+
+  redirect_to_alteration @reservation_alteration
+end
+```
+
+```erb
+<% if @presenter.guest_visa_russia? %>
+  <%= icon_tile_for(I18n.t("email.reservation_confirmed_guest.visa.details_header",
+                           :default => "Visa for foreign Travelers"),
+                    :beveled_big_icon => "stamp" do %>
+    <%= I18n.t("email.reservation_confirmed_guest.visa.russia.details_copy",
+               :default => "Foreign guests travelling to Russia may need to obtain a visa...") %>
+  <% end %>
+<% end %>
+```
+
+These code snippets are very much more readable than the alternative:
+
+```ruby
+scope = Translation::Phrase.includes(:phrase_translations).joins(:phrase_screenshots).where(:phrase_screenshots => { :controller => controller_name, :action => JAROMIR_JAGR_SALUTE })
+
+translation = FactoryGirl.create(:phrase_translation, :locale => :is, :phrase => phrase, :key => 'phone_number_not_revealed_time_zone', :value => 'Símanúmerið þitt verður ekki birt. Það er aðeins hægt að hringja á milli 9:00 og 21:00 %{time_zone}.')
+
+if @reservation_alteration.checkin == @reservation.start_date && @reservation_alteration.checkout == (@reservation.start_date + @reservation.nights)
+  redirect_to_alteration @reservation_alteration
+end
+```
+
+```erb
+<% if @presenter.guest_visa_russia? %>
+  <%= icon_tile_for(I18n.t("email.reservation_confirmed_guest.visa.details_header", :default => "Visa for foreign Travelers"), :beveled_big_icon => "stamp" do %>
+    <%= I18n.t("email.reservation_confirmed_guest.visa.russia.details_copy", :default => "Foreign guests travelling to Russia may need to obtain a visa prior to...") %>
+  <% end %>
+<% end %>
+```
+
+## Commenting
+
+> Though a pain to write, comments are absolutely vital to keeping our code
+> readable. The following rules describe what you should comment and where. But
+> remember: while comments are very important, the best code is
+> self-documenting. Giving sensible names to types and variables is much better
+> than using obscure names that you must then explain through comments.
+
+> When writing your comments, write for your audience: the next contributor who
+> will need to understand your code. Be generous — the next one may be you!
+
+&mdash;[Google C++ Style Guide][google-c++]
+
+### File/class-level comments
+
+Every class definition should have an accompanying comment that describes what
+it is for and how it should be used.
+
+A file that contains zero classes or more than one class should have a comment
+at the top describing its contents.
+
+```ruby
+# Automatic conversion of one locale to another where it is possible, like
+# American to British English.
+module Translation
+  # Class for converting between text between similar locales.
+  # Right now only conversion between American English -> British, Canadian,
+  # Australian, New Zealand variations is provided.
+  class PrimAndProper
+    def initialize
+      @converters = { :en => { :"en-AU" => AmericanToAustralian.new,
+                               :"en-CA" => AmericanToCanadian.new,
+                               :"en-GB" => AmericanToBritish.new,
+                               :"en-NZ" => AmericanToKiwi.new,
+                             } }
+    end
+
+  ...
+
+  # Applies transforms to American English that are common to
+  # variants of all other English colonies.
+  class AmericanToColonial
+    ...
+  end
+
+  # Converts American to British English.
+  # In addition to general Colonial English variations, changes "apartment"
+  # to "flat".
+  class AmericanToBritish < AmericanToColonial
+    ...
+  end
+```
+
+All files, including data and config files, should have file-level comments. From ```translation/config/colonial_spelling_variants.yml```:
+
+```ruby
+# List of American-to-British spelling variants.
+#
+# This list is made with
+# lib/tasks/list_american_to_british_spelling_variants.rake.
+#
+# It contains words with general spelling variation patterns:
+#   [trave]led/lled, [real]ize/ise, [flav]or/our, [cent]er/re, plus
+# and these extras:
+#   learned/learnt, practices/practises, airplane/aeroplane, ...
+
+sectarianizes: sectarianises
+neutralization: neutralisation
+...
+```
+
+### Function comments
+
+Every function declaration should have comments immediately preceding it that
+describe what the function does and how to use it. These comments should be
+descriptive ("Opens the file") rather than imperative ("Open the file"); the
+comment describes the function, it does not tell the function what to do. In
+general, these comments do not describe how the function performs its task.
+Instead, that should be left to comments interspersed in the function's code.
+
+Every function should mention what the inputs and outputs are, unless it meets
+all of the following criteria:
+
+* not externally visible
+* very short
+* obvious
+
+You may use whatever format you wish. In Ruby, two popular function
+documentation schemes are [TomDoc](http://tomdoc.org/) and
+[YARD](http://rubydoc.info/docs/yard/file/docs/GettingStarted.md). You can also
+just write things out concisely:
+
+```ruby
+# Return the fallback locales for the_locale.
+# If opts[:exclude_default] is set, the default locale, which is otherwise
+# always the last one in the returned list, will be excluded.
+#
+# For example:
+#   fallbacks_for(:"pt-BR")
+#     => [:"pt-BR", :pt, :en]
+#   fallbacks_for(:"pt-BR", :exclude_default => true)
+#     => [:"pt-BR", :pt]
+def fallbacks_for(the_locale, opts = {})
+  ...
+end
+```
+
+### Block and inline comments
+
+The final place to have comments is in tricky parts of the code. If you're
+going to have to explain it at the next code review, you should comment it now.
+Complicated operations get a few lines of comments before the operations
+commence. Non-obvious ones get comments at the end of the line.
+
+```ruby
+def fallbacks_for(the_locale, opts = {})
+  # dup() to produce an array that we can mutate.
+  ret = @fallbacks[the_locale].dup
+
+  # We make two assumptions here:
+  # 1) There is only one default locale (that is, it has no less-specific
+  #    children).
+  # 1) The default locale is just a language. (Like :en, and not :"en-US".)
+  if opts[:exclude_default] &&
+      ret.last == self.default_locale &&
+      ret.last != language_from_locale(the_locale)
+    ret.pop
+  end
+
+  ret
+end
+```
+
+On the other hand, never describe the code. Assume the person reading the code
+knows the language (though not what you're trying to do) better than you do.
+
+### Punctuation, spelling and grammar
+
+Pay attention to punctuation, spelling, and grammar; it is easier to read
+well-written comments than badly written ones.
+
+Comments should be as readable as narrative text, with proper capitalization
+and punctuation. In many cases, complete sentences are more readable than
+sentence fragments. Shorter comments, such as comments at the end of a line of
+code, can sometimes be less formal, but you should be consistent with your
+style.
+
+Although it can be frustrating to have a code reviewer point out that you are
+using a comma when you should be using a semicolon, it is very important that
+source code maintain a high level of clarity and readability. Proper
+punctuation, spelling, and grammar help with that goal.
+
+### TODO comments
+
+Use TODO comments for code that is temporary, a short-term solution, or
+good-enough but not perfect.
+
+TODOs should include the string TODO in all caps, followed by the full name
+of the person who can best provide context about the problem referenced by the
+TODO, in parentheses. A colon is optional. A comment explaining what there is
+to do is required. The main purpose is to have a consistent TODO format that
+can be searched to find the person who can provide more details upon request.
+A TODO is not a commitment that the person referenced will fix the problem.
+Thus when you create a TODO, it is almost always your name that is given.
+
+```ruby
+  # bad
+  # TODO(RS): Use proper namespacing for this constant.
+
+  # bad
+  # TODO(drumm3rz4lyfe): Use proper namespacing for this constant.
+
+  # good
+  # TODO(Ringo Starr): Use proper namespacing for this constant.
+```
+
+### Commented-out code
+
+Never leave commented-out code in our codebase.
+
+## Methods
+
+### Method definitions
+
+* Use `def` with parentheses when there are arguments. Omit the
+  parentheses when the method doesn't accept any arguments.
+
+     ```Ruby
+     def some_method
+       # body omitted
+     end
+
+     def some_method_with_arguments(arg1, arg2)
+       # body omitted
+     end
+     ```
+
+* Do not use default arguments. Use an options hash instead.
+
+    ```Ruby
+    # bad
+    def obliterate(things, gently = true, except = [], at = Time.now)
+      ...
+    end
+
+    # good
+    def obliterate(things, options = {})
+      default_options = {
+        :gently => true, # obliterate with soft-delete
+        :except => [], # skip obliterating these things
+        :at => Time.now, # don't obliterate them until later
+      }
+      options.reverse_merge!(default_options)
+
+      ...
+    end
+    ```
+
+### Method calls
+
+**Use parentheses** for a method call:
+
+* If the method returns a value.
+
+    ```ruby
+    # bad
+    @current_user = User.find_by_id 1964192
+
+    # good
+    @current_user = User.find_by_id(1964192)
+    ```
+
+* If the first argument to the method uses parentheses.
+
+    ```ruby
+    # bad
+    put! (x + y) % len, value
+
+    # good
+    put!((x + y) % len, value)
+    ```
+
+* Never put a space between a method name and the opening parenthesis.
+
+    ```Ruby
+    # bad
+    f (3 + 2) + 1
+
+    # good
+    f(3 + 2) + 1
+    ```
+
+**Omit parentheses** for a method call:
+
+* If the method accepts no arguments.
+
+    ```ruby
+    # bad
+    nil?()
+
+    # good
+    nil?
+    ```
+
+* If the method doesn't return a value (or we don't care about the return).
+
+    ```ruby
+    # bad
+    render(:partial => 'foo')
+
+    # good
+    render :partial => 'foo'
+    ```
+
+In either case:
+
+* If a method accepts an options hash as the last argument, do not use `{` `}`
+  during invocation.
+
+    ```ruby
+    # bad
+    get '/v1/reservations', { :id => 54875 }
+
+    # good
+    get '/v1/reservations', :id => 54875
+    ```
+
+## Conditional Expressions
+
+### Conditional keywords
+
+* Never use `then` for multi-line `if/unless`.
+
+    ```Ruby
+    # bad
+    if some_condition then
+      ...
+    end
+
+    # good
+    if some_condition
+      ...
+    end
+    ```
+
+* The `and` and `or` keywords are banned. It's just not worth it. Always use `&&` and `||` instead.
+
+* Modifier `if/unless` usage is okay when the body is simple, the
+  condition is simple, and the whole thing fits on one line. Otherwise,
+  avoid modifier `if/unless`.
+
+    ```Ruby
+    # bad - this doesn't fit on one line
+    add_trebuchet_experiments_on_page(request_opts[:trebuchet_experiments_on_page]) if request_opts[:trebuchet_experiments_on_page] && !request_opts[:trebuchet_experiments_on_page].empty?
+
+    # okay
+    if request_opts[:trebuchet_experiments_on_page] &&
+         !request_opts[:trebuchet_experiments_on_page].empty?
+
+      add_trebuchet_experiments_on_page(request_opts[:trebuchet_experiments_on_page])
+    end
+
+    # bad - this is complex and deserves multiple lines and a comment
+    parts[i] = part.to_i(INTEGER_BASE) if !part.nil? && [0, 2, 3].include?(i)
+
+    # okay
+    return if self.reconciled?
+    ```
+
+* Never use `unless` with `else`. Rewrite these with the positive case first.
+
+    ```Ruby
+    # bad
+    unless success?
+      puts 'failure'
+    else
+      puts 'success'
+    end
+
+    # good
+    if success?
+      puts 'success'
+    else
+      puts 'failure'
+    end
+    ```
+
+* Avoid `unless` with multiple conditions.
+
+    ```Ruby
+      # bad
+      unless foo? && bar?
+        ...
+      end
+
+      # okay
+      if !(foo? && bar?)
+        ...
+      end
+    ```
+
+* Don't use parentheses around the condition of an `if/unless/while`,
+  unless the condition contains an assignment (see [Using the return
+  value of `=`](#syntax) below).
+
+    ```Ruby
+    # bad
+    if (x > 10)
+      ...
+    end
+
+    # good
+    if x > 10
+      ...
+    end
+
+    # ok
+    if (x = self.next_value)
+      ...
+    end
+    ```
+
+### Ternary operator
+
+* Avoid the ternary operator (`?:`) except in cases where all expressions are
+  extremely trivial. However, do use the ternary operator(`?:`) over
+  `if/then/else/end` constructs for single line conditionals.
+
+    ```Ruby
+    # bad
+    result = if some_condition then something else something_else end
+
+    # good
+    result = some_condition ? something : something_else
+    ```
+
+* Use one expression per branch in a ternary operator. This
+  also means that ternary operators must not be nested. Prefer
+  `if/else` constructs in these cases.
+
+    ```Ruby
+    # bad
+    some_condition ? (nested_condition ? nested_something : nested_something_else) : something_else
+
+    # good
+    if some_condition
+      nested_condition ? nested_something : nested_something_else
+    else
+      something_else
+    end
+    ```
+
+* Avoid multi-line `?:` (the ternary operator), use `if/unless` instead.
+
+## Syntax
+
+* Never use `for`, unless you know exactly why. Most of the time iterators
+  should be used instead. `for` is implemented in terms of `each` (so
+  you're adding a level of indirection), but with a twist - `for`
+  doesn't introduce a new scope (unlike `each`) and variables defined
+  in its block will be visible outside it.
+
+    ```Ruby
+    arr = [1, 2, 3]
+
+    # bad
+    for elem in arr do
+      puts elem
+    end
+
+    # good
+    arr.each { |elem| puts elem }
+    ```
+
+
+* Prefer `{...}` over `do...end` for single-line blocks.  Avoid using
+  `{...}` for multi-line blocks (multiline chaining is always
+  ugly). Always use `do...end` for "control flow" and "method
+  definitions" (e.g. in Rakefiles and certain DSLs).  Avoid `do...end`
+  when chaining.
+
+    ```Ruby
+    names = ["Bozhidar", "Steve", "Sarah"]
+
+    # good
+    names.each { |name| puts name }
+
+    # bad
+    names.each do |name|
+      puts name
+    end
+
+    # good
+    names.select { |name| name.start_with?("S") }.map { |name| name.upcase }
+
+    # bad
+    names.select do |name|
+      name.start_with?("S")
+    end.map { |name| name.upcase }
+    ```
+
+    Some will argue that multiline chaining would look OK with the use of
+    `{...}`, but they should ask themselves - it this code really readable and
+    can't the blocks contents be extracted into nifty methods.
+
+* Avoid `return` where not required.
+
+    ```Ruby
+    # bad
+    def some_method(some_arr)
+      return some_arr.size
+    end
+
+    # good
+    def some_method(some_arr)
+      some_arr.size
+    end
+    ```
+
+* Using the return value of `=` (an assignment) is ok, but surround the
+  assignment with parenthesis.
+
+    ```Ruby
+    # good - shows intented use of assignment
+    if (v = array.grep(/foo/))
+      ...
+    end
+
+    # bad
+    if v = array.grep(/foo/)
+      ...
+    end
+
+    # also good - shows intended use of assignment and has correct precedence
+    if (v = self.next_value) == "hello"
+      ...
+    end
+    ```
+
+* Use `||=` freely to initialize variables.
+
+    ```Ruby
+    # set name to Bozhidar, only if it's nil or false
+    name ||= 'Bozhidar'
+    ```
+
+* Don't use `||=` to initialize boolean variables. (Consider what
+  would happen if the current value happened to be `false`.)
+
+    ```Ruby
+    # bad - would set enabled to true even if it was false
+    enabled ||= true
+
+    # good
+    enabled = true if enabled.nil?
+    ```
+
+* Avoid using Perl-style special variables (like `$0-9`, `$`,
+  etc. ). They are quite cryptic and their use in anything but
+  one-liner scripts is discouraged. Prefer long form versions such as
+  `$PROGRAM_NAME`.
+
+* Use `_` for unused block parameters.
+
+    ```Ruby
+    # bad
+    result = hash.map { |k, v| v + 1 }
+
+    # good
+    result = hash.map { |_, v| v + 1 }
+    ```
+
+* When a method block takes only one argument, and the body consists solely of
+  reading an attribute or calling one method with no arguments, use the `&:`
+  shorthand.
+
+    ```ruby
+    # bad
+    bluths.map { |bluth| bluth.occupation }
+    bluths.select { |bluth| bluth.blue_self? }
+
+    # good
+    bluths.map(&:occupation)
+    bluths.select(&:blue_self?)
+    ```
+
+## Naming
+
+* Use `snake_case` for methods and variables.
+
+* Use `CamelCase` for classes and modules.  (Keep acronyms like HTTP,
+  RFC, XML uppercase.)
+
+* Use `SCREAMING_SNAKE_CASE` for other constants.
+
+* The names of predicate methods (methods that return a boolean value)
+  should end in a question mark. (i.e. `Array#empty?`).
+
+* The names of potentially "dangerous" methods (i.e. methods that modify `self`
+  or the arguments, `exit!`, etc.) should end with an exclamation mark. Bang
+  methods should only exist if a non-bang method exists.
+
+* Name throwaway variables `_`.
+    ```Ruby
+    payment, _ = Payment.complete_paypal_payment!(params[:token],
+                                                  native_currency,
+                                                  created_at)
+    ```
+
+## Classes
+
+* Avoid the usage of class (`@@`) variables due to their "nasty" behavior
+in inheritance.
+
+    ```Ruby
+    class Parent
+      @@class_var = 'parent'
+
+      def self.print_class_var
+        puts @@class_var
+      end
+    end
+
+    class Child < Parent
+      @@class_var = 'child'
+    end
+
+    Parent.print_class_var # => will print "child"
+    ```
+
+    As you can see all the classes in a class hierarchy actually share one
+    class variable. Class instance variables should usually be preferred
+    over class variables.
+
+* Use `def self.method` to define singleton methods. This makes the methods
+  more resistant to refactoring changes.
+
+    ```Ruby
+    class TestClass
+      # bad
+      def TestClass.some_method
+        ...
+      end
+
+      # good
+      def self.some_other_method
+        ...
+      end
+    ```
+* Avoid `class << self` except when necessary, e.g. single accessors and aliased
+  attributes.
+
+    ```Ruby
+    class TestClass
+      # bad
+      class << self
+        def first_method
+          ...
+        end
+
+        def second_method_etc
+          ...
+        end
+      end
+
+      # good
+      class << self
+        attr_accessor :per_page
+        alias_method :nwo, :find_by_name_with_owner
+      end
+
+      def self.first_method
+        ...
+      end
+
+      def self.second_method_etc
+        ...
+      end
+    end
+    ```
+
+* Indent the `public`, `protected`, and `private` methods as much the
+  method definitions they apply to. Leave one blank line above them.
+
+    ```Ruby
+    class SomeClass
+      def public_method
+        # ...
+      end
+
+      private
+      def private_method
+        # ...
+      end
+    end
+
+## Exceptions
+
+* Don't use exceptions for flow of control.
+
+    ```Ruby
+    # bad
+    begin
+      n / d
+    rescue ZeroDivisionError
+      puts "Cannot divide by 0!"
+    end
+
+    # good
+    if d.zero?
+      puts "Cannot divide by 0!"
+    else
+      n / d
+    end
+    ```
+
+* Avoid rescuing the `Exception` class.
+
+    ```Ruby
+    # bad
+    begin
+      # an exception occurs here
+    rescue Exception
+      # exception handling
+    end
+
+    # good
+    begin
+      # an exception occurs here
+    rescue StandardError
+      # exception handling
+    end
+
+    # acceptable
+    begin
+      # an exception occurs here
+    rescue
+      # exception handling
+    end
+    ```
+
+## Collections
+
+* Use `Set` instead of `Array` when dealing with unique elements. `Set`
+  implements a collection of unordered values with no duplicates. This
+  is a hybrid of `Array`'s intuitive inter-operation facilities and
+  `Hash`'s fast lookup.
+
+* Use symbols instead of strings as hash keys.
+
+    ```Ruby
+    # bad
+    hash = { 'one' => 1, 'two' => 2, 'three' => 3 }
+
+    # good
+    hash = { one: 1, two: 2, three: 3 }
+    ```
+
+* Use multi-line hashes when it makes the code more readable, and use
+  trailing commas to ensure that parameter changes don't cause
+  extraneous diff lines when the logic has not otherwise changed.
+
+    ```ruby
+    hash = {
+      :protocol => 'https',
+      :only_path => false,
+      :controller => :users,
+      :action => :set_password,
+      :redirect => @redirect_url,
+      :secret => @secret,
+    }
+    ```
 
 ## Strings
 
-- **[SHOULD]** Use `''` to write empty strings.
-- **[SHOULD]** Do not use `String.new` method with no arguments, unless there is a valid reason.
-- **[MUST]** Use appropriate punctuation characters to minimize the number of escape sequences in string contents.
-- **[SHOULD]** Use parentheses to write strings by `%` notation.  You can use any kind of parentheses.  In the following cases you can use non-parentheses characters for punctuations.
+* Prefer string interpolation instead of string concatenation:
 
-    ```ruby
-    OPEN_PARENTHESES = %!({[!
+    ```Ruby
+    # bad
+    email_with_name = user.name + ' <' + user.email + '>'
+
+    # good
+    email_with_name = "#{user.name} <#{user.email}>"
     ```
 
-- **[MUST]** Do not write only `Object#to_s` in string interpolation, such as `"#{obj.to_s}"`.
-- **[SHOULD]** (Ruby 1.9+) Use `\u` notation to write Unicode characters rather than writing the bytes in `\x`, e.g. `"\u{3333}"` instead of `"\xE3\x8C\xB3"`.  If you have to write a script for both Ruby 1.8 and 1.9, you may write the bytes in `\x` form.
-- **[SHOULD]** Do not write string literals in loops (e.g. `while`, `until`, `for`).
-- **[SHOULD]** Do not use `String#+` to concatenate any string objects to string literals.  Use string interpolations.
-- **[MUST]** Do not use `+=` to append string to string in a destructive manner.  Use `String#<<` or `String#concat`.
-
-**[⬆ back to top](#table-of-contents)**
-
-## Regular expressions
-
-- **[SHOULD]** Do not make unnecessary backref groups.  Use `(?: ... )`.
-- **[SHOULD]** Use `x` option for writing complicated regular expressions.  This option allows you to use line breaks, whitespace, and comments (`(?# ... )`) in the regular expressions to improve their readability.
-  - You can find practical exampled in [uri/common.rb](https://github.com/ruby/ruby/blob/trunk/lib/uri/common.rb#L457).
-
-**[⬆ back to top](#table-of-contents)**
-
-## Arrays
-
-- **[MUST]** If you write an array in multiple lines, insert a white space between `[` and the first item, and align the head of each item.
+    Furthermore, keep in mind Ruby 1.9-style interpolation. Let's say you have
+    are composing cache keys like this:
 
     ```ruby
-    # good
-    [ :foo,
-      :bar,
-      :baz
-    ]
+    CACHE_KEY = '_store'
 
-    # bad
-    [:foo,
-      :bar,
-      :baz
-    ]
+    cache.write(@user.id + CACHE_KEY)
     ```
 
-- **[MUST]** If you write an array literal just after an assignment operator such as `=`, obey the following form denoted as "good".
+    Prefer instead string interpolation instead of string concatentation:
 
     ```ruby
-    # good
-    array = [
-      :foo,
-      :bar,
-      :baz,
-    ]
+    CACHE_KEY = '%d_store'
 
-    # bad
-    array = [ :foo,
-              :bar,
-              :baz, ]
-
-    # bad
-    array = [ :foo,
-              :bar,
-              :baz,
-            ]
-
-    # bad
-    array = [
-      :foo,
-      :bar,
-      :baz, ]
+    cache.write(CACHE_KEY % @user.id)
     ```
 
-- **[SHOULD]** In the multi-line array literal, put `,` after the last item.
-- **[SHOULD]** Use general delimited input (percent) syntax `%w(...)` or `%W(...)` for word arrays.
+* Avoid using `String#+` when you need to construct large data chunks.
+  Instead, use `String#<<`. Concatenation mutates the string instance in-place
+  and is always faster than `String#+`, which creates a bunch of new string objects.
 
-    ```ruby
-    # good
-    words = %w(foo bar baz)
+    ```Ruby
+    # good and also fast
+    html = ''
+    html << '<h1>Page title</h1>'
 
-    # bad
-    words = ['foo', 'bar', 'baz']
-    ```
-
-- **[MUST]** Use `[]` to write empty arrays.
-- **[MUST]** Do not use `Array.new` without any arguments.
-- **[SHOULD]** Use `Array.new(n, obj)` to generate an array with `n` same items.  Do not use `[obj] * n` to reduce object allocation.
-- **[SHOULD]** Use `[*range]` form instead of `Range#to_a` to convert range literals to arrays.
-
-    ```ruby
-    # good
-    [*1..10]  #=> [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-
-    # bad
-    (1..10).to_a  #=> [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-    ```
-
-**[⬆ back to top](#table-of-contents)**
-
-## Hashes
-
-- **[MUST]** Put whitespaces between `{` and the first key, and between the last value and `}` when writing hash literals on a single line.
-
-    ```ruby
-    # good
-    { hoge: 1, fuga: 2 }
-    # bad
-    {hoge: 1, fuga: 2}
-    ```
-
-- **[MUST]** Use new hash syntax in Ruby 1.9+ (`{ foo: 42 }`) if all keys can be written in that syntax:
-
-    ```ruby
-    # good
-    { first: 42,
-      second: 'foo',
-    }
-    # bad
-    { :first => 42,
-      :second => 'foo',
-    }
-    ```
-
-- **[SHOULD]** Use hash rocket (`{ :foo => 42 }`) for all keys if any of keys can't be written in new Hash syntax (e.g. `:'foo.bar'`, `:'foo-bar'`, `if`, `unless`)
-
-    ```ruby
-    # good
-    { :cookpad => 42,
-      :'cookpad.com' => 'foo',
-    }
-    # bad
-    { cookpad: 42,
-      :'cookpad.com' => 'foo',
-    }
-    ```
-
-- **[MUST]** Use `{}` to write empty hashes.
-- **[MUST]** For multiline hashes, write the first item just after `{`, increment the level of indentation after the second items, put `}` on an independent line, and align the line of `}` to the head of the line of the first item.
-
-    ```ruby
-    # good
-    { first: 42,
-      second: 'foo',
-    }
-
-    # bad
-    {
-      first: 42,
-      second: 'foo',
-    }
-
-    # bad
-    { first: 42,
-    second: 'foo',
-    }
-    ```
-
-- **[MUST]** If you write a hash literal just after an assignment operator, such as `=`, obey the following form denoted as "good".
-
-    ```ruby
-    # good
-    hash = {
-      first: 42,
-      second: 'foo',
-    }
-
-    # bad
-    hash = { first: 42,
-             second: 'foo',
-           }
-
-    # bad
-    hash = { first: 42,
-             second: 'foo',
-    }
-
-    # bad
-    hash = { first: 42,
-      second: 'foo',
-    }
-
-    # bad
-    hash = {
-    first: 42,
-    second: 'foo',
-    }
-    ```
-
-- **[SHOULD]** In the multi line hash literal, put `,` after the last item.
-- **[SHOULD]** If Symbol literals can be used as keys of hashes, use it for faster item lookup.
-
-  ```ruby
-  # good
-  { foo: 1, bar: 2 }
-
-  # bad
-  { 'foo' => 1, 'bar' => 2 }
-  ```
-
-- **[SHOULD]** (Ruby 1.9+) If all the keys of hash literals are Symbol literals, use the form of `{ key: value }`.  Put whitespace after `:`.
-
-**[⬆ back to top](#table-of-contents)**
-
-## Operations
-
-- **[SHOULD]** Put whitespace around operators, except for `**`.
-- **[MUST]** Do not use `and`, `or`, and `not`.
-  - But, you may use `or` for the special case: `expression or raise 'message'`.
-- **[MUST]** Do not nest conditional operators.
-- **[MUST]** Do not write conditional operators over multiple lines.
-
-    ```ruby
-    # good
-    fizzbuzz = if n % 3 == 0
-        n % 5 == 0 ? 'fizzbuzz' : 'fizz'
-      else
-        n % 5 == 0 ? 'buzz' : "#{n}"
-      end
-
-    # bad
-    fizzbuzz = n % 3 == 0 ? (n % 5 == 0 ? 'fizzbuzz' : 'fizz') : (n % 5 == 0 ? 'buzz' : "#{n}")
-
-    # bad
-    fizzbuzz = n % 3 == 0 ?
-      (n % 5 == 0 ? 'fizzbuzz' : 'fizz') :
-      (n % 5 == 0 ? 'buzz' : "#{n}")
-    ```
-
-**[⬆ back to top](#table-of-contents)**
-
-## Assignments
-
-- **[MUST]** Parallel assignments can only be used for assigning literal values or results of methods without arguments, and for exchanging two variables or attributes.
-- **[MUST]** Put whitespace around assignment operators.
-- **[MUST]** Do not write assignment expressions in conditional clauses.
-
-**[⬆ back to top](#table-of-contents)**
-
-## Control structures
-
-- **[SHOULD]** Use `unless condition`, instead of `if !condition`.
-- **[SHOULD]** Use `until condition`, instead of `while !condition`.
-- **[SHOULD]** Do not use `else` for `unless`.
-- **[MUST]** Put a line break just after the condition clause of `if`, `unless`, and `case`.  Do not follow a body code.
-- **[MUST]** Do not use `then` and `:` for the condition clause of `if`, `unless`, and `case`.
-- **[MUST]** Put a line break just after the condition clause of `while` and `until`.  Do not follow a body code.
-- **[MUST]** Do not use `do` and `:` for the condition clause of `while` and `until`.
-- **[SHOULD]** Do not write a logical expressions combined by `||` in the condition clause of `unless` and `until`.
-- **[SHOULD]** Use modifier forms, if conditions and bodies are short.
-- **[SHOULD]** Extract conditions as predicator methods with appropriate names if the conditions are long or multiple line.
-- **[MUST]** If you write a control structure just after an assignment operator such as `=`, obey the following form denoted as "good".
-
-    ```ruby
-    # good
-    result = if condition
-        body_code
-      end
-
-    # good
-    result =
-      if condition
-        body_code
-      end
-
-    # bad
-    result = if condition
-      body_code
-    end
-
-    # bad
-    result = if condition
-               body_code
-             end
-    ```
-
-- **[MUST]** Do not put any meaningless expressions after return, next, or break.
-   - In the actions of controllers when writing method calls that declare continuation, such as redirect_to and render, you can put them after return or next.
-
-**[⬆ back to top](#table-of-contents)**
-
-## Method calls
-
-- **[MUST]** Do not omit parentheses of method calls except for the following permitted cases.
-- **[MUST]** You must omit parentheses for method calls without any arguments.
-- **[MUST]** For DSL-like methods (as in the examples below), you may omit parentheses when calling them.  However, you should not omit parentheses for the case where the first argument is enclosed in parentheses, because this case generates syntax warning.
-   - Global methods such as p, print, and puts.
-   - Declarative methods used in definitions of classes and modules such as private and attr_reader, including them provided by frameworks like Rails.
-   - Methods for declaring continuation for actions of controllers such as redirect_to and render provided by ActionController.
-   - Other, DSL-like methods.
-- You may omit the parentheses of the outermost method call when nesting method calls, provided that other guidelines are not violated
-- **[MUST]** Do not put whitespace between a method name and parenthesis.
-
-    ```ruby
-    # good
-    p(1 + 2)
-
-    # bad
-    p (1 + 2)
-    ```
-
-- **[SHOULD]** Omit `{ }` of a hash literal, when put on the end of an argument list.
-
-    ```ruby
-    # good
-    foo(1, 2, foo: :bar, baz: 42)
-
-    # bad
-    foo(1, 2, { foo: :bar, baz: 42 })
-    ```
-
-- **[MUST]** Use `do`/`end` form for blocks of method calls where the return value of the block is unused. i.e. blocks executed for side-effects
-- **[MUST]** Use `{ }` form (i.e. brace blocks) for blocks of method calls where the return value of the block used. e.g. as an argument of the other method call.
-
-    ```ruby
-    # good
-    puts [1, 2, 3].map {|i|
-      i * i
-    }
-
-    # bad
-    puts [1, 2, 3].map do |i|
-      i * i
-    end
-
-    # good
-    [1, 2, 3].map {|n|
-      n * n
-    }.each {|n|
-      puts Math.sqrt(n)
-    }
-
-    # bad
-    [1, 2, 3].map do |n|
-      n * n
-    end.each do |n|
-      puts Math.sqrt(n)
+    paragraphs.each do |paragraph|
+      html << "<p>#{paragraph}</p>"
     end
     ```
 
-- **[MUST]** Use brace block for a method call written in one line.
-- **[MUST]** Obey the following "good" form in `do`/`end` form of blocks.
+## Regular Expressions
 
-    ```ruby
-    # good
-    [1, 2, 3].each do |num|
-      puts num
-    end
+* Avoid using `$1-9` as it can be hard to track what they contain. Named groups
+  can be used instead.
 
+    ```Ruby
     # bad
-    [1, 2, 3].each do |num|
-        puts num
-      end
-
-    # bad
-    [1, 2, 3].each do |num|
-                     puts num
-                   end
-
-    # bad
-    [1, 2, 3].each do |num| puts num end
-    ```
-
-- **[MUST]** Put a whitespace before `{` of brace blocks.
-- **[MUST]** For a brace block written in one line, put whitespace between `{`, `}` and the inner contents.
-
-    ```ruby
-    # good
-    [1, 2, 3].each {|num| puts num }
-    [1, 2, 3].each { |num| puts num }
-
-    # bad
-    [1, 2, 3].each {|num| puts num}
-
-    # bad
-    [1, 2, 3].each { |num| puts num}
+    /(regexp)/ =~ string
+    ...
+    process $1
 
     # good
-    10.times { puts 'Hello world' }
-
-    # bad
-    10.times {puts 'Hello world' }
-
-    # bad
-    10.times {puts 'Hello world'}
-
-    # bad
-    10.times { puts 'Hello world'}
+    /(?<meaningful_var>regexp)/ =~ string
+    ...
+    process meaningful_var
     ```
 
-- **[SHOULD]** On a method call with long parameters, write these arguments over multiple lines according to the following regulations.
-  - If the arguments are long, put a line break after an open parenthesis `(`, increment the level of indent from the next line and put each argument on a new line. Finally, put a closing parenthesis `)` on a new less indented line.
+* Be careful with `^` and `$` as they match start/end of line, not string
+  endings.  If you want to match the whole string use: `\A` and `\z`.
 
-      ```ruby
-      Foo.new(
-        arg,
-        long_argument,
-        key: value,
-        long_key: long_value,
-        pretty_so_much_very_long_key:
-          pretty_so_much_very_tooooooooooooooooooooo_long_value,
-      )
-      ```
-
-  - If the arguments are not long, continue the first argument after an open parenthesis `(`, increment the level of indentation from the next line and put each argument on a new line, and put a closing parenthesis `)` just after the last argument.
-
-      ```ruby
-      Foo.new(arg,
-              long_argument,
-              key: value,
-              long_key: long_value)
-      ```
-
-  - For writing a DSL-like method call in multiple lines, put the first argument just after the method name, increment the level of indentation from the next line, and put each argument on a new line.
-
-      ```ruby
-      ActionMailer::Base.delivery_method :smtp,
-          host: 'localhost',
-          port: 25
-      ```
-
-**[⬆ back to top](#table-of-contents)**
-
-## BEGIN and END
-
-- **[MUST]** Do not use `BEGIN` and `END` blocks.
-
-**[⬆ back to top](#table-of-contents)**
-
-## Module and Class definitions
-
-- **[MUST]** Use `alias_method` instead of `alias` to define aliases of methods.
-- **[MUST]** use `attr_accessor`, `attr_reader`, and `attr_writer` to define accessors instead of `attr`.
-- **[MUST]** In definitions of class methods, use `self.` prefix of method name to reduce the indentation level. However, it is fine to use `class << self` when you want to define both public and private class methods.
-
-    ```ruby
-    class Foo
-      # good
-      def self.foo
-      end
-
-      # bad
-      def Foo.foo
-      end
-    end
+    ```Ruby
+    string = "some injection\nusername"
+    string[/^username$/]   # matches
+    string[/\Ausername\z/] # don't match
     ```
 
-- **[MUST]** In definitions of private or protected class methods, define these methods and change their visibilities in `class << self`/`end`.
+* Use `x` modifier for complex regexps. This makes them more readable and you
+  can add some useful comments. Just be careful as spaces are ignored.
 
-   ```ruby
-    class Foo
-      # good
-      class << self
-        def foo
-        end
-        private :foo
+    ```Ruby
+    regexp = %r{
+      start         # some text
+      \s            # white space char
+      (group)       # first group
+      (?:alt1|alt2) # some alternation
       end
-
-      # bad
-      def self.foo
-      end
-      class <<self
-        private :foo
-      end
-    end
-   ```
-
-- **[MUST]** If you use `private`, `protected`, and `public` with method name to change the visibilities of methods after definitions of the methods, do not put empty line between the definition of the method and these visibility-change methods.
-
-    ```ruby
-    class Foo
-      # good
-      def foo
-      end
-      private :foo
-
-      # bad
-      def foo
-      end
-
-      private :foo
-    end
+    }x
     ```
 
-- **[MUST]** If you use `private`, `protected`, and `public` without any arguments, align the lines of these method calls to their associated method definition. Put empty lines around the visibility-change methods.
+## Percent Literals
 
-    ```ruby
+* Use `%w` freely.
+
+    ```Ruby
+    STATES = %w(draft open closed)
+    ```
+
+* Use `%()` for single-line strings which require both interpolation
+  and embedded double-quotes. For multi-line strings, prefer heredocs.
+
+    ```Ruby
+    # bad - no interpolation needed
+    %(<div class="text">Some text</div>)
+    # should be '<div class="text">Some text</div>'
+
+    # bad - no double-quotes
+    %(This is #{quality} style)
+    # should be "This is #{quality} style"
+
+    # bad - multiple lines
+    %(<div>\n<span class="big">#{exclamation}</span>\n</div>)
+    # should be a heredoc.
+
+    # good - requires interpolation, has quotes, single line
+    %(<tr><td class="name">#{name}</td>)
+    ```
+
+* Use `%r` only for regular expressions matching *more than* one '/' character.
+
+    ```Ruby
+    # bad
+    %r(\s+)
+
+    # still bad
+    %r(^/(.*)$)
+    # should be /^\/(.*)$/
+
     # good
-    class Foo
-      def foo
-      end
-
-      private
-
-      def bar
-      end
-    end
-
-    # bad
-    class Foo
-      def foo
-      end
-
-    private
-
-      def bar
-      end
-    end
-
-    # bad
-    class Foo
-      def foo
-      end
-
-      private
-
-        def bar
-        end
-    end
-
-    # bad
-    class Foo
-      def foo
-      end
-
-      private
-      def bar
-      end
-    end
+    %r(^/blog/2011/(.*)$)
     ```
 
-- **[SHOULD]** Use Markdown format to write documentation comments for public interfaces of modules and/or classes.
-- **[MUST]** Do not put empty lines between documentation comments and the corresponding method definitions.
-- **[MUST]** Follow <a href="http://tomdoc.org/" target="_blank">TomDoc</a> style to write documentation comments.
-- **[MUST]** Do not give different responsibilities to a class.
+## Rails
 
-**[⬆ back to top](#table-of-contents)**
-
-## Method definitions
-
-- **[MUST]** On method definition, do not omit parentheses of parameter list, except for methods without parameters.
-- **[MUST]** Do not put whitespace between method name and the parameter list.
-- **[SHOULD]** Do not write codes that is not understandable without any comment.
-  - Prefer to divide a method into smaller methods, which do not require comments to understand.
-  - You may write comments for additional information, such as describing variables or citations for equations.
-- **[MUST]** Do not give different responsibilities to a method.
-- **[MUST]** Do not destructively modify arguments (i.e. cause side-effects).
+* When immediately returning after calling `render` or `redirect_to`, put `return` on the next line,
+  not the same line.
 
     ```ruby
-    # good
-    def your_method(str)
-      new_str = str.sub('xxx', 'yyy')
-    end
-
     # bad
-    def your_method(str)
-      str.sub!('xxx', 'yyy')
+    render :text => 'Howdy' and return
+
+    # good
+    render :text => 'Howdy'
+    return
+
+    # still bad
+    render :text => 'Howdy' and return if foo.present?
+
+    # good
+    if foo.present?
+      render :text => 'Howdy'
+      return
     end
     ```
 
-**[⬆ back to top](#table-of-contents)**
+## Be Consistent
 
-## Variables
+> If you're editing code, take a few minutes to look at the code around you and
+> determine its style. If they use spaces around all their arithmetic
+> operators, you should too. If their comments have little boxes of hash marks
+> around them, make your comments have little boxes of hash marks around them
+> too.
 
-- **[MUST]** Do not introduce new global variables (`$foo`) for any reason.
-- **[MUST]** Do not use class variables (`@@foo`) for any reasons.  Use `class_attribute` instead.
-- **[MUST]** Name variables with valid English words without shortening.  If a variable name gets too long, you can shorten the variable name by removing vowels, except for the first character. Alternatively, you choose well-known abbreviations.  Additionally, you can use conventional variables such as `i` and `j` for loop counters.
-- **[SHOULD]** Do not use a single variable for different purposes.
-- **[SHOULD]** Minimize the scope of a local variable.  Methods without any local variables are preferred.
+> The point of having style guidelines is to have a common vocabulary of coding
+> so people can concentrate on what you're saying rather than on how you're
+> saying it. We present global style rules here so people know the vocabulary,
+> but local style is also important. If code you add to a file looks
+> drastically different from the existing code around it, it throws readers out
+> of their rhythm when they go to read it. Avoid this.
 
-**[⬆ back to top](#table-of-contents)**
+&mdash;[Google C++ Style Guide][google-c++]
 
-## Miscellaneous
-
-- **[MUST]** Keep the side effects of destructive methods to a minimum.
-
-**[⬆ back to top](#table-of-contents)**
+[google-c++]: http://google-styleguide.googlecode.com/svn/trunk/cppguide.xml
