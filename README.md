@@ -26,6 +26,7 @@ Not only have a code style guide, but relevant informations about my Workflow. T
 ## Table of Contents
 
 - [Workflow](#workflow)
+- [Tools](#tools)
 - [Guides](#guides)
 - [Dependencies](#dependencies)
 - [General Notes](#general-notes)
@@ -36,26 +37,27 @@ Not only have a code style guide, but relevant informations about my Workflow. T
 
 This is a simple table with tools, aproaches and methods that I use at my Workflow.
 
-| Setup       | Develop          | Build Process        | Automation | Managers   | Deploy     | Database |
-|-------------|------------------|----------------------|------------|------------|------------|----------|
-| Scaffolding | Sass / Stylus    | Lint                 | Grunt      | NPM        | Rsync      | MySQL    |
-| Libraries   | Haml / Jade      | Unit Test            | Gulp       | Bower      | Git        | MongoDB  |
-| Templates   | Browser Sync     | Compile              | Just       | Component  | FTP        | Redis    |
-| Frameworks  | JS / CSS Linting | Minify               | Guard      | Bundler    | Capistrano |          |
-|             |                  | Concatenate          | Makefy     |            |            |          |
-|             |                  | Optimize             | Rakefile   |            |            |          |
-|             |                  | Deploy               |            |            |            |          |
+| Setup       | Develop          | Build Process | Deploy     |
+|-------------|------------------|---------------|------------|
+| Scaffolding | Sass / Stylus    | Lint          | Rsync      |
+| Libraries   | Haml / Jade      | Unit Test     | Git        |
+| Templates   | JS / CSS Linting | Compile       | FTP        |
+| Frameworks  | MySQL / MongoDB  | Minify        |            |
+| Database    | Browser Sync     | Concatenate   |            |
+|             |                  | Optimize      |            |
 
 **[⬆ back to top](#table-of-contents)**
+
+## Tools
 
 ### Scaffolding and Build
 
 - [Skeleton](http://skeleton.vitorbritto.com.br/)
 - [Boilerplates](https://github.com/vitorbritto/boilerplates)
 - [Managers](http://managers.vitorbritto.com.br/)
-- [Optimus](https://github.com/vitorbritto/optimus)
 - [Just](http://vitorbritto.github.io/just/)
 - [Makefy](http://vitorbritto.github.io/makefy/)
+- [Optimus](https://github.com/vitorbritto/optimus)
 - [Gone](https://github.com/vitorbritto/gone)
 
 **[⬆ back to top](#table-of-contents)**
@@ -80,6 +82,40 @@ This is a simple table with tools, aproaches and methods that I use at my Workfl
 - [Browser-sync](http://browsersync.io/)
 - [PhantomJS](http://phantomjs.org/)
 - [RSpec](http://rspec.info/)
+
+**[⬆ back to top](#table-of-contents)**
+
+### Automation
+
+- [Grunt](http://gruntjs.com/)
+- [Gulp](http://gulpjs.com/)
+- [Guard](http://guardgem.org/)
+- [Rakefile](http://rake.rubyforge.org/doc/rakefile_rdoc.html)
+- [Makefile](http://en.wikipedia.org/wiki/Make_(software))
+
+**[⬆ back to top](#table-of-contents)**
+
+### Package Managers
+
+- [NPM](https://www.npmjs.org/)
+- [Bower](http://bower.io/)
+- [Component](http://component.io/)
+- [Bundler](http://bundler.io/)
+- [RubyGems](https://rubygems.org/)
+
+**[⬆ back to top](#table-of-contents)**
+
+### Deployment
+
+- [Dploy](http://leanmeanfightingmachine.github.io/dploy/)
+- [Capistrano](http://capistranorb.com/) - _used for remote server automation too_
+
+**[⬆ back to top](#table-of-contents)**
+
+### PaaS
+
+- [Heroku](https://www.heroku.com/)
+- [OpenShift](https://www.openshift.com/)
 
 **[⬆ back to top](#table-of-contents)**
 
