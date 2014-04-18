@@ -27,6 +27,14 @@ Not only have a code style guide, but relevant informations about my Workflow. T
 
 - [Workflow](#workflow)
 - [Tools](#tools)
+    - [Scaffolding and Build](#scaffolding-and-build)
+    - [Debug and Inspection](#debug-and-inspection)
+    - [Tests](#tests)
+    - [Automation](#automation)
+    - [Package Managers](#package-managers)
+    - [Documentation](#documentation)
+    - [Deployment](#deployment)
+    - [PaaS](#paas)
 - [Guides](#guides)
 - [Dependencies](#dependencies)
 - [General Notes](#general-notes)
@@ -104,6 +112,11 @@ This is a simple table with tools, aproaches and methods that I use at my Workfl
 - [RubyGems](https://rubygems.org/)
 
 **[⬆ back to top](#table-of-contents)**
+
+### Documentation
+
+- [YUIDoc](http://yui.github.io/yuidoc/)
+-
 
 ### Deployment
 
