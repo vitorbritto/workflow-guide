@@ -2,7 +2,9 @@
 
 ## CSS Summary
 
+- [File Organization](#file-organization)
 - [Syntax](#syntax)
+- [Units](#units)
 - [Declaration Order](#order)
 - [Class Name](#class-name)
 - [Performance](#performance)
@@ -12,6 +14,72 @@
 - [Shorthand notation](#shorthand-notation)
 - [Pre-Processors](#pre-processors)
 - [Comments](#comments)
+
+
+## File Organization
+
+    .
+    ├── _all.{scss,styl}
+    ├── app
+    │   ├── _layout.{scss,styl}
+    │   ├── _legacy.{scss,styl}
+    │   └── _responsive.{scss,styl}
+    ├── core
+    │   ├── _config.{scss,styl}
+    │   ├── _functions.{scss,styl}
+    │   ├── _grid.{scss,styl}
+    │   ├── _mixins.{scss,styl}
+    │   └── _print.{scss,styl}
+    ├── general
+    │   ├── _base.{scss,styl}
+    │   ├── _forms.{scss,styl}
+    │   ├── _reset.{scss,styl}
+    │   └── _tables.{scss,styl}
+    ├── helpers
+    │   ├── _animation.{scss,styl}
+    │   ├── _browser.{scss,styl}
+    │   ├── _grid.{scss,styl}
+    │   ├── _icons.{scss,styl}
+    │   ├── _responsive.{scss,styl}
+    │   └── _sprites.{scss,styl}
+    ├── modules
+    ├── style.{scss,styl}
+    └── vendors
+
+**[⬆ back to top](#table-of-contents)**
+
+## Preprocessors
+
+I use pre-processors in all projects. Today I use `Sass` on Ruby or PHP projects and `Stylus` on Full Stack JavaScript projects.
+
+- Warning with nesting rules of pre-processors. Continue keep without nesting. If you find yourself going further, think about reorganizing your rules (either the specificity needed, or the layout of the nesting).
+
+```css
+/* Good */
+.nav-item { ... }
+
+/* Bad */
+.navbar {
+    .nav {
+        .nav-item {
+            ...
+        }
+    }
+}
+```
+
+- Any `$variable` or `@mixin` that is used in more than one file should be put in `core` folder. Provide semantic names for variables.
+
+```css
+/* Good */
+@brand-primary: #049cdb;
+
+/* Bad */
+@color-blue: #049cdb;
+```
+
+**[⬆ back to top](#table-of-contents)**
+
 
 ## Syntax
 
@@ -161,6 +229,14 @@ Use lowercase, shorthand hex values and avoid specifying units is zero-values.
 
 **[⬆ back to top](#table-of-contents)**
 
+
+## Units
+
+Use `px` for `font-size`, because it offers absolute control over text. Additionally, unit-less `line-height` is preferred because it does not inherit a percentage value of its parent element, but instead is based on a multiplier of the `font-size`.
+
+**[⬆ back to top](#table-of-contents)**
+
+
 ## Declaration Order
 
 Related property declarations should be grouped together following the order:
@@ -200,6 +276,7 @@ Related property declarations should be grouped together following the order:
 ```
 
 **[⬆ back to top](#table-of-contents)**
+
 
 ## Class Name
 
@@ -243,6 +320,7 @@ Avoid giving too short names for class and always choose meaningful names that p
 ```
 
 **[⬆ back to top](#table-of-contents)**
+
 
 ## Performance
 
@@ -316,6 +394,7 @@ Always minify the CSS code. Task builders like [Grunt](http://gruntjs.com/) leav
 
 **[⬆ back to top](#table-of-contents)**
 
+
 ## Import
 
 Compared to <link>s, @import is slower, adds extra page requests, and can cause other unforeseen problems. Avoid them and instead opt for an alternate approach:
@@ -335,6 +414,7 @@ Compared to <link>s, @import is slower, adds extra page requests, and can cause 
 - Concatenate CSS files with features provided in Rails, Jekyll, and other environments
 
 **[⬆ back to top](#table-of-contents)**
+
 
 ## Media Queries
 
@@ -394,6 +474,7 @@ Keep the media queries in a separate stylesheet.
 
 **[⬆ back to top](#table-of-contents)**
 
+
 ## Prefixed properties
 
 /* Prefixed properties */
@@ -403,6 +484,7 @@ Keep the media queries in a separate stylesheet.
 }
 
 **[⬆ back to top](#table-of-contents)**
+
 
 ## Shorthand notation
 
@@ -436,37 +518,6 @@ Strive to limit use of shorthand declarations to instances where you must explic
 
 **[⬆ back to top](#table-of-contents)**
 
-## Pre-Processors
-
-I use pre-processors in all projects. Today I use `Sass` on Ruby or PHP projects and `Stylus` on Full Stack JavaScript projects.
-
-Warning with nesting rules of pre-processors. Continue keep without nesting.
-
-```css
-/* Good */
-.nav-item { ... }
-
-/* Bad */
-.navbar {
-    .nav {
-        .nav-item {
-            ...
-        }
-    }
-}
-```
-
-Provide semantic names for variables.
-
-```css
-/* Good */
-@brand-primary: #049cdb;
-
-/* Bad */
-@color-blue: #049cdb;
-```
-
-**[⬆ back to top](#table-of-contents)**
 
 ## Comments
 
