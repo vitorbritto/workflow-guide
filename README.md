@@ -66,7 +66,6 @@ This is a simple table with tools, aproaches and methods that I use at my Workfl
 - [Just](http://vitorbritto.github.io/just/)
 - [Makefy](http://vitorbritto.github.io/makefy/)
 - [Optimus](https://github.com/vitorbritto/optimus)
-- [Gone](https://github.com/vitorbritto/gone)
 
 **[⬆ back to top](#table-of-contents)**
 
@@ -123,6 +122,7 @@ This is a simple table with tools, aproaches and methods that I use at my Workfl
 
 - [Dploy](http://leanmeanfightingmachine.github.io/dploy/)
 - [Capistrano](http://capistranorb.com/) - _used for remote server automation too_
+- [Gone](https://github.com/vitorbritto/gone)
 
 **[⬆ back to top](#table-of-contents)**
 
