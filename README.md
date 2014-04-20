@@ -186,8 +186,9 @@ This is a simple table with aproaches and methods that I use at my Workflow.
 
 ## General Notes
 
-- **[STRATEGY]**: for Task Management I use the [GTD](http://pt.wikipedia.org/wiki/Getting_Things_Done) and [Scrum](http://scrummethodology.com/) methods.
-- **[DEVELOPMENT]**: these files gets two spaces for indentation: `*.styl`, `*.jade`, `*.coffee`, `*.sass`, `*.haml`, `*.rb`, `*.json`.
+- **[STRATEGY]**: use the [GTD](http://pt.wikipedia.org/wiki/Getting_Things_Done) and [Scrum](http://scrummethodology.com/) methods.
+- **[DEVELOPMENT]**: use the [SOLID](http://en.wikipedia.org/wiki/SOLID_(object-oriented_design)) principles.
+- **[BUILD]**: these files gets two spaces for indentation: `*.styl`, `*.jade`, `*.coffee`, `*.sass`, `*.haml`, `*.rb`, `*.json`.
 
 **[⬆ back to top](#table-of-contents)**
 
