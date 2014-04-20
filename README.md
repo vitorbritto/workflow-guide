@@ -53,8 +53,8 @@ This is a simple table with aproaches and methods that I use at my Workflow.
 | Research    | Sitemap        | Concepting     | Scaffolding | Lint          | Test       |
 | Observe     | Wireframe      | Presentation   | Libraries   | Concatenate   | Optimize   |
 | Understand  | Prototype      | Refine         | Templates   | Minify        | **LAUNCH** |
-| Analyze     | Usability      | Approval       | Frameworks  | Compile       |            |
-| Timeline    |                |                | Database    |               |            |
+| Analyze     | Style Guide    | Approval       | Frameworks  | Compile       |            |
+| Timeline    | Usability      |                | Database    |               |            |
 
 **[⬆ back to top](#table-of-contents)**
 
