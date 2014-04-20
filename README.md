@@ -17,16 +17,19 @@ Apply rules and be based on a principle and methodology of process which could m
 
 Not only have a code style guide, but relevant informations about my Workflow. Thus I always keep the same logic process and can initiate the development of my projects without any questions when making a scaffolding, building process, automation rotines, unit testing and others tasks.
 
-**This guide consist with three parts:** :ghost:
+**This guide consist with four parts:** :ghost:
 
-1. My workflow context with tools, approaches and methods that I use.
-2. My own code conventions. Which is inspired by what is popular within the community, and flavored with some personal opinions.
-3. Major dependencies that I use on Grunt, Gulp, Bower, Karma and Node/CLI.
+1. My workflow context with approaches and methods that I use.
+2. Tools that I use in my Workflow.
+3. My own code conventions, which is inspired by what is popular within the community and flavored with some personal opinions.
+4. Major dependencies that I use with Grunt, Gulp, Bower, Karma and Node/CLI.
 
 ## Table of Contents
 
 - [Workflow](#workflow)
 - [Tools](#tools)
+    - [Strategy](#strategy)
+    - [Blueprint and Visual](#blueprint-and-visual)
     - [Scaffolding and Build](#scaffolding-and-build)
     - [Debug and Inspection](#debug-and-inspection)
     - [Tests](#tests)
@@ -35,37 +38,49 @@ Not only have a code style guide, but relevant informations about my Workflow. T
     - [Documentation](#documentation)
     - [Deployment](#deployment)
     - [PaaS](#paas)
-- [Guides](#guides)
 - [Dependencies](#dependencies)
+- [Guides](#guides)
 - [General Notes](#general-notes)
 - [References](#references)
 
 
 ## Workflow
 
-This is a simple table with tools, aproaches and methods that I use at my Workflow.
+This is a simple table with aproaches and methods that I use at my Workflow.
 
-| Setup       | Develop          | Build Process | Deploy     |
-|-------------|------------------|---------------|------------|
-| Scaffolding | Sass / Stylus    | Lint          | Rsync      |
-| Libraries   | Haml / Jade      | Unit Test     | Git        |
-| Templates   | JS / CSS Linting | Compile       | FTP        |
-| Frameworks  | MySQL / MongoDB  | Minify        |            |
-| Database    | Browser Sync     | Concatenate   |            |
-|             |                  | Optimize      |            |
+| Strategy    | Blueprint      | Visual         | Develop     | Build         | Deploy     |
+|-------------|----------------|----------------|-------------|---------------|------------|
+| Research    | Sitemap        | Concepting     | Scaffolding | Lint          | Test       |
+| Observe     | Wireframe      | Presentation   | Libraries   | Concatenate   | Optimize   |
+| Understand  | Prototype      | Refine         | Templates   | Minify        | **LAUNCH** |
+| Analyze     | Usability      | Approval       | Frameworks  | Compile       |            |
+| Timeline    |                |                | Database    |               |            |
 
 **[⬆ back to top](#table-of-contents)**
 
+
 ## Tools
+
+### Strategy
+
+- [Trello](https://trello.com/)
+- [doit](http://doit.im/)
+
+**[⬆ back to top](#table-of-contents)**
+
+### Blueprint and Visual
+
+- [Axure RP](http://www.axure.com/)
+- [Photoshop CS6](http://www.photoshop.com/products/photoshop)
+- [Illustrator](http://www.adobe.com/products/illustrator)
+
+**[⬆ back to top](#table-of-contents)**
 
 ### Scaffolding and Build
 
 - [Skeleton](http://skeleton.vitorbritto.com.br/)
 - [Boilerplates](https://github.com/vitorbritto/boilerplates)
-- [Managers](http://managers.vitorbritto.com.br/)
-- [Just](http://vitorbritto.github.io/just/)
-- [Makefy](http://vitorbritto.github.io/makefy/)
-- [Optimus](https://github.com/vitorbritto/optimus)
+- [Sequel Pro](http://www.sequelpro.com/)
 
 **[⬆ back to top](#table-of-contents)**
 
@@ -82,6 +97,7 @@ This is a simple table with tools, aproaches and methods that I use at my Workfl
 
 ### Tests
 
+- [Optimus](https://github.com/vitorbritto/optimus)
 - [Karma](http://karma-runner.github.io/)
 - [Jasmine](https://github.com/pivotal/jasmine)
 - [Mocha](https://github.com/visionmedia/mocha)
@@ -94,6 +110,8 @@ This is a simple table with tools, aproaches and methods that I use at my Workfl
 
 ### Automation
 
+- [Just](http://vitorbritto.github.io/just/)
+- [Makefy](http://vitorbritto.github.io/makefy/)
 - [Grunt](http://gruntjs.com/)
 - [Gulp](http://gulpjs.com/)
 - [Guard](http://guardgem.org/)
@@ -104,6 +122,7 @@ This is a simple table with tools, aproaches and methods that I use at my Workfl
 
 ### Package Managers
 
+- [Managers](http://managers.vitorbritto.com.br/)
 - [NPM](https://www.npmjs.org/)
 - [Bower](http://bower.io/)
 - [Component](http://component.io/)
@@ -123,6 +142,8 @@ This is a simple table with tools, aproaches and methods that I use at my Workfl
 - [Dploy](http://leanmeanfightingmachine.github.io/dploy/)
 - [Capistrano](http://capistranorb.com/) - _used for remote server automation too_
 - [Gone](https://github.com/vitorbritto/gone)
+- [Bitbucket](http://www.bitbucket.com/)
+- [Github](http://github.com)
 
 **[⬆ back to top](#table-of-contents)**
 
@@ -130,6 +151,19 @@ This is a simple table with tools, aproaches and methods that I use at my Workfl
 
 - [Heroku](https://www.heroku.com/)
 - [OpenShift](https://www.openshift.com/)
+
+**[⬆ back to top](#table-of-contents)**
+
+
+## Dependencies
+
+- [Grunt](https://gist.github.com/vitorbritto/6163803#file-grunt-md)
+- [Gulp](https://gist.github.com/vitorbritto/6163803#file-gulp-md)
+- [Bower](https://gist.github.com/vitorbritto/6163803#file-bower-md)
+- [Karma](https://gist.github.com/vitorbritto/6163803#file-karma-md)
+- [Node/CLI](https://gist.github.com/vitorbritto/6163803#file-cli-md)
+- [Guard](https://gist.github.com/vitorbritto/6163803#file-guard-md)
+- [RubyGems](https://gist.github.com/vitorbritto/6163803#file-rubygems-md)
 
 **[⬆ back to top](#table-of-contents)**
 
@@ -150,22 +184,10 @@ This is a simple table with tools, aproaches and methods that I use at my Workfl
 **[⬆ back to top](#table-of-contents)**
 
 
-## Dependencies
-
-- [Grunt](https://gist.github.com/vitorbritto/6163803#file-grunt-md)
-- [Gulp](https://gist.github.com/vitorbritto/6163803#file-gulp-md)
-- [Bower](https://gist.github.com/vitorbritto/6163803#file-bower-md)
-- [Karma](https://gist.github.com/vitorbritto/6163803#file-karma-md)
-- [Node/CLI](https://gist.github.com/vitorbritto/6163803#file-cli-md)
-- [Guard](https://gist.github.com/vitorbritto/6163803#file-guard-md)
-- [RubyGems](https://gist.github.com/vitorbritto/6163803#file-rubygems-md)
-
-**[⬆ back to top](#table-of-contents)**
-
-
 ## General Notes
 
-- These files gets two spaces for indentation: `*.styl`, `*.jade`, `*.coffee`, `*.sass`, `*.haml`, `*.rb`, `*.json`.
+- **[STRATEGY]**: for Task Management I use the [GTD](http://pt.wikipedia.org/wiki/Getting_Things_Done) and [Scrum](http://scrummethodology.com/) methods.
+- **[DEVELOPMENT]**: these files gets two spaces for indentation: `*.styl`, `*.jade`, `*.coffee`, `*.sass`, `*.haml`, `*.rb`, `*.json`.
 
 **[⬆ back to top](#table-of-contents)**
 
