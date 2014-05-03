@@ -245,16 +245,16 @@ if (a == '') {
 }
 ```
 
-The ternary operator should not be used on a single line. Split it up into multiple lines instead.
+The ternary operator should be used on a single line. Split it up into multiple lines instead.
 
 ```javascript
 // good
+var foo = (a === b) ? 1 : 2;
+
+// bad
 var foo = (a === b)
     ? 1
     : 2;
-
-// bad
-var foo = (a === b) ? 1 : 2;
 ```
 
 ##### Write small functions
