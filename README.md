@@ -56,7 +56,7 @@ This is a simple table with aproaches and methods that I use at my Workflow.
 | Analyze     | Style Guide    | Approval       | Frameworks  | Compile       |            |
 | Timeline    | Usability      |                | Database    |               |            |
 
-**[⬆ back to top](#table-of-contents)**
+**[:arrow_up: back to top](#table-of-contents)**
 
 
 ## Tools
@@ -66,7 +66,7 @@ This is a simple table with aproaches and methods that I use at my Workflow.
 - [Trello](https://trello.com/)
 - [doit](http://doit.im/)
 
-**[⬆ back to top](#table-of-contents)**
+**[:arrow_up: back to top](#table-of-contents)**
 
 ### Blueprint and Visual
 
@@ -74,7 +74,7 @@ This is a simple table with aproaches and methods that I use at my Workflow.
 - [Photoshop CS6](http://www.photoshop.com/products/photoshop)
 - [Illustrator](http://www.adobe.com/products/illustrator)
 
-**[⬆ back to top](#table-of-contents)**
+**[:arrow_up: back to top](#table-of-contents)**
 
 ### Scaffolding and Build
 
@@ -82,7 +82,7 @@ This is a simple table with aproaches and methods that I use at my Workflow.
 - [Boilerplates](https://github.com/vitorbritto/boilerplates)
 - [Sequel Pro](http://www.sequelpro.com/)
 
-**[⬆ back to top](#table-of-contents)**
+**[:arrow_up: back to top](#table-of-contents)**
 
 ### Debug and Inspection
 
@@ -93,7 +93,7 @@ This is a simple table with aproaches and methods that I use at my Workflow.
 - [JSFiddle](http://jsfiddle.net/)
 - [JSbin](http://jsbin.com/)
 
-**[⬆ back to top](#table-of-contents)**
+**[:arrow_up: back to top](#table-of-contents)**
 
 ### Tests
 
@@ -106,7 +106,7 @@ This is a simple table with aproaches and methods that I use at my Workflow.
 - [PhantomJS](http://phantomjs.org/)
 - [RSpec](http://rspec.info/)
 
-**[⬆ back to top](#table-of-contents)**
+**[:arrow_up: back to top](#table-of-contents)**
 
 ### Automation
 
@@ -118,7 +118,7 @@ This is a simple table with aproaches and methods that I use at my Workflow.
 - [Rakefile](http://rake.rubyforge.org/doc/rakefile_rdoc.html)
 - [Makefile](http://en.wikipedia.org/wiki/Make_(software))
 
-**[⬆ back to top](#table-of-contents)**
+**[:arrow_up: back to top](#table-of-contents)**
 
 ### Package Managers
 
@@ -129,13 +129,13 @@ This is a simple table with aproaches and methods that I use at my Workflow.
 - [Bundler](http://bundler.io/)
 - [RubyGems](https://rubygems.org/)
 
-**[⬆ back to top](#table-of-contents)**
+**[:arrow_up: back to top](#table-of-contents)**
 
 ### Documentation
 
 - [YUIDoc](http://yui.github.io/yuidoc/)
 
-**[⬆ back to top](#table-of-contents)**
+**[:arrow_up: back to top](#table-of-contents)**
 
 ### Deployment
 
@@ -145,14 +145,14 @@ This is a simple table with aproaches and methods that I use at my Workflow.
 - [Bitbucket](http://www.bitbucket.com/)
 - [Github](http://github.com)
 
-**[⬆ back to top](#table-of-contents)**
+**[:arrow_up: back to top](#table-of-contents)**
 
 ### PaaS
 
 - [Heroku](https://www.heroku.com/)
 - [OpenShift](https://www.openshift.com/)
 
-**[⬆ back to top](#table-of-contents)**
+**[:arrow_up: back to top](#table-of-contents)**
 
 
 ## Dependencies
@@ -165,7 +165,7 @@ This is a simple table with aproaches and methods that I use at my Workflow.
 - [Guard](https://gist.github.com/vitorbritto/6163803#file-guard-md)
 - [RubyGems](https://gist.github.com/vitorbritto/6163803#file-rubygems-md)
 
-**[⬆ back to top](#table-of-contents)**
+**[:arrow_up: back to top](#table-of-contents)**
 
 
 ## Guides
@@ -181,7 +181,7 @@ This is a simple table with aproaches and methods that I use at my Workflow.
 - [Erlang](guides/erlang.md)
 - [Git](guides/git.md)
 
-**[⬆ back to top](#table-of-contents)**
+**[:arrow_up: back to top](#table-of-contents)**
 
 
 ## General Notes
@@ -190,7 +190,7 @@ This is a simple table with aproaches and methods that I use at my Workflow.
 - **[DEVELOPMENT]**: use the [SOLID](http://en.wikipedia.org/wiki/SOLID_(object-oriented_design)) principles.
 - **[BUILD]**: these files gets two spaces for indentation: `*.styl`, `*.jade`, `*.coffee`, `*.sass`, `*.haml`, `*.rb`, `*.json`.
 
-**[⬆ back to top](#table-of-contents)**
+**[:arrow_up: back to top](#table-of-contents)**
 
 
 ## References
@@ -221,7 +221,7 @@ This is a simple table with aproaches and methods that I use at my Workflow.
 * [The RSpec Book](http://pragprog.com/book/achbd/the-rspec-book)
 * [Everyday Rails Testing with RSpec](https://leanpub.com/everydayrailsrspec)
 
-**[⬆ back to top](#table-of-contents)**
+**[:arrow_up: back to top](#table-of-contents)**
 
 
 ## License
