@@ -31,13 +31,17 @@ Not only have a code style guide, but relevant informations about my Workflow. T
     - [Strategy](#strategy)
     - [Blueprint and Visual](#blueprint-and-visual)
     - [Scaffolding and Build](#scaffolding-and-build)
+    - [Lint and Code Style Checker](#lint-and-code-style-checker)
     - [Debug and Inspection](#debug-and-inspection)
+    - [Metrics and Performance](#metrics-and-performance)
     - [Tests](#tests)
     - [Automation](#automation)
     - [Package Managers](#package-managers)
+    - [Database](#database)
     - [Documentation](#documentation)
     - [Deployment](#deployment)
     - [PaaS](#paas)
+    - [CI and Code Coverage](#ci-and-code-coverage)
 - [Dependencies](#dependencies)
 - [Guides](#guides)
 - [General Notes](#general-notes)
@@ -61,6 +65,8 @@ This is a simple table with aproaches and methods that I use at my Workflow.
 
 ## Tools
 
+Following is the list of the main tools and resources that I use in my workflow.
+
 ### Strategy
 
 - [Trello](https://trello.com/)
@@ -80,31 +86,51 @@ This is a simple table with aproaches and methods that I use at my Workflow.
 
 - [Skeleton](http://skeleton.vitorbritto.com.br/)
 - [Boilerplates](https://github.com/vitorbritto/boilerplates)
-- [Sequel Pro](http://www.sequelpro.com/)
+
+**[:arrow_up: back to top](#table-of-contents)**
+
+### Lint and Code Style Checker
+
+- [JSHint](https://github.com/vitorbritto/workflow-guide/blob/master/files/.jshintrc)
+- [CSSLint](https://github.com/vitorbritto/workflow-guide/blob/master/files/.csslintrc)
+- [JSCS](https://github.com/mdevils/node-jscs)
+- [CSSComb](https://github.com/csscomb/csscomb.js)
+- [JSBeautify](https://github.com/einars/js-beautify)
 
 **[:arrow_up: back to top](#table-of-contents)**
 
 ### Debug and Inspection
 
-- [JSHint](https://github.com/vitorbritto/workflow-guide/blob/master/files/.jshintrc)
-- [CSSLint](https://github.com/vitorbritto/workflow-guide/blob/master/files/.csslintrc)
-- [DevTools](https://developers.google.com/chrome-developer-tools/)
+- [DevTools](https://developer.mozilla.org/en-US/docs/Tools)
 - [JSPerf](http://jsperf.com/)
 - [JSFiddle](http://jsfiddle.net/)
 - [JSbin](http://jsbin.com/)
+
+### Metrics and Performance
+
+- [GTmetrix](http://gtmetrix.com/)
 
 **[:arrow_up: back to top](#table-of-contents)**
 
 ### Tests
 
+**Unit Tests**
 - [Optimus](https://github.com/vitorbritto/optimus)
 - [Karma](http://karma-runner.github.io/)
 - [Jasmine](https://github.com/pivotal/jasmine)
 - [Mocha](https://github.com/visionmedia/mocha)
 - [Chai](http://chaijs.com/)
+- [RSpec](http://rspec.info/)
+
+**REST/API**
+- [Superagent](https://github.com/visionmedia/superagent)
+- [Supertest](https://github.com/visionmedia/supertest)
+- [RESTClient](http://restclient.net/)
+- [cURL](http://curl.haxx.se/)
+
+**Cross-Device/Browsers**
 - [Browser-sync](http://browsersync.io/)
 - [PhantomJS](http://phantomjs.org/)
-- [RSpec](http://rspec.info/)
 
 **[:arrow_up: back to top](#table-of-contents)**
 
@@ -131,6 +157,15 @@ This is a simple table with aproaches and methods that I use at my Workflow.
 
 **[:arrow_up: back to top](#table-of-contents)**
 
+### Database
+
+- [Sequel Pro](http://www.sequelpro.com/)
+- [RoboMongo](http://robomongo.org/)
+- [MongoDB](http://www.mongodb.org/)
+- [MySQL](http://www.mysql.com/)
+
+**[:arrow_up: back to top](#table-of-contents)**
+
 ### Documentation
 
 - [YUIDoc](http://yui.github.io/yuidoc/)
@@ -151,6 +186,17 @@ This is a simple table with aproaches and methods that I use at my Workflow.
 
 - [Heroku](https://www.heroku.com/)
 - [OpenShift](https://www.openshift.com/)
+
+**[:arrow_up: back to top](#table-of-contents)**
+
+### CI and Code Coverage
+
+- [Travis CI](https://travis-ci.org/)
+- [Code Climate](https://codeclimate.com/)
+- [Drone CI](https://drone.io/)
+- [David](https://ci.appveyor.com/login)
+- [Coveralls](https://coveralls.io/)
+- [App Veyor](https://ci.appveyor.com/login)
 
 **[:arrow_up: back to top](#table-of-contents)**
 
