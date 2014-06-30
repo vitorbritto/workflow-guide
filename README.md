@@ -70,7 +70,7 @@ Following is the list of the main tools and resources that I use in my workflow.
 ### Strategy
 
 - [Trello](https://trello.com/)
-- [doit](http://doit.im/)
+- [TicTac](https://github.com/vitorbritto/tictac)
 
 **[:arrow_up: back to top](#table-of-contents)**
 
