@@ -60,7 +60,7 @@ This is a simple table with aproaches and methods that I use at my Workflow.
 | Analyze     | Style Guide    | Approval       | Frameworks  | Compile       |            |
 | Timeline    | Usability      |                | Database    |               |            |
 
-**[:arrow_up: back to top](#table-of-contents)**
+**[⬆ back to top](#table-of-contents)**
 
 
 ## Tools
@@ -72,7 +72,7 @@ Following is the list of the main tools and resources that I use in my workflow.
 - [Trello](https://trello.com/)
 - [TicTac](https://github.com/vitorbritto/tictac)
 
-**[:arrow_up: back to top](#table-of-contents)**
+**[⬆ back to top](#table-of-contents)**
 
 ### Blueprint and Visual
 
@@ -80,14 +80,14 @@ Following is the list of the main tools and resources that I use in my workflow.
 - [Photoshop CS6](http://www.photoshop.com/products/photoshop)
 - [Illustrator](http://www.adobe.com/products/illustrator)
 
-**[:arrow_up: back to top](#table-of-contents)**
+**[⬆ back to top](#table-of-contents)**
 
 ### Scaffolding and Build
 
 - [Skeleton](http://skeleton.vitorbritto.com.br/)
 - [Boilerplates](https://github.com/vitorbritto/boilerplates)
 
-**[:arrow_up: back to top](#table-of-contents)**
+**[⬆ back to top](#table-of-contents)**
 
 ### Lint and Code Style Checker
 
@@ -97,7 +97,7 @@ Following is the list of the main tools and resources that I use in my workflow.
 - [CSSComb](https://github.com/csscomb/csscomb.js)
 - [JSBeautify](https://github.com/einars/js-beautify)
 
-**[:arrow_up: back to top](#table-of-contents)**
+**[⬆ back to top](#table-of-contents)**
 
 ### Debug and Inspection
 
@@ -110,7 +110,7 @@ Following is the list of the main tools and resources that I use in my workflow.
 
 - [GTmetrix](http://gtmetrix.com/)
 
-**[:arrow_up: back to top](#table-of-contents)**
+**[⬆ back to top](#table-of-contents)**
 
 ### Tests
 
@@ -132,7 +132,7 @@ Following is the list of the main tools and resources that I use in my workflow.
 - [Browser-sync](http://browsersync.io/)
 - [PhantomJS](http://phantomjs.org/)
 
-**[:arrow_up: back to top](#table-of-contents)**
+**[⬆ back to top](#table-of-contents)**
 
 ### Automation
 
@@ -144,7 +144,7 @@ Following is the list of the main tools and resources that I use in my workflow.
 - [Rakefile](http://rake.rubyforge.org/doc/rakefile_rdoc.html)
 - [Makefile](http://en.wikipedia.org/wiki/Make_(software))
 
-**[:arrow_up: back to top](#table-of-contents)**
+**[⬆ back to top](#table-of-contents)**
 
 ### Package Managers
 
@@ -155,7 +155,7 @@ Following is the list of the main tools and resources that I use in my workflow.
 - [Bundler](http://bundler.io/)
 - [RubyGems](https://rubygems.org/)
 
-**[:arrow_up: back to top](#table-of-contents)**
+**[⬆ back to top](#table-of-contents)**
 
 ### Database
 
@@ -164,13 +164,13 @@ Following is the list of the main tools and resources that I use in my workflow.
 - [MongoDB](http://www.mongodb.org/)
 - [MySQL](http://www.mysql.com/)
 
-**[:arrow_up: back to top](#table-of-contents)**
+**[⬆ back to top](#table-of-contents)**
 
 ### Documentation
 
 - [YUIDoc](http://yui.github.io/yuidoc/)
 
-**[:arrow_up: back to top](#table-of-contents)**
+**[⬆ back to top](#table-of-contents)**
 
 ### Deployment
 
@@ -180,14 +180,14 @@ Following is the list of the main tools and resources that I use in my workflow.
 - [Bitbucket](http://www.bitbucket.com/)
 - [Github](http://github.com)
 
-**[:arrow_up: back to top](#table-of-contents)**
+**[⬆ back to top](#table-of-contents)**
 
 ### PaaS
 
 - [Heroku](https://www.heroku.com/)
 - [OpenShift](https://www.openshift.com/)
 
-**[:arrow_up: back to top](#table-of-contents)**
+**[⬆ back to top](#table-of-contents)**
 
 ### CI and Code Coverage
 
@@ -198,7 +198,7 @@ Following is the list of the main tools and resources that I use in my workflow.
 - [Coveralls](https://coveralls.io/)
 - [App Veyor](https://ci.appveyor.com/login)
 
-**[:arrow_up: back to top](#table-of-contents)**
+**[⬆ back to top](#table-of-contents)**
 
 
 ## Dependencies
@@ -208,10 +208,9 @@ Following is the list of the main tools and resources that I use in my workflow.
 - [Bower](https://gist.github.com/vitorbritto/6163803#file-bower-md)
 - [Karma](https://gist.github.com/vitorbritto/6163803#file-karma-md)
 - [Node/CLI](https://gist.github.com/vitorbritto/6163803#file-cli-md)
-- [Guard](https://gist.github.com/vitorbritto/6163803#file-guard-md)
 - [RubyGems](https://gist.github.com/vitorbritto/6163803#file-rubygems-md)
 
-**[:arrow_up: back to top](#table-of-contents)**
+**[⬆ back to top](#table-of-contents)**
 
 
 ## Guides
@@ -222,12 +221,10 @@ Following is the list of the main tools and resources that I use in my workflow.
 - [NodeJS](guides/nodejs.md)
 - [Ruby](guides/ruby.md)
 - [Rails](guides/rails.md)
-- [Shell](guides/shell.md)
-- [C/C++](guides/c.md)
-- [Erlang](guides/erlang.md)
 - [Git](guides/git.md)
+- [Shell](guides/shell.md)
 
-**[:arrow_up: back to top](#table-of-contents)**
+**[⬆ back to top](#table-of-contents)**
 
 
 ## General Notes
@@ -236,7 +233,18 @@ Following is the list of the main tools and resources that I use in my workflow.
 - **[DEVELOPMENT]**: use the [SOLID](http://en.wikipedia.org/wiki/SOLID_(object-oriented_design)) principles.
 - **[BUILD]**: these files gets two spaces for indentation: `*.styl`, `*.jade`, `*.coffee`, `*.sass`, `*.haml`, `*.rb`, `*.json`.
 
-**[:arrow_up: back to top](#table-of-contents)**
+**Be Consistent**
+
+> The point of having style guidelines is to have a common vocabulary of coding
+> so people can concentrate on what you're saying rather than on how you're
+> saying it. We present global style rules here so people know the vocabulary,
+> but local style is also important. If code you add to a file looks
+> drastically different from the existing code around it, it throws readers out
+> of their rhythm when they go to read it. Avoid this.
+
+[Google C++ Style Guide](http://google-styleguide.googlecode.com/svn/trunk/cppguide.xml)
+
+**[⬆ back to top](#table-of-contents)**
 
 
 ## References
@@ -248,11 +256,7 @@ Following is the list of the main tools and resources that I use in my workflow.
 - [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript)
 - [Google JavaScript Style Guide](http://google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml)
 - [jQuery Core Style Guidelines](http://docs.jquery.com/JQuery_Core_Style_Guidelines)
-- [Airbnb Ruby Style Guide](https://github.com/airbnb/javascript)
-- [Bozhidar Batsov Style Guide](https://github.com/bbatsov/ruby-style-guide)
-- [Github Ruby Style Guide](https://github.com/styleguide/ruby)
 - [Annotated ECMAScript 5.1](http://es5.github.com/)
-- [Google JavaScript Style Guide](http://google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml)
 - [Douglas Crockford's Code Conventions for JavaScript](http://javascript.crockford.com/code.html)
 - [Principles of Writing Consistent, Idiomatic JavaScript](https://github.com/rwldrn/idiomatic.js/)
 - [Naming this in nested functions](https://gist.github.com/4135065) - Christian Johansen
@@ -262,12 +266,15 @@ Following is the list of the main tools and resources that I use in my workflow.
 - [Basic JavaScript for the impatient programmer](http://www.2ality.com/2013/06/basic-javascript.html) - Dr. Axel Rauschmayer
 - [You Might Not Need jQuery](http://youmightnotneedjquery.com/) - Zack Bloom & Adam Schwartz
 - [ES6 Features](https://github.com/lukehoban/es6features) - Luke Hoban
-* [The Rails 3 Way](http://www.amazon.com/Rails-Way-Addison-Wesley-Professional-Ruby/dp/0321601661)
-* [Ruby on Rails Guides](http://guides.rubyonrails.org/)
-* [The RSpec Book](http://pragprog.com/book/achbd/the-rspec-book)
-* [Everyday Rails Testing with RSpec](https://leanpub.com/everydayrailsrspec)
+- [Airbnb Ruby Style Guide](https://github.com/airbnb/ruby)
+- [Bozhidar Batsov Style Guide](https://github.com/bbatsov/ruby-style-guide)
+- [Github Ruby Style Guide](https://github.com/styleguide/ruby)
+- [The Rails 3 Way](http://www.amazon.com/Rails-Way-Addison-Wesley-Professional-Ruby/dp/0321601661)
+- [Ruby on Rails Guides](http://guides.rubyonrails.org/)
+- [The RSpec Book](http://pragprog.com/book/achbd/the-rspec-book)
+- [Everyday Rails Testing with RSpec](https://leanpub.com/everydayrailsrspec)
 
-**[:arrow_up: back to top](#table-of-contents)**
+**[⬆ back to top](#table-of-contents)**
 
 
 ## License
