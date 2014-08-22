@@ -1,42 +1,42 @@
 # Ruby Style Guide
 
 ## Table of Contents
-  1.  [Whitespace](#whitespace)
-      1. [Indentation](#indentation)
-      1. [Inline](#inline)
-      1. [Newlines](#newlines)
-  1.  [Line Length](#line-length)
-  1.  [Commenting](#commenting)
-      1. [File/class-level comments](#fileclass-level-comments)
-      1. [Function comments](#function-comments)
-      1. [Block and inline comments](#block-and-inline-comments)
-      1. [Punctuation, spelling, and grammar](#punctuation-spelling-and-grammar)
-      1. [TODO comments](#todo-comments)
-      1. [Commented-out code](#commented-out-code)
-  1.  [Methods](#methods)
-      1. [Method definitions](#method-definitions)
-      1. [Method calls](#method-calls)
-  1.  [Conditional Expressions](#conditional-expressions)
-      1. [Conditional keywords](#conditional-keywords)
-      1. [Ternary operator](#ternary-operator)
-  1.  [Syntax](#syntax)
-  1.  [Naming](#naming)
-  1.  [Classes](#classes)
-  1.  [Exceptions](#exceptions)
-  1.  [Collections](#collections)
-  1. [Strings](#strings)
-  1. [Regular Expressions](#regular-expressions)
-  1. [Percent Literals](#percent-literals)
-  1. [Rails Specific](#rails)
-  1. [Be Consistent](#be-consistent)
+- [Whitespace](#whitespace)
+    - [Indentation](#indentation)
+    - [Inline](#inline)
+    - [Newlines](#newlines)
+- [Line Length](#line-length)
+- [Commenting](#commenting)
+    - [File/class-level comments](#fileclass-level-comments)
+    - [Function comments](#function-comments)
+    - [Block and inline comments](#block-and-inline-comments)
+    - [Punctuation, spelling, and grammar](#punctuation-spelling-and-grammar)
+    - [TODO comments](#todo-comments)
+    - [Commented-out code](#commented-out-code)
+- [Methods](#methods)
+    - [Method definitions](#method-definitions)
+    - [Method calls](#method-calls)
+- [Conditional Expressions](#conditional-expressions)
+    - [Conditional keywords](#conditional-keywords)
+    - [Ternary operator](#ternary-operator)
+- [Syntax](#syntax)
+- [Naming](#naming)
+- [Classes](#classes)
+- [Exceptions](#exceptions)
+- [Collections](#collections)
+- [Strings](#strings)
+- [Regular Expressions](#regular-expressions)
+- [Percent Literals](#percent-literals)
+- [Rails Specific](#rails)
+- [Be Consistent](#be-consistent)
 
 ## Whitespace
 
 ### Indentation
 
-* Use soft-tabs with a two space-indent.
+- Use soft-tabs with a two space-indent.
 
-* Indent `when` as deep as `case`.
+- Indent `when` as deep as `case`.
 
     ```Ruby
     case
@@ -60,7 +60,7 @@
            end
     ```
 
-* Align function arguments either all on the same line or one per line.
+- Align function arguments either all on the same line or one per line.
 
     ```ruby
     # good
@@ -81,11 +81,13 @@
     end
     ```
 
+**[⬆ back to top](#table-of-contents)**
+
 ### Inline
 
-* Never leave trailing whitespace.
+- Never leave trailing whitespace.
 
-* Use spaces around operators; after commas, colons, and semicolons; and around
+- Use spaces around operators; after commas, colons, and semicolons; and around
   `{` and before `}`.
 
     ```Ruby
@@ -95,17 +97,18 @@
     [1, 2, 3].each { |e| puts e }
     ```
 
-* No spaces after `(`, `[` or before `]`, `)`.
+- No spaces after `(`, `[` or before `]`, `)`.
 
     ```Ruby
     some(arg).other
     [1, 2, 3].length
     ```
 
+**[⬆ back to top](#table-of-contents)**
+
 ### Newlines
 
-* Add a new line after `if` conditions span multiple lines to help
-  differentiate between the conditions and the body.
+- Add a new line after `if` conditions span multiple lines to help differentiate between the conditions and the body.
 
     ```ruby
     if @reservation_alteration.checkin == @reservation.start_date &&
@@ -115,26 +118,19 @@
     end
     ```
 
+**[⬆ back to top](#table-of-contents)**
+
 ## Line Length
 
-Keep each line of code to a readable length. Unless you have a reason
-to, keep lines to fewer than 100 characters. Keeping code visually
-grouped together (as a 100-character line limit enforces) makes it
-easier to understand. For example, you don't have to scroll back and
-forth on one line to see what's going on -- you can view it all
-together.
+Keep each line of code to a readable length. Unless you have a reason to, keep lines to fewer than 100 characters. Keeping code visually grouped together (as a 100-character line limit enforces) makes it easier to understand. For example, you don't have to scroll back and forth on one line to see what's going on -- you can view it all together.
 
-Here are examples from our codebase showing several techniques for
-breaking complex statements into multiple lines that are all < 100
-characters. Notice techniques like:
+Here are examples from our codebase showing several techniques for breaking complex statements into multiple lines that are all < 100 characters. Notice techniques like:
 
-* liberal use of linebreaks inside unclosed `(` `{` `[`
-* chaining methods, ending unfinished chains with a `.`
-* composing long strings by putting strings next to each other, separated
-  by a backslash-then-newline.
-* breaking long logical statements with linebreaks after operators like
+- liberal use of linebreaks inside unclosed `(` `{` `[`
+- chaining methods, ending unfinished chains with a `.`
+- composing long strings by putting strings next to each other, separated by a backslash-then-newline.
+- breaking long logical statements with linebreaks after operators like
   `&&` and `||`
-
 
 ```ruby
 scope = Translation::Phrase.includes(:phrase_translations).
@@ -195,6 +191,8 @@ end
 <% end %>
 ```
 
+**[⬆ back to top](#table-of-contents)**
+
 ## Commenting
 
 > Though a pain to write, comments are absolutely vital to keeping our code
@@ -208,13 +206,13 @@ end
 
 &mdash;[Google C++ Style Guide][google-c++]
 
+**[⬆ back to top](#table-of-contents)**
+
 ### File/class-level comments
 
-Every class definition should have an accompanying comment that describes what
-it is for and how it should be used.
+Every class definition should have an accompanying comment that describes what it is for and how it should be used.
 
-A file that contains zero classes or more than one class should have a comment
-at the top describing its contents.
+A file that contains zero classes or more than one class should have a comment at the top describing its contents.
 
 ```ruby
 # Automatic conversion of one locale to another where it is possible, like
@@ -266,26 +264,19 @@ neutralization: neutralisation
 ...
 ```
 
+**[⬆ back to top](#table-of-contents)**
+
 ### Function comments
 
-Every function declaration should have comments immediately preceding it that
-describe what the function does and how to use it. These comments should be
-descriptive ("Opens the file") rather than imperative ("Open the file"); the
-comment describes the function, it does not tell the function what to do. In
-general, these comments do not describe how the function performs its task.
-Instead, that should be left to comments interspersed in the function's code.
+Every function declaration should have comments immediately preceding it that describe what the function does and how to use it. These comments should be descriptive ("Opens the file") rather than imperative ("Open the file"); the comment describes the function, it does not tell the function what to do. In general, these comments do not describe how the function performs its task. Instead, that should be left to comments interspersed in the function's code.
 
-Every function should mention what the inputs and outputs are, unless it meets
-all of the following criteria:
+Every function should mention what the inputs and outputs are, unless it meets all of the following criteria:
 
 * not externally visible
 * very short
 * obvious
 
-You may use whatever format you wish. In Ruby, two popular function
-documentation schemes are [TomDoc](http://tomdoc.org/) and
-[YARD](http://rubydoc.info/docs/yard/file/docs/GettingStarted.md). You can also
-just write things out concisely:
+You may use whatever format you wish. In Ruby, two popular function documentation schemes are [TomDoc](http://tomdoc.org/) and [YARD](http://rubydoc.info/docs/yard/file/docs/GettingStarted.md). You can also just write things out concisely:
 
 ```ruby
 # Return the fallback locales for the_locale.
@@ -302,12 +293,11 @@ def fallbacks_for(the_locale, opts = {})
 end
 ```
 
+**[⬆ back to top](#table-of-contents)**
+
 ### Block and inline comments
 
-The final place to have comments is in tricky parts of the code. If you're
-going to have to explain it at the next code review, you should comment it now.
-Complicated operations get a few lines of comments before the operations
-commence. Non-obvious ones get comments at the end of the line.
+The final place to have comments is in tricky parts of the code. If you're going to have to explain it at the next code review, you should comment it now. Complicated operations get a few lines of comments before the operations commence. Non-obvious ones get comments at the end of the line.
 
 ```ruby
 def fallbacks_for(the_locale, opts = {})
@@ -328,37 +318,25 @@ def fallbacks_for(the_locale, opts = {})
 end
 ```
 
-On the other hand, never describe the code. Assume the person reading the code
-knows the language (though not what you're trying to do) better than you do.
+On the other hand, never describe the code. Assume the person reading the code knows the language (though not what you're trying to do) better than you do.
+
+**[⬆ back to top](#table-of-contents)**
 
 ### Punctuation, spelling and grammar
 
-Pay attention to punctuation, spelling, and grammar; it is easier to read
-well-written comments than badly written ones.
+Pay attention to punctuation, spelling, and grammar; it is easier to read well-written comments than badly written ones.
 
-Comments should be as readable as narrative text, with proper capitalization
-and punctuation. In many cases, complete sentences are more readable than
-sentence fragments. Shorter comments, such as comments at the end of a line of
-code, can sometimes be less formal, but you should be consistent with your
-style.
+Comments should be as readable as narrative text, with proper capitalization and punctuation. In many cases, complete sentences are more readable than sentence fragments. Shorter comments, such as comments at the end of a line of code, can sometimes be less formal, but you should be consistent with your style.
 
-Although it can be frustrating to have a code reviewer point out that you are
-using a comma when you should be using a semicolon, it is very important that
-source code maintain a high level of clarity and readability. Proper
-punctuation, spelling, and grammar help with that goal.
+Although it can be frustrating to have a code reviewer point out that you are using a comma when you should be using a semicolon, it is very important that source code maintain a high level of clarity and readability. Proper punctuation, spelling, and grammar help with that goal.
+
+**[⬆ back to top](#table-of-contents)**
 
 ### TODO comments
 
-Use TODO comments for code that is temporary, a short-term solution, or
-good-enough but not perfect.
+Use TODO comments for code that is temporary, a short-term solution, or good-enough but not perfect.
 
-TODOs should include the string TODO in all caps, followed by the full name
-of the person who can best provide context about the problem referenced by the
-TODO, in parentheses. A colon is optional. A comment explaining what there is
-to do is required. The main purpose is to have a consistent TODO format that
-can be searched to find the person who can provide more details upon request.
-A TODO is not a commitment that the person referenced will fix the problem.
-Thus when you create a TODO, it is almost always your name that is given.
+TODOs should include the string TODO in all caps, followed by the full name of the person who can best provide context about the problem referenced by the TODO, in parentheses. A colon is optional. A comment explaining what there is to do is required. The main purpose is to have a consistent TODO format that can be searched to find the person who can provide more details upon request. A TODO is not a commitment that the person referenced will fix the problem. Thus when you create a TODO, it is almost always your name that is given.
 
 ```ruby
   # bad
@@ -371,16 +349,19 @@ Thus when you create a TODO, it is almost always your name that is given.
   # TODO(Ringo Starr): Use proper namespacing for this constant.
 ```
 
+**[⬆ back to top](#table-of-contents)**
+
 ### Commented-out code
 
 Never leave commented-out code in our codebase.
+
+**[⬆ back to top](#table-of-contents)**
 
 ## Methods
 
 ### Method definitions
 
-* Use `def` with parentheses when there are arguments. Omit the
-  parentheses when the method doesn't accept any arguments.
+- Use `def` with parentheses when there are arguments. Omit the parentheses when the method doesn't accept any arguments.
 
      ```Ruby
      def some_method
@@ -392,7 +373,7 @@ Never leave commented-out code in our codebase.
      end
      ```
 
-* Do not use default arguments. Use an options hash instead.
+- Do not use default arguments. Use an options hash instead.
 
     ```Ruby
     # bad
@@ -413,11 +394,13 @@ Never leave commented-out code in our codebase.
     end
     ```
 
+**[⬆ back to top](#table-of-contents)**
+
 ### Method calls
 
 **Use parentheses** for a method call:
 
-* If the method returns a value.
+- If the method returns a value.
 
     ```ruby
     # bad
@@ -427,7 +410,7 @@ Never leave commented-out code in our codebase.
     @current_user = User.find_by_id(1964192)
     ```
 
-* If the first argument to the method uses parentheses.
+- If the first argument to the method uses parentheses.
 
     ```ruby
     # bad
@@ -437,7 +420,7 @@ Never leave commented-out code in our codebase.
     put!((x + y) % len, value)
     ```
 
-* Never put a space between a method name and the opening parenthesis.
+- Never put a space between a method name and the opening parenthesis.
 
     ```Ruby
     # bad
@@ -449,7 +432,7 @@ Never leave commented-out code in our codebase.
 
 **Omit parentheses** for a method call:
 
-* If the method accepts no arguments.
+- If the method accepts no arguments.
 
     ```ruby
     # bad
@@ -459,7 +442,7 @@ Never leave commented-out code in our codebase.
     nil?
     ```
 
-* If the method doesn't return a value (or we don't care about the return).
+- If the method doesn't return a value (or we don't care about the return).
 
     ```ruby
     # bad
@@ -471,8 +454,7 @@ Never leave commented-out code in our codebase.
 
 In either case:
 
-* If a method accepts an options hash as the last argument, do not use `{` `}`
-  during invocation.
+- If a method accepts an options hash as the last argument, do not use `{` `}` during invocation.
 
     ```ruby
     # bad
@@ -482,11 +464,13 @@ In either case:
     get '/v1/reservations', :id => 54875
     ```
 
+**[⬆ back to top](#table-of-contents)**
+
 ## Conditional Expressions
 
 ### Conditional keywords
 
-* Never use `then` for multi-line `if/unless`.
+- Never use `then` for multi-line `if/unless`.
 
     ```Ruby
     # bad
@@ -500,11 +484,9 @@ In either case:
     end
     ```
 
-* The `and` and `or` keywords are banned. It's just not worth it. Always use `&&` and `||` instead.
+- The `and` and `or` keywords are banned. It's just not worth it. Always use `&&` and `||` instead.
 
-* Modifier `if/unless` usage is okay when the body is simple, the
-  condition is simple, and the whole thing fits on one line. Otherwise,
-  avoid modifier `if/unless`.
+- Modifier `if/unless` usage is okay when the body is simple, the condition is simple, and the whole thing fits on one line. Otherwise, avoid modifier `if/unless`.
 
     ```Ruby
     # bad - this doesn't fit on one line
@@ -524,7 +506,7 @@ In either case:
     return if self.reconciled?
     ```
 
-* Never use `unless` with `else`. Rewrite these with the positive case first.
+- Never use `unless` with `else`. Rewrite these with the positive case first.
 
     ```Ruby
     # bad
@@ -542,7 +524,7 @@ In either case:
     end
     ```
 
-* Avoid `unless` with multiple conditions.
+- Avoid `unless` with multiple conditions.
 
     ```Ruby
       # bad
@@ -556,9 +538,7 @@ In either case:
       end
     ```
 
-* Don't use parentheses around the condition of an `if/unless/while`,
-  unless the condition contains an assignment (see [Using the return
-  value of `=`](#syntax) below).
+- Don't use parentheses around the condition of an `if/unless/while`, unless the condition contains an assignment (see [Using the return value of `=`](#syntax) below).
 
     ```Ruby
     # bad
@@ -577,11 +557,11 @@ In either case:
     end
     ```
 
+**[⬆ back to top](#table-of-contents)**
+
 ### Ternary operator
 
-* Avoid the ternary operator (`?:`) except in cases where all expressions are
-  extremely trivial. However, do use the ternary operator(`?:`) over
-  `if/then/else/end` constructs for single line conditionals.
+- Avoid the ternary operator (`?:`) except in cases where all expressions are extremely trivial. However, do use the ternary operator(`?:`) over `if/then/else/end` constructs for single line conditionals.
 
     ```Ruby
     # bad
@@ -591,9 +571,7 @@ In either case:
     result = some_condition ? something : something_else
     ```
 
-* Use one expression per branch in a ternary operator. This
-  also means that ternary operators must not be nested. Prefer
-  `if/else` constructs in these cases.
+- Use one expression per branch in a ternary operator. This also means that ternary operators must not be nested. Prefer `if/else` constructs in these cases.
 
     ```Ruby
     # bad
@@ -607,15 +585,13 @@ In either case:
     end
     ```
 
-* Avoid multi-line `?:` (the ternary operator), use `if/unless` instead.
+- Avoid multi-line `?:` (the ternary operator), use `if/unless` instead.
+
+**[⬆ back to top](#table-of-contents)**
 
 ## Syntax
 
-* Never use `for`, unless you know exactly why. Most of the time iterators
-  should be used instead. `for` is implemented in terms of `each` (so
-  you're adding a level of indirection), but with a twist - `for`
-  doesn't introduce a new scope (unlike `each`) and variables defined
-  in its block will be visible outside it.
+- Never use `for`, unless you know exactly why. Most of the time iterators should be used instead. `for` is implemented in terms of `each` (so you're adding a level of indirection), but with a twist - `for` doesn't introduce a new scope (unlike `each`) and variables defined in its block will be visible outside it.
 
     ```Ruby
     arr = [1, 2, 3]
@@ -630,11 +606,7 @@ In either case:
     ```
 
 
-* Prefer `{...}` over `do...end` for single-line blocks.  Avoid using
-  `{...}` for multi-line blocks (multiline chaining is always
-  ugly). Always use `do...end` for "control flow" and "method
-  definitions" (e.g. in Rakefiles and certain DSLs).  Avoid `do...end`
-  when chaining.
+- Prefer `{...}` over `do...end` for single-line blocks.  Avoid using `{...}` for multi-line blocks (multiline chaining is always ugly). Always use `do...end` for "control flow" and "method definitions" (e.g. in Rakefiles and certain DSLs). Avoid `do...end` when chaining.
 
     ```Ruby
     names = ["Bozhidar", "Steve", "Sarah"]
@@ -656,11 +628,9 @@ In either case:
     end.map { |name| name.upcase }
     ```
 
-    Some will argue that multiline chaining would look OK with the use of
-    `{...}`, but they should ask themselves - it this code really readable and
-    can't the blocks contents be extracted into nifty methods.
+Some will argue that multiline chaining would look OK with the use of `{...}`, but they should ask themselves - it this code really readable and can't the blocks contents be extracted into nifty methods.
 
-* Avoid `return` where not required.
+- Avoid `return` where not required.
 
     ```Ruby
     # bad
@@ -674,8 +644,7 @@ In either case:
     end
     ```
 
-* Using the return value of `=` (an assignment) is ok, but surround the
-  assignment with parenthesis.
+- Using the return value of `=` (an assignment) is ok, but surround the assignment with parenthesis.
 
     ```Ruby
     # good - shows intented use of assignment
@@ -694,15 +663,14 @@ In either case:
     end
     ```
 
-* Use `||=` freely to initialize variables.
+- Use `||=` freely to initialize variables.
 
     ```Ruby
     # set name to Bozhidar, only if it's nil or false
     name ||= 'Bozhidar'
     ```
 
-* Don't use `||=` to initialize boolean variables. (Consider what
-  would happen if the current value happened to be `false`.)
+- Don't use `||=` to initialize boolean variables. (Consider what would happen if the current value happened to be `false`.)
 
     ```Ruby
     # bad - would set enabled to true even if it was false
@@ -712,12 +680,9 @@ In either case:
     enabled = true if enabled.nil?
     ```
 
-* Avoid using Perl-style special variables (like `$0-9`, `$`,
-  etc. ). They are quite cryptic and their use in anything but
-  one-liner scripts is discouraged. Prefer long form versions such as
-  `$PROGRAM_NAME`.
+- Avoid using Perl-style special variables (like `$0-9`, `$`, etc). They are quite cryptic and their use in anything but one-liner scripts is discouraged. Prefer long form versions such as `$PROGRAM_NAME`.
 
-* Use `_` for unused block parameters.
+- Use `_` for unused block parameters.
 
     ```Ruby
     # bad
@@ -727,9 +692,7 @@ In either case:
     result = hash.map { |_, v| v + 1 }
     ```
 
-* When a method block takes only one argument, and the body consists solely of
-  reading an attribute or calling one method with no arguments, use the `&:`
-  shorthand.
+- When a method block takes only one argument, and the body consists solely of reading an attribute or calling one method with no arguments, use the `&:` shorthand.
 
     ```ruby
     # bad
@@ -741,33 +704,28 @@ In either case:
     bluths.select(&:blue_self?)
     ```
 
+**[⬆ back to top](#table-of-contents)**
+
 ## Naming
 
-* Use `snake_case` for methods and variables.
+- Use `snake_case` for methods and variables.
+- Use `CamelCase` for classes and modules.  (Keep acronyms like HTTP, RFC, XML uppercase.)
+- Use `SCREAMING_SNAKE_CASE` for other constants.
+- The names of predicate methods (methods that return a boolean value) should end in a question mark. (i.e. `Array#empty?`).
+- The names of potentially "dangerous" methods (i.e. methods that modify `self` or the arguments, `exit!`, etc.) should end with an exclamation mark. Bang methods should only exist if a non-bang method exists.
+- Name throwaway variables `_`.
 
-* Use `CamelCase` for classes and modules.  (Keep acronyms like HTTP,
-  RFC, XML uppercase.)
-
-* Use `SCREAMING_SNAKE_CASE` for other constants.
-
-* The names of predicate methods (methods that return a boolean value)
-  should end in a question mark. (i.e. `Array#empty?`).
-
-* The names of potentially "dangerous" methods (i.e. methods that modify `self`
-  or the arguments, `exit!`, etc.) should end with an exclamation mark. Bang
-  methods should only exist if a non-bang method exists.
-
-* Name throwaway variables `_`.
     ```Ruby
     payment, _ = Payment.complete_paypal_payment!(params[:token],
                                                   native_currency,
                                                   created_at)
     ```
 
+**[⬆ back to top](#table-of-contents)**
+
 ## Classes
 
-* Avoid the usage of class (`@@`) variables due to their "nasty" behavior
-in inheritance.
+- Avoid the usage of class (`@@`) variables due to their "nasty" behavior in inheritance.
 
     ```Ruby
     class Parent
@@ -785,12 +743,9 @@ in inheritance.
     Parent.print_class_var # => will print "child"
     ```
 
-    As you can see all the classes in a class hierarchy actually share one
-    class variable. Class instance variables should usually be preferred
-    over class variables.
+As you can see all the classes in a class hierarchy actually share one class variable. Class instance variables should usually be preferred over class variables.
 
-* Use `def self.method` to define singleton methods. This makes the methods
-  more resistant to refactoring changes.
+- Use `def self.method` to define singleton methods. This makes the methods more resistant to refactoring changes.
 
     ```Ruby
     class TestClass
@@ -804,8 +759,8 @@ in inheritance.
         ...
       end
     ```
-* Avoid `class << self` except when necessary, e.g. single accessors and aliased
-  attributes.
+
+- Avoid `class << self` except when necessary, e.g. single accessors and aliased attributes.
 
     ```Ruby
     class TestClass
@@ -836,8 +791,7 @@ in inheritance.
     end
     ```
 
-* Indent the `public`, `protected`, and `private` methods as much the
-  method definitions they apply to. Leave one blank line above them.
+- Indent the `public`, `protected`, and `private` methods as much the method definitions they apply to. Leave one blank line above them.
 
     ```Ruby
     class SomeClass
@@ -851,9 +805,11 @@ in inheritance.
       end
     end
 
+**[⬆ back to top](#table-of-contents)**
+
 ## Exceptions
 
-* Don't use exceptions for flow of control.
+- Don't use exceptions for flow of control.
 
     ```Ruby
     # bad
@@ -871,7 +827,7 @@ in inheritance.
     end
     ```
 
-* Avoid rescuing the `Exception` class.
+- Avoid rescuing the `Exception` class.
 
     ```Ruby
     # bad
@@ -896,14 +852,13 @@ in inheritance.
     end
     ```
 
+**[⬆ back to top](#table-of-contents)**
+
 ## Collections
 
-* Use `Set` instead of `Array` when dealing with unique elements. `Set`
-  implements a collection of unordered values with no duplicates. This
-  is a hybrid of `Array`'s intuitive inter-operation facilities and
-  `Hash`'s fast lookup.
+- Use `Set` instead of `Array` when dealing with unique elements. `Set` implements a collection of unordered values with no duplicates. This is a hybrid of `Array`'s intuitive inter-operation facilities and `Hash`'s fast lookup.
 
-* Use symbols instead of strings as hash keys.
+- Use symbols instead of strings as hash keys.
 
     ```Ruby
     # bad
@@ -913,9 +868,7 @@ in inheritance.
     hash = { one: 1, two: 2, three: 3 }
     ```
 
-* Use multi-line hashes when it makes the code more readable, and use
-  trailing commas to ensure that parameter changes don't cause
-  extraneous diff lines when the logic has not otherwise changed.
+- Use multi-line hashes when it makes the code more readable, and use trailing commas to ensure that parameter changes don't cause extraneous diff lines when the logic has not otherwise changed.
 
     ```ruby
     hash = {
@@ -928,9 +881,11 @@ in inheritance.
     }
     ```
 
+**[⬆ back to top](#table-of-contents)**
+
 ## Strings
 
-* Prefer string interpolation instead of string concatenation:
+- Prefer string interpolation instead of string concatenation:
 
     ```Ruby
     # bad
@@ -957,9 +912,7 @@ in inheritance.
     cache.write(CACHE_KEY % @user.id)
     ```
 
-* Avoid using `String#+` when you need to construct large data chunks.
-  Instead, use `String#<<`. Concatenation mutates the string instance in-place
-  and is always faster than `String#+`, which creates a bunch of new string objects.
+- Avoid using `String#+` when you need to construct large data chunks. Instead, use `String#<<`. Concatenation mutates the string instance in-place and is always faster than `String#+`, which creates a bunch of new string objects.
 
     ```Ruby
     # good and also fast
@@ -971,10 +924,11 @@ in inheritance.
     end
     ```
 
+**[⬆ back to top](#table-of-contents)**
+
 ## Regular Expressions
 
-* Avoid using `$1-9` as it can be hard to track what they contain. Named groups
-  can be used instead.
+- Avoid using `$1-9` as it can be hard to track what they contain. Named groups can be used instead.
 
     ```Ruby
     # bad
@@ -988,8 +942,7 @@ in inheritance.
     process meaningful_var
     ```
 
-* Be careful with `^` and `$` as they match start/end of line, not string
-  endings.  If you want to match the whole string use: `\A` and `\z`.
+- Be careful with `^` and `$` as they match start/end of line, not string endings. If you want to match the whole string use: `\A` and `\z`.
 
     ```Ruby
     string = "some injection\nusername"
@@ -997,8 +950,7 @@ in inheritance.
     string[/\Ausername\z/] # don't match
     ```
 
-* Use `x` modifier for complex regexps. This makes them more readable and you
-  can add some useful comments. Just be careful as spaces are ignored.
+- Use `x` modifier for complex regexps. This makes them more readable and you can add some useful comments. Just be careful as spaces are ignored.
 
     ```Ruby
     regexp = %r{
@@ -1010,16 +962,17 @@ in inheritance.
     }x
     ```
 
+**[⬆ back to top](#table-of-contents)**
+
 ## Percent Literals
 
-* Use `%w` freely.
+- Use `%w` freely.
 
     ```Ruby
     STATES = %w(draft open closed)
     ```
 
-* Use `%()` for single-line strings which require both interpolation
-  and embedded double-quotes. For multi-line strings, prefer heredocs.
+- Use `%()` for single-line strings which require both interpolation and embedded double-quotes. For multi-line strings, prefer heredocs.
 
     ```Ruby
     # bad - no interpolation needed
@@ -1038,7 +991,7 @@ in inheritance.
     %(<tr><td class="name">#{name}</td>)
     ```
 
-* Use `%r` only for regular expressions matching *more than* one '/' character.
+- Use `%r` only for regular expressions matching *more than* one '/' character.
 
     ```Ruby
     # bad
@@ -1052,10 +1005,11 @@ in inheritance.
     %r(^/blog/2011/(.*)$)
     ```
 
+**[⬆ back to top](#table-of-contents)**
+
 ## Rails
 
-* When immediately returning after calling `render` or `redirect_to`, put `return` on the next line,
-  not the same line.
+- When immediately returning after calling `render` or `redirect_to`, put `return` on the next line, not the same line.
 
     ```ruby
     # bad
@@ -1075,21 +1029,4 @@ in inheritance.
     end
     ```
 
-## Be Consistent
-
-> If you're editing code, take a few minutes to look at the code around you and
-> determine its style. If they use spaces around all their arithmetic
-> operators, you should too. If their comments have little boxes of hash marks
-> around them, make your comments have little boxes of hash marks around them
-> too.
-
-> The point of having style guidelines is to have a common vocabulary of coding
-> so people can concentrate on what you're saying rather than on how you're
-> saying it. We present global style rules here so people know the vocabulary,
-> but local style is also important. If code you add to a file looks
-> drastically different from the existing code around it, it throws readers out
-> of their rhythm when they go to read it. Avoid this.
-
-&mdash;[Google C++ Style Guide][google-c++]
-
-[google-c++]: http://google-styleguide.googlecode.com/svn/trunk/cppguide.xml
+**[⬆ back to top](#table-of-contents)**
