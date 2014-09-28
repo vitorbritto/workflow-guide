@@ -189,14 +189,15 @@ Following is the list of the main tools and resources that I use in my workflow.
 
 **[⬆ back to top](#table-of-contents)**
 
-### CI and Code Coverage
+### CI and Code Review
 
-- [Travis CI](https://travis-ci.org/)
 - [Code Climate](https://codeclimate.com/)
-- [Drone CI](https://drone.io/)
-- [David](https://ci.appveyor.com/login)
 - [Coveralls](https://coveralls.io/)
-- [App Veyor](https://ci.appveyor.com/login)
+- [TravisCI](https://travis-ci.org)
+- [Drone](https://drone.io/)
+- [AppVeyor](https://ci.appveyor.com)
+- [CodeShip](https://www.codeship.io)
+- [David](https://david-dm.org/)
 
 **[⬆ back to top](#table-of-contents)**
 
