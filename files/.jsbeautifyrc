@@ -1,35 +1,43 @@
 {
-    "css": {
-        "indentChar": " ",
-        "indentSize": 4
-    },
-    "html": {
-        "braceStyle": "end-expand",
-        "indentChar": " ",
-        "indentScripts": "keep",
-        "indentSize": 4,
-        "maxPreserveNewlines": 2,
-        "preserveNewlines": true,
-        "unformatted": ["a", "sub", "sup", "b", "i", "u"],
-        "wrapLineLength": 100
-    },
-    "js": {
-        "braceStyle": "end-expand",
-        "breakChainedMethods": false,
-        "e4x": false,
-        "evalCode": false,
-        "indentChar": " ",
-        "indentLevel": 0,
-        "indentSize": 4,
-        "indentWithTabs": false,
-        "jslintHappy": false,
-        "keepArrayIndentation": true,
-        "keepFunctionIndentation": true,
-        "maxPreserveNewlines": 2,
-        "preserveNewlines": true,
-        "spaceBeforeConditional": true,
-        "spaceInParen": false,
-        "unescapeStrings": false,
-        "wrapLineLength": 100
-    }
+  "html": {
+    "allowed_file_extensions": ["htm", "html", "xhtml", "shtml", "xml", "svg"],
+    "brace_style": "collapse", // "expand", "end-expand", "expand-strict"
+    "indent_char": " ",
+    "indent_handlebars": false, // e.g. {{#foo}}, {{/foo}}
+    "indent_inner_html": false,
+    "indent_scripts": "keep", // "separate", "normal"
+    "indent_size": 4,
+    "max_preserve_newlines": 10,
+    "preserve_newlines": true,
+    "unformatted": ["a", "sub", "sup", "b", "i", "u", "pre"],
+    "wrap_line_length": 0
+  },
+  "css": {
+    "allowed_file_extensions": ["css", "scss", "sass", "styl"],
+    "end_with_newline": false,
+    "indent_char": " ",
+    "indent_size": 4,
+    "selector_separator": " ",
+    "selector_separator_newline": false
+  },
+  "js": {
+    "allowed_file_extensions": ["js", "json", "jshintrc", "jsbeautifyrc"],
+    "brace_style": "collapse", // "expand", "end-expand", "expand-strict"
+    "break_chained_methods": false,
+    "e4x": false,
+    "eval_code": false,
+    "indent_char": " ",
+    "indent_level": 0,
+    "indent_size": 4,
+    "indent_with_tabs": false,
+    "jslint_happy": false,
+    "keep_array_indentation": false,
+    "keep_function_indentation": false,
+    "max_preserve_newlines": 10,
+    "preserve_newlines": true,
+    "space_before_conditional": true,
+    "space_in_paren": false,
+    "unescape_strings": false,
+    "wrap_line_length": 0
+  }
 }

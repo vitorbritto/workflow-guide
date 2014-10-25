@@ -28,7 +28,7 @@ Not only have a code style guide, but relevant informations about my Workflow. T
 
 - [Workflow](#workflow)
 - [Tools](#tools)
-    - [Strategy](#strategy)
+    - [Strategy and Management](#strategy-and-management)
     - [Blueprint and Visual](#blueprint-and-visual)
     - [Scaffolding and Build](#scaffolding-and-build)
     - [Lint and Code Style Checker](#lint-and-code-style-checker)
@@ -67,10 +67,13 @@ This is a simple table with aproaches and methods that I use at my Workflow.
 
 Following is the list of the main tools and resources that I use in my workflow.
 
-### Strategy
+### Strategy and Management
 
 - [Trello](https://trello.com/)
+- [Todoist](http://todoist.com/)
+- [On the Job](http://stuntsoftware.com/onthejob/)
 - [TicTac](https://github.com/vitorbritto/tictac)
+- [Google Drive](https://drive.google.com/)
 
 **[⬆ back to top](#table-of-contents)**
 
@@ -102,13 +105,15 @@ Following is the list of the main tools and resources that I use in my workflow.
 ### Debug and Inspection
 
 - [DevTools](https://developer.mozilla.org/en-US/docs/Tools)
-- [JSPerf](http://jsperf.com/)
 - [JSFiddle](http://jsfiddle.net/)
 - [JSbin](http://jsbin.com/)
 
 ### Metrics and Performance
 
+- [JSPerf](http://jsperf.com/)
 - [GTmetrix](http://gtmetrix.com/)
+- [Page Speed](https://developers.google.com/speed/pagespeed/insights/)
+- [WooRank](http://www.woorank.com/pt/)
 
 **[⬆ back to top](#table-of-contents)**
 
@@ -189,15 +194,14 @@ Following is the list of the main tools and resources that I use in my workflow.
 
 **[⬆ back to top](#table-of-contents)**
 
-### CI and Code Review
+### CI and Code Coverage
 
+- [Travis CI](https://travis-ci.org/)
 - [Code Climate](https://codeclimate.com/)
+- [Drone CI](https://drone.io/)
+- [David](https://ci.appveyor.com/login)
 - [Coveralls](https://coveralls.io/)
-- [TravisCI](https://travis-ci.org)
-- [Drone](https://drone.io/)
-- [AppVeyor](https://ci.appveyor.com)
-- [CodeShip](https://www.codeship.io)
-- [David](https://david-dm.org/)
+- [App Veyor](https://ci.appveyor.com/login)
 
 **[⬆ back to top](#table-of-contents)**
 
