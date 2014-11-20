@@ -40,6 +40,7 @@ Not only have a code style guide, but relevant informations about my Workflow. T
     - [Database](#database)
     - [Documentation](#documentation)
     - [Deployment](#deployment)
+    - [Versioning](#versioning)
     - [PaaS](#paas)
     - [CI and Code Coverage](#ci-and-code-coverage)
 - [Dependencies](#dependencies)
@@ -70,7 +71,7 @@ Following is the list of the main tools and resources that I use in my workflow.
 ### Strategy and Management
 
 - [Trello](https://trello.com/)
-- [Todoist](http://todoist.com/)
+- [Evernote](https://evernote.com)
 - [On the Job](http://stuntsoftware.com/onthejob/)
 - [TicTac](https://github.com/vitorbritto/tictac)
 - [Google Drive](https://drive.google.com/)
@@ -80,6 +81,7 @@ Following is the list of the main tools and resources that I use in my workflow.
 ### Blueprint and Visual
 
 - [Axure RP](http://www.axure.com/)
+- [Macaw](http://macaw.co/)
 - [Photoshop CS6](http://www.photoshop.com/products/photoshop)
 - [Illustrator](http://www.adobe.com/products/illustrator)
 
@@ -96,7 +98,6 @@ Following is the list of the main tools and resources that I use in my workflow.
 
 - [JSHint](https://github.com/vitorbritto/workflow-guide/blob/master/files/.jshintrc)
 - [CSSLint](https://github.com/vitorbritto/workflow-guide/blob/master/files/.csslintrc)
-- [JSCS](https://github.com/mdevils/node-jscs)
 - [CSSComb](https://github.com/csscomb/csscomb.js)
 - [JSBeautify](https://github.com/einars/js-beautify)
 
@@ -153,7 +154,6 @@ Following is the list of the main tools and resources that I use in my workflow.
 
 ### Package Managers
 
-- [Managers](http://managers.vitorbritto.com.br/)
 - [NPM](https://www.npmjs.org/)
 - [Bower](http://bower.io/)
 - [Component](http://component.io/)
@@ -164,8 +164,7 @@ Following is the list of the main tools and resources that I use in my workflow.
 
 ### Database
 
-- [Sequel Pro](http://www.sequelpro.com/)
-- [RoboMongo](http://robomongo.org/)
+- [SQLite](http://www.sqlite.org/)
 - [MongoDB](http://www.mongodb.org/)
 - [MySQL](http://www.mysql.com/)
 
@@ -173,7 +172,7 @@ Following is the list of the main tools and resources that I use in my workflow.
 
 ### Documentation
 
-- [YUIDoc](http://yui.github.io/yuidoc/)
+- [JSDoc](http://usejsdoc.org/)
 
 **[⬆ back to top](#table-of-contents)**
 
@@ -182,6 +181,11 @@ Following is the list of the main tools and resources that I use in my workflow.
 - [Dploy](http://leanmeanfightingmachine.github.io/dploy/)
 - [Capistrano](http://capistranorb.com/) - _used for remote server automation too_
 - [Gone](https://github.com/vitorbritto/gone)
+
+**[⬆ back to top](#table-of-contents)**
+
+### Versioning
+
 - [Bitbucket](http://www.bitbucket.com/)
 - [Github](http://github.com)
 
