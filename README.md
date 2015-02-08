@@ -70,19 +70,33 @@ Following is the list of the main tools and resources that I use in my workflow.
 
 ### Strategy and Management
 
+- Reminder - _Built-in Mac application_
 - [Trello](https://trello.com/)
+- [Asana](https://trello.com/)
+- [Basecamp](https://trello.com/)
+- [InstaGantt](http://instagantt.com)
 - [Evernote](https://evernote.com)
 - [On the Job](http://stuntsoftware.com/onthejob/)
 - [TicTac](https://github.com/vitorbritto/tictac)
 - [Google Drive](https://drive.google.com/)
+- [Dropbox](https://www.dropbox.com/)
+- [Wakatime](https://wakatime.com)
+
+**[⬆ back to top](#table-of-contents)**
+
+### Communication
+
+- [Skype](http://www.skype.com)
+- [Slack](https://slack.com/)
+- [HipChat](https://www.hipchat.com/)
 
 **[⬆ back to top](#table-of-contents)**
 
 ### Blueprint and Visual
 
 - [Axure RP](http://www.axure.com/)
-- [Macaw](http://macaw.co/)
-- [Photoshop CS6](http://www.photoshop.com/products/photoshop)
+- [Sketch](http://bohemiancoding.com/sketch/)
+- [Photoshop](http://www.photoshop.com/products/photoshop)
 - [Illustrator](http://www.adobe.com/products/illustrator)
 
 **[⬆ back to top](#table-of-contents)**
@@ -92,14 +106,16 @@ Following is the list of the main tools and resources that I use in my workflow.
 - [Skeleton](http://skeleton.vitorbritto.com.br/)
 - [Boilerplates](https://github.com/vitorbritto/boilerplates)
 
+
 **[⬆ back to top](#table-of-contents)**
 
 ### Lint and Code Style Checker
 
-- [JSHint](https://github.com/vitorbritto/workflow-guide/blob/master/files/.jshintrc)
 - [CSSLint](https://github.com/vitorbritto/workflow-guide/blob/master/files/.csslintrc)
 - [CSSComb](https://github.com/csscomb/csscomb.js)
-- [JSBeautify](https://github.com/einars/js-beautify)
+- [JSHint](https://github.com/vitorbritto/workflow-guide/blob/master/files/.jshintrc)
+- [Rubocop](http://batsov.com/rubocop/)
+- [PHPfmt](http://www.cirello.org/php.tools/)
 
 **[⬆ back to top](#table-of-contents)**
 
@@ -107,7 +123,6 @@ Following is the list of the main tools and resources that I use in my workflow.
 
 - [DevTools](https://developer.mozilla.org/en-US/docs/Tools)
 - [JSFiddle](http://jsfiddle.net/)
-- [JSbin](http://jsbin.com/)
 
 ### Metrics and Performance
 
@@ -121,11 +136,9 @@ Following is the list of the main tools and resources that I use in my workflow.
 ### Tests
 
 **Unit Tests**
-- [Optimus](https://github.com/vitorbritto/optimus)
-- [Karma](http://karma-runner.github.io/)
-- [Jasmine](https://github.com/pivotal/jasmine)
 - [Mocha](https://github.com/visionmedia/mocha)
 - [Chai](http://chaijs.com/)
+- [PHPUnit](https://phpunit.de/)
 - [RSpec](http://rspec.info/)
 
 **REST/API**
@@ -134,9 +147,13 @@ Following is the list of the main tools and resources that I use in my workflow.
 - [RESTClient](http://restclient.net/)
 - [cURL](http://curl.haxx.se/)
 
-**Cross-Device/Browsers**
+**Cross-Devices/Browsers and Interfaces**
 - [Browser-sync](http://browsersync.io/)
 - [PhantomJS](http://phantomjs.org/)
+- [Capybara](https://jnicklas.github.io/capybara/)
+
+**Cloud Development Environment**
+- [Koding](https://koding.com)
 
 **[⬆ back to top](#table-of-contents)**
 
@@ -146,9 +163,8 @@ Following is the list of the main tools and resources that I use in my workflow.
 - [Makefy](http://vitorbritto.github.io/makefy/)
 - [Grunt](http://gruntjs.com/)
 - [Gulp](http://gulpjs.com/)
-- [Guard](http://guardgem.org/)
-- [Rakefile](http://rake.rubyforge.org/doc/rakefile_rdoc.html)
-- [Makefile](http://en.wikipedia.org/wiki/Make_(software))
+- [Rake](http://rake.rubyforge.org/doc/rakefile_rdoc.html)
+- [Make](http://en.wikipedia.org/wiki/Make_(software))
 
 **[⬆ back to top](#table-of-contents)**
 
@@ -159,26 +175,27 @@ Following is the list of the main tools and resources that I use in my workflow.
 - [Component](http://component.io/)
 - [Bundler](http://bundler.io/)
 - [RubyGems](https://rubygems.org/)
+- [Composer](https://getcomposer.org/)
 
 **[⬆ back to top](#table-of-contents)**
 
 ### Database
 
-- [SQLite](http://www.sqlite.org/)
-- [MongoDB](http://www.mongodb.org/)
-- [MySQL](http://www.mysql.com/)
+- [Sequel Pro](http://www.sequelpro.com/)
+- [Robomongo](http://robomongo.org/)
 
 **[⬆ back to top](#table-of-contents)**
 
 ### Documentation
 
+- [apiDoc](http://apidocjs.com/)
 - [JSDoc](http://usejsdoc.org/)
+- [PHPDocumentor](http://www.phpdoc.org/)
 
 **[⬆ back to top](#table-of-contents)**
 
 ### Deployment
 
-- [Dploy](http://leanmeanfightingmachine.github.io/dploy/)
 - [Capistrano](http://capistranorb.com/) - _used for remote server automation too_
 - [Gone](https://github.com/vitorbritto/gone)
 
@@ -215,7 +232,6 @@ Following is the list of the main tools and resources that I use in my workflow.
 - [Grunt](https://gist.github.com/vitorbritto/6163803#file-grunt-md)
 - [Gulp](https://gist.github.com/vitorbritto/6163803#file-gulp-md)
 - [Bower](https://gist.github.com/vitorbritto/6163803#file-bower-md)
-- [Karma](https://gist.github.com/vitorbritto/6163803#file-karma-md)
 - [Node/CLI](https://gist.github.com/vitorbritto/6163803#file-cli-md)
 - [RubyGems](https://gist.github.com/vitorbritto/6163803#file-rubygems-md)
 
@@ -240,7 +256,7 @@ Following is the list of the main tools and resources that I use in my workflow.
 
 - **[STRATEGY]**: use the [GTD](http://pt.wikipedia.org/wiki/Getting_Things_Done) and [Scrum](http://scrummethodology.com/) methods.
 - **[DEVELOPMENT]**: use the [SOLID](http://en.wikipedia.org/wiki/SOLID_(object-oriented_design)) principles.
-- **[BUILD]**: these files gets two spaces for indentation: `*.styl`, `*.jade`, `*.coffee`, `*.sass`, `*.haml`, `*.rb`, `*.json`.
+- **[BUILD]**: these files has two spaces for indentation: `*.styl`, `*.jade`, `*.coffee`, `*.sass`, `*.haml`, `*.rb`, `*.json`.
 
 **Be Consistent**
 
