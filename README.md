@@ -43,6 +43,7 @@ Not only have a code style guide, but relevant informations about my Workflow. T
     - [Versioning](#versioning)
     - [PaaS](#paas)
     - [CI and Code Coverage](#ci-and-code-coverage)
+    - [Post-project](#post-project)
 - [Dependencies](#dependencies)
 - [Guides](#guides)
 - [General Notes](#general-notes)
@@ -70,32 +71,32 @@ Following is the list of the main tools and resources that I use in my workflow.
 
 ### Strategy and Management
 
-- Reminder - _Built-in Mac application_
-- [Trello](https://trello.com/)
-- [Asana](https://trello.com/)
-- [Basecamp](https://trello.com/)
-- [InstaGantt](http://instagantt.com)
-- [Evernote](https://evernote.com)
-- [On the Job](http://stuntsoftware.com/onthejob/)
-- [TicTac](https://github.com/vitorbritto/tictac)
-- [Google Drive](https://drive.google.com/)
-- [Dropbox](https://www.dropbox.com/)
-- [Wakatime](https://wakatime.com)
+- Reminder (Built-in Mac application) - _All kind of reminders_
+- [Trello](https://trello.com/) - _Task Management_
+- [Asana](https://trello.com/) - _Task Management_
+- [Basecamp](https://trello.com/) - _Task Management_
+- [InstaGantt](http://instagantt.com) - _Task Management_
+- [Evernote](https://evernote.com) - _Organize Thoughts_
+- [On the Job](http://stuntsoftware.com/onthejob/) - _Track time and Expenses_
+- [TicTac](https://github.com/vitorbritto/tictac) - _A kind of Pomodoro methodology_
+- [Google Drive](https://drive.google.com/) - _Share documents and files_
+- [Dropbox](https://www.dropbox.com/) - _Share documents and files_
+- [Wakatime](https://wakatime.com) - _Time Tracking for VIM and Sublime Text_
 
 **[⬆ back to top](#table-of-contents)**
 
 ### Communication
 
-- [Skype](http://www.skype.com)
-- [Slack](https://slack.com/)
-- [HipChat](https://www.hipchat.com/)
+- [Skype](http://www.skype.com) - _Business Conferences and chats_
+- [Slack](https://slack.com/) - _Internal Team Messaging_
+- [HipChat](https://www.hipchat.com/) - _Internal Team Messaging_
+- [Gitter](https://gitter.im/) - _Open Source Communications_
 
 **[⬆ back to top](#table-of-contents)**
 
 ### Blueprint and Visual
 
-- [Axure RP](http://www.axure.com/)
-- [Sketch](http://bohemiancoding.com/sketch/)
+- [Axure RP](http://www.axure.com/) - _Prototyping and Wireframes_
 - [Photoshop](http://www.photoshop.com/products/photoshop)
 - [Illustrator](http://www.adobe.com/products/illustrator)
 
@@ -222,7 +223,14 @@ Following is the list of the main tools and resources that I use in my workflow.
 - [Drone CI](https://drone.io/)
 - [David](https://ci.appveyor.com/login)
 - [Coveralls](https://coveralls.io/)
-- [App Veyor](https://ci.appveyor.com/login)
+- [Wercker](wercker.com)
+
+**[⬆ back to top](#table-of-contents)**
+
+### Post-Project
+
+- [MailChimp](http://mailchimp.com)
+- [Mandrill](https://www.mandrill.com/)
 
 **[⬆ back to top](#table-of-contents)**
 
