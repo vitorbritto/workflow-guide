@@ -1,4 +1,4 @@
-![Workflow Guide Logo](logo-wg.jpg "Workflow Guide")
+![Workflow Guide Logo](logo-wg.jpg "Workflow Guide") [![Stack Share](http://img.shields.io/badge/tech-stack-0690fa.svg?style=flat)](http://stackshare.io/vitorbritto/vb-web-studio)
 
 > This is a work in progress and I will likely add (or replace) more functionality in the future.
 
