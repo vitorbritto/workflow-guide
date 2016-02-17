@@ -31,7 +31,8 @@ Not only have a code style guide, but relevant informations about my Workflow. T
     - [Strategy and Management](#strategy-and-management)
     - [Blueprint and Visual](#blueprint-and-visual)
     - [Scaffolding and Build](#scaffolding-and-build)
-    - [Lint and Code Style Checker](#lint-and-code-style-checker)
+    - [Frameworks, Supersets and Transpilers](#frameworks-supersets-and-transpilers)
+    - [Lint and Code Style Checker](#lint-optimize-and-style-checker)
     - [Debug and Inspection](#debug-and-inspection)
     - [Metrics and Performance](#metrics-and-performance)
     - [Tests](#tests)
@@ -44,7 +45,6 @@ Not only have a code style guide, but relevant informations about my Workflow. T
     - [PaaS](#paas)
     - [CI and Code Coverage](#ci-and-code-coverage)
     - [Post-project](#post-project)
-- [Dependencies](#dependencies)
 - [Guides](#guides)
 - [General Notes](#general-notes)
 - [References](#references)
@@ -71,11 +71,7 @@ Following is the list of the main tools and resources that I use in my workflow.
 
 ### Strategy and Management
 
-- Reminder (Built-in Mac application) - _All kind of reminders_
 - [Trello](https://trello.com/) - _Task Management_
-- [Asana](https://trello.com/) - _Task Management_
-- [Basecamp](https://trello.com/) - _Task Management_
-- [InstaGantt](http://instagantt.com) - _Task Management_
 - [Evernote](https://evernote.com) - _Organize Thoughts_
 - [On the Job](http://stuntsoftware.com/onthejob/) - _Track time and Expenses_
 - [TicTac](https://github.com/vitorbritto/tictac) - _A kind of Pomodoro methodology_
@@ -89,7 +85,6 @@ Following is the list of the main tools and resources that I use in my workflow.
 
 - [Skype](http://www.skype.com) - _Business Conferences and chats_
 - [Slack](https://slack.com/) - _Internal Team Messaging_
-- [HipChat](https://www.hipchat.com/) - _Internal Team Messaging_
 - [Gitter](https://gitter.im/) - _Open Source Communications_
 
 **[⬆ back to top](#table-of-contents)**
@@ -97,6 +92,7 @@ Following is the list of the main tools and resources that I use in my workflow.
 ### Blueprint and Visual
 
 - [Axure RP](http://www.axure.com/) - _Prototyping and Wireframes_
+- [Sketch]()
 - [Photoshop](http://www.photoshop.com/products/photoshop)
 - [Illustrator](http://www.adobe.com/products/illustrator)
 
@@ -104,17 +100,48 @@ Following is the list of the main tools and resources that I use in my workflow.
 
 ### Scaffolding and Build
 
+**Web**
 - [Skeleton](http://skeleton.vitorbritto.com.br/)
 - [Boilerplates](https://github.com/vitorbritto/boilerplates)
 
+**Mobile**
+- [Ionic](http://ionicframework.com/)
+- [Cordova](https://cordova.apache.org/)
 
 **[⬆ back to top](#table-of-contents)**
 
-### Lint and Code Style Checker
+### Frameworks, Supersets and Transpilers
 
-- [CSSLint](https://github.com/vitorbritto/workflow-guide/blob/master/files/.csslintrc)
-- [CSSComb](https://github.com/csscomb/csscomb.js)
-- [JSHint](https://github.com/vitorbritto/workflow-guide/blob/master/files/.jshintrc)
+#### Front-End
+
+**HTML**
+- Jade
+- EJS
+
+**CSS**
+- Sass
+- Stylus
+- PostCSS (Rucksack, Autoprefixer e CSSnano)
+
+**JavaScript**
+- AngularJS
+- VueJS
+- Babel
+
+#### Back-End
+
+**JavaScript**
+- Express
+
+**[⬆ back to top](#table-of-contents)**
+
+### Lint, Optimize and Style Checker
+
+- [SassLint](https://github.com/sasstools/sass-lint)
+- [CSSLint](https://github.com/CSSLint/csslint)
+- [JSHint](http://jshint.com/)
+- [ESLint](http://eslint.org/)
+- [JSCS](http://jscs.info/)
 - [Rubocop](http://batsov.com/rubocop/)
 - [PHPfmt](http://www.cirello.org/php.tools/)
 
@@ -125,18 +152,18 @@ Following is the list of the main tools and resources that I use in my workflow.
 - [DevTools](https://developer.mozilla.org/en-US/docs/Tools)
 - [JSFiddle](http://jsfiddle.net/)
 
+**[⬆ back to top](#table-of-contents)**
+
 ### Metrics and Performance
 
 - [JSPerf](http://jsperf.com/)
-- [GTmetrix](http://gtmetrix.com/)
 - [Page Speed](https://developers.google.com/speed/pagespeed/insights/)
-- [WooRank](http://www.woorank.com/pt/)
 
 **[⬆ back to top](#table-of-contents)**
 
 ### Tests
 
-**Unit Tests**
+**Unit**
 - [Mocha](https://github.com/visionmedia/mocha)
 - [Chai](http://chaijs.com/)
 - [PHPUnit](https://phpunit.de/)
@@ -145,16 +172,29 @@ Following is the list of the main tools and resources that I use in my workflow.
 **REST/API**
 - [Superagent](https://github.com/visionmedia/superagent)
 - [Supertest](https://github.com/visionmedia/supertest)
-- [RESTClient](http://restclient.net/)
+- [Postman]()
 - [cURL](http://curl.haxx.se/)
 
 **Cross-Devices/Browsers and Interfaces**
 - [Browser-sync](http://browsersync.io/)
-- [PhantomJS](http://phantomjs.org/)
 - [Capybara](https://jnicklas.github.io/capybara/)
 
-**Cloud Development Environment**
-- [Koding](https://koding.com)
+**Performance**
+- [JSPerf](http://jsperf.com/)
+- [OpenBeat](opbeat.com)
+- [New Relic](newrelic.com)
+
+**Load/Stress**
+- [Gremlins](https://github.com/marmelab/gremlins.js)
+
+**Integration**
+- [Pioneer](http://pioneerjs.com/)
+
+**E2E**
+- [DalekJS](http://dalekjs.com/)
+
+**Regression**
+- [BackToStopJS](https://garris.github.io/BackstopJS/)
 
 **[⬆ back to top](#table-of-contents)**
 
@@ -162,7 +202,6 @@ Following is the list of the main tools and resources that I use in my workflow.
 
 - [Just](http://vitorbritto.github.io/just/)
 - [Makefy](http://vitorbritto.github.io/makefy/)
-- [Grunt](http://gruntjs.com/)
 - [Gulp](http://gulpjs.com/)
 - [Rake](http://rake.rubyforge.org/doc/rakefile_rdoc.html)
 - [Make](http://en.wikipedia.org/wiki/Make_(software))
@@ -172,8 +211,7 @@ Following is the list of the main tools and resources that I use in my workflow.
 ### Package Managers
 
 - [NPM](https://www.npmjs.org/)
-- [Bower](http://bower.io/)
-- [Component](http://component.io/)
+- [JSPM](http://jspm.io/)
 - [Bundler](http://bundler.io/)
 - [RubyGems](https://rubygems.org/)
 - [Composer](https://getcomposer.org/)
@@ -182,15 +220,19 @@ Following is the list of the main tools and resources that I use in my workflow.
 
 ### Database
 
+- [MySQL WorkBench](https://www.mysql.com/products/workbench/)
 - [Sequel Pro](http://www.sequelpro.com/)
 - [Robomongo](http://robomongo.org/)
+- [CouchDB](http://couchdb.apache.org/#download)
+- [PSequel](http://www.psequel.com/)
 
 **[⬆ back to top](#table-of-contents)**
 
 ### Documentation
 
+- [RAML](http://raml.org/)
 - [apiDoc](http://apidocjs.com/)
-- [JSDoc](http://usejsdoc.org/)
+- [ESDoc](https://esdoc.org/)
 - [PHPDocumentor](http://www.phpdoc.org/)
 
 **[⬆ back to top](#table-of-contents)**
@@ -198,7 +240,7 @@ Following is the list of the main tools and resources that I use in my workflow.
 ### Deployment
 
 - [Capistrano](http://capistranorb.com/) - _used for remote server automation too_
-- [Gone](https://github.com/vitorbritto/gone)
+- [Surge.sh](https://surge.sh/)
 
 **[⬆ back to top](#table-of-contents)**
 
@@ -220,8 +262,7 @@ Following is the list of the main tools and resources that I use in my workflow.
 
 - [Travis CI](https://travis-ci.org/)
 - [Code Climate](https://codeclimate.com/)
-- [Drone CI](https://drone.io/)
-- [David](https://ci.appveyor.com/login)
+- [CodeShip](https://codeship.com)
 - [Coveralls](https://coveralls.io/)
 - [Wercker](wercker.com)
 
@@ -231,17 +272,8 @@ Following is the list of the main tools and resources that I use in my workflow.
 
 - [MailChimp](http://mailchimp.com)
 - [Mandrill](https://www.mandrill.com/)
-
-**[⬆ back to top](#table-of-contents)**
-
-
-## Dependencies
-
-- [Grunt](https://gist.github.com/vitorbritto/6163803#file-grunt-md)
-- [Gulp](https://gist.github.com/vitorbritto/6163803#file-gulp-md)
-- [Bower](https://gist.github.com/vitorbritto/6163803#file-bower-md)
-- [Node/CLI](https://gist.github.com/vitorbritto/6163803#file-cli-md)
-- [RubyGems](https://gist.github.com/vitorbritto/6163803#file-rubygems-md)
+- [Google AdWords Editor]()
+- [Google Analytics]()
 
 **[⬆ back to top](#table-of-contents)**
 
