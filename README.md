@@ -5,7 +5,7 @@
 
 ## Introduction
 
-Hello there! I'm Vitor Britto, a Full Stack Web Developer extremely passionate about my work. I discovered the world of code almost two decades ago and kept the same passion from the first day of this discovery. I have worked full time as a freelancer for nearly 4 years developing projects for the web, and I direct part of my time to researchs, collaborative projects, development of personal projects and writing some articles for my blog.
+Hello there! I'm Vitor Britto, a Full Stack Developer extremely passionate about my work. I discovered the world of code almost two decades ago and kept the same passion from the first day of this discovery. I have worked full time as a freelancer for nearly 4 years developing projects for the web, and I direct part of my time to researchs, collaborative projects, development of personal projects and writing some articles for my blog.
 
 But enough about me! I would like to present this project and why it was created.
 
@@ -73,11 +73,12 @@ Following is the list of the main tools and resources that I use in my workflow.
 
 - [Trello](https://trello.com/) - _Task Management_
 - [Evernote](https://evernote.com) - _Organize Thoughts_
+- [Wunderlist](https://www.wunderlist.com/pt/) - _Daily Tasks_
 - [On the Job](http://stuntsoftware.com/onthejob/) - _Track time and Expenses_
 - [TicTac](https://github.com/vitorbritto/tictac) - _A kind of Pomodoro methodology_
 - [Google Drive](https://drive.google.com/) - _Share documents and files_
 - [Dropbox](https://www.dropbox.com/) - _Share documents and files_
-- [Wakatime](https://wakatime.com) - _Time Tracking for VIM and Sublime Text_
+- [Wakatime](https://wakatime.com) - _Quantify my coding_
 
 **[⬆ back to top](#table-of-contents)**
 
@@ -92,7 +93,7 @@ Following is the list of the main tools and resources that I use in my workflow.
 ### Blueprint and Visual
 
 - [Axure RP](http://www.axure.com/) - _Prototyping and Wireframes_
-- [Sketch]()
+- [Sketch](https://www.sketchapp.com/) - _Professional digital design_
 - [Photoshop](http://www.photoshop.com/products/photoshop)
 - [Illustrator](http://www.adobe.com/products/illustrator)
 
@@ -100,13 +101,7 @@ Following is the list of the main tools and resources that I use in my workflow.
 
 ### Scaffolding and Build
 
-**Web**
-- [Skeleton](http://skeleton.vitorbritto.com.br/)
 - [Boilerplates](https://github.com/vitorbritto/boilerplates)
-
-**Mobile**
-- [Ionic](http://ionicframework.com/)
-- [Cordova](https://cordova.apache.org/)
 
 **[⬆ back to top](#table-of-contents)**
 
@@ -121,7 +116,7 @@ Following is the list of the main tools and resources that I use in my workflow.
 **CSS**
 - Sass
 - Stylus
-- PostCSS (Rucksack, Autoprefixer e CSSnano)
+- PostCSS (Rucksack, Autoprefixer and CSS Nano)
 
 **JavaScript**
 - AngularJS
@@ -132,6 +127,13 @@ Following is the list of the main tools and resources that I use in my workflow.
 
 **JavaScript**
 - Express
+
+**Ruby**
+- Rails
+
+**PHP**
+- Laravel
+- Slim
 
 **[⬆ back to top](#table-of-contents)**
 
@@ -151,6 +153,7 @@ Following is the list of the main tools and resources that I use in my workflow.
 
 - [DevTools](https://developer.mozilla.org/en-US/docs/Tools)
 - [JSFiddle](http://jsfiddle.net/)
+- [Plunker](https://plnkr.co)
 
 **[⬆ back to top](#table-of-contents)**
 
@@ -172,7 +175,7 @@ Following is the list of the main tools and resources that I use in my workflow.
 **REST/API**
 - [Superagent](https://github.com/visionmedia/superagent)
 - [Supertest](https://github.com/visionmedia/supertest)
-- [Postman]()
+- [Postman](https://www.getpostman.com/)
 - [cURL](http://curl.haxx.se/)
 
 **Cross-Devices/Browsers and Interfaces**
@@ -210,6 +213,7 @@ Following is the list of the main tools and resources that I use in my workflow.
 
 ### Package Managers
 
+- [Bower](https://bower.io/)
 - [NPM](https://www.npmjs.org/)
 - [JSPM](http://jspm.io/)
 - [Bundler](http://bundler.io/)
@@ -231,8 +235,11 @@ Following is the list of the main tools and resources that I use in my workflow.
 ### Documentation
 
 - [RAML](http://raml.org/)
-- [apiDoc](http://apidocjs.com/)
+- [api Blueprint](https://apiblueprint.org)
 - [ESDoc](https://esdoc.org/)
+- [JSDoc](http://usejsdoc.org/)
+- [ngDoc](https://github.com/angular/angular.js/wiki/Writing-AngularJS-Documentation)
+- [SassDoc](http://sassdoc.com/)
 - [PHPDocumentor](http://www.phpdoc.org/)
 
 **[⬆ back to top](#table-of-contents)**
@@ -258,6 +265,12 @@ Following is the list of the main tools and resources that I use in my workflow.
 
 **[⬆ back to top](#table-of-contents)**
 
+### BaaS
+
+- [Firebase](https://www.firebase.com)
+
+**[⬆ back to top](#table-of-contents)**
+
 ### CI and Code Coverage
 
 - [Travis CI](https://travis-ci.org/)
@@ -268,7 +281,7 @@ Following is the list of the main tools and resources that I use in my workflow.
 
 **[⬆ back to top](#table-of-contents)**
 
-### Post-Project
+### Post-Project / SEO
 
 - [MailChimp](http://mailchimp.com)
 - [Mandrill](https://www.mandrill.com/)
@@ -283,6 +296,7 @@ Following is the list of the main tools and resources that I use in my workflow.
 - [HTML](guides/html.md)
 - [CSS](guides/css.md)
 - [JavaScript](guides/javascript.md)
+- [AngularJS](https://github.com/johnpapa/angular-styleguide/blob/master/a1/README.md)
 - [NodeJS](guides/nodejs.md)
 - [Ruby](guides/ruby.md)
 - [Rails](guides/rails.md)
