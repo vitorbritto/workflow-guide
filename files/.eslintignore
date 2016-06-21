@@ -1,0 +1,8 @@
+../assets/scripts/config.js
+../assets/scripts/lib/
+../docs/
+gulp_modules
+node_modules
+gulpfile.js
+package.json
+.esdoc.json
