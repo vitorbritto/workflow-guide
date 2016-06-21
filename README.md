@@ -43,6 +43,7 @@ Not only have a code style guide, but relevant informations about my Workflow. T
     - [Deployment](#deployment)
     - [Versioning](#versioning)
     - [PaaS](#paas)
+    - [BaaS](#baas)
     - [CI and Code Coverage](#ci-and-code-coverage)
     - [Post-project](#post-project)
 - [Guides](#guides)
@@ -310,7 +311,7 @@ Following is the list of the main tools and resources that I use in my workflow.
 
 - **[STRATEGY]**: use the [GTD](http://pt.wikipedia.org/wiki/Getting_Things_Done) and [Scrum](http://scrummethodology.com/) methods.
 - **[DEVELOPMENT]**: use the [SOLID](http://en.wikipedia.org/wiki/SOLID_(object-oriented_design)) principles.
-- **[BUILD]**: these files has two spaces for indentation: `*.styl`, `*.jade`, `*.coffee`, `*.sass`, `*.haml`, `*.rb`, `*.json`.
+- **[BUILD]**: these files has two spaces for indentation: `*.styl`, `*.jade`, `*.sass`, `*.haml`, `*.rb`, `*.json`.
 
 **Be Consistent**
 
