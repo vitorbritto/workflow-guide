@@ -1,0 +1,6 @@
+.DS_Store
+src/node_modules/
+src/.sass-cache/
+src/components/
+src/npm-debug.log
+src/.ftppass

@@ -44,7 +44,7 @@
         "funcscope"     : false,
         "globalstrict"  : false,
         "immed"         : true,
-        "indent"        : 4,
+        "indent"        : 2,
         "iterator"      : false,
         "lastsemic"     : false,
         "latedef"       : true,
