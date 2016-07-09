@@ -1,4 +1,8 @@
-# JavaScript Style Guide
+# ES6 Style Guide
+
+This is my ES6 Style Guide.
+
+It was inspired by [Airbnb's JavaScript Style Guide](https://github.com/airbnb/javascript).
 
 ## Table of Contents
 
