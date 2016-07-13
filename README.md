@@ -25,7 +25,7 @@ Not only have a code style guide, but relevant informations about my Workflow. T
 
 > In the last projects, Grunt shows some unstable performance in my Wofklow. I'm not saying that grunt is worse than Gulp. No! Unfortunately, it doesn't fits on my workflow anymore.
 >
-> I've been working a lot with Isomorphic Applications using JavaScript both on client and server-side. Gulp, is programmatically closer to NodeJS. I love the pipe flow at Gulp. It reminds me the UNIX :love:.
+> I've been working a lot with Isomorphic Applications using JavaScript both on client and server-side. Gulp, is programmatically closer to NodeJS. I love the pipe flow at Gulp. It reminds me the UNIX System :heart:.
 
 # Table of Contents
 
@@ -35,12 +35,7 @@ Not only have a code style guide, but relevant informations about my Workflow. T
   - [Blueprint and Visual](#blueprint-and-visual)
   - [Development](#development)
     - [Scaffolding](#scaffolding)
-    - [Transpilers](#transpilers)
-    - [Compilers](#compilers)
-    - [Frameworks](#frameworks)
-    - [Libraries](#libraries)
-    - [Template Engine](#template-engines)
-    - [CSS Supersets](#css-supersets)
+    - [Building](#build)
     - [Coding](#coding)
     - [Lint and Code Style Checker](#lint-optimize-and-style-checker)
     - [Debug and Inspection](#debug-and-inspection)
@@ -135,54 +130,27 @@ Timeline   | Usability   |              | Database    |
 
 ### Scaffolding
 
+The **Boilerplates** repository is my personal Yeoman. I organize and setup my stacks for every kind of project. It's a kick start structure and configuration. With this guy, I can start coding in a few minutes.
+
 - [Boilerplates](https://github.com/vitorbritto/boilerplates)
 
-**[⬆ back to top](#table-of-contents)**
+### Building
 
-### Transpilers
+Transpilers | Compilers    | Frameworks  | Libraries   | Template Engine | CSS Supersets  | Others
+----------- | ------------ | ----------- | ----------- | --------------- | -------------- | ----------
+Babel       | Electron     | AngularJS   | jQuery      | Pug             | Sass           | WordPress
+            | Cordova      | BackboneJS  | ReactJS     | ERB             | Stylus         | WooCommerce
+            |              | Ionic       |             | Haml            | PostCSS        | Sinatra
+            |              | Express     |             | EJS             |                | Rack
+            |              | Slim        |             |                 |                |
+            |              | Laravel     |             |                 |                |
+            |              |             |             |                 |                |
+            |              |             |             |                 |                |
+            |              |             |             |                 |                |
+            |              |             |             |                 |                |
+            |              |             |             |                 |                |
 
-- Babel
-
-**[⬆ back to top](#table-of-contents)**
-
-### Compilers
-
-- Electron
-- Cordova
-
-**[⬆ back to top](#table-of-contents)**
-
-### Frameworks
-
-- AngularJS
-- BackboneJS
-- Ionic
-
-**[⬆ back to top](#table-of-contents)**
-
-### Libraries
-
-- jQuery
-- ReactJS
-
-**[⬆ back to top](#table-of-contents)**
-
-### Template Engine
-
-- Pug
-- ERB
-- Haml
-- EJS
-
-**[⬆ back to top](#table-of-contents)**
-
-### CSS Supersets
-
-- Sass
-- Stylus
-- PostCSS
-
-**[⬆ back to top](#table-of-contents)**
+... [and much more](http://stackshare.io/vitorbritto/vb-web-studio)!
 
 ### Coding
 
@@ -197,8 +165,6 @@ Timeline   | Usability   |              | Database    |
 - NodeJS
 - Ruby
 - PHP
-
-**[⬆ back to top](#table-of-contents)**
 
 ### Lint, Optimize and Style Checker
 
@@ -311,7 +277,7 @@ Timeline   | Usability   |              | Database    |
 ## Documentation
 
 - [RAML](http://raml.org/)
-- [api Blueprint](https://apiblueprint.org)
+- [Blueprint](https://apiblueprint.org)
 - [ESDoc](https://esdoc.org/)
 - [JSDoc](http://usejsdoc.org/)
 - [ngDoc](https://github.com/angular/angular.js/wiki/Writing-AngularJS-Documentation)
@@ -373,13 +339,11 @@ Timeline   | Usability   |              | Database    |
 - [HTML](guides/html.md)
 - [CSS](guides/css.md)
 - JavaScript
-
   - [ES5](guies/es5.md)
   - [ES6](guies/es6.md)
   - ReactJS - _work in progress_
   - [AngularJS](guides/angularjs.md)
   - [NodeJS](guides/nodejs.md)
-
 - [Ruby](guides/ruby.md)
 - [Git](guides/git.md)
 - [Shell](guides/shell.md)
@@ -388,7 +352,7 @@ Timeline   | Usability   |              | Database    |
 
 # General Notes
 
-- **[STRATEGY]**: use the [GTD](http://pt.wikipedia.org/wiki/Getting_Things_Done) and [Scrum](http://scrummethodology.com/) methods.
+- **[STRATEGY]**: a mix of [GTD](http://pt.wikipedia.org/wiki/Getting_Things_Done) and [Scrum](http://scrummethodology.com/) methods.
 - **[DEVELOPMENT]**: use the [SOLID](http://en.wikipedia.org/wiki/SOLID_(object-oriented_design)) principles.
 - **[BUILD]**: all files must have two spaces (soft tab) for indentation.
 
