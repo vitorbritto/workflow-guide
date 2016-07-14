@@ -24,16 +24,18 @@ Not only have a code style guide, but relevant informations about my Workflow. T
 4. Major dependencies that I use with ~~Grunt~~, Gulp, ~~Bower~~, JSPM, Karma and NodeJS/CLI.
 
 > In the last projects, Grunt shows some unstable performance in my Wofklow. I'm not saying that grunt is worse than Gulp. No! Unfortunately, it doesn't fits on my workflow anymore.
->
+
 > I've been working a lot with Isomorphic Applications using JavaScript both on client and server-side. Gulp, is programmatically closer to NodeJS. I love the pipe flow at Gulp. It reminds me the UNIX System :heart:.
 
 # Table of Contents
 
 - [Candidate Tools](#candidate-tools)
 - [Workflow](#workflow)
+
   - [Strategy and Management](#strategy-and-management)
   - [Blueprint and Visual](#blueprint-and-visual)
   - [Development](#development)
+
     - [Scaffolding](#scaffolding)
     - [Building](#build)
     - [Coding](#coding)
@@ -50,13 +52,15 @@ Not only have a code style guide, but relevant informations about my Workflow. T
     - [PaaS](#paas)
     - [BaaS](#baas)
     - [CI and Code Coverage](#ci-and-code-coverage)
+
   - [Post-project](#post-project)
 
 - [Guides](#guides)
+
 - [General Notes](#general-notes)
 - [References](#references)
 
----
+--------------------------------------------------------------------------------
 
 # Candidate Tools
 
@@ -80,7 +84,7 @@ I started to use this tool about 1 month. You can understand what your website u
 
 **[⬆ back to top](#table-of-contents)**
 
----
+--------------------------------------------------------------------------------
 
 # Workflow
 
@@ -113,7 +117,6 @@ Timeline   | Usability   |              | Database    |
 
 **[⬆ back to top](#table-of-contents)**
 
-
 ## Blueprint and Visual
 
 - [Axure RP](http://www.axure.com/) - _Prototyping and Wireframes_
@@ -123,10 +126,7 @@ Timeline   | Usability   |              | Database    |
 
 **[⬆ back to top](#table-of-contents)**
 
-
 ## Development
-
-> Work in progress...
 
 ### Scaffolding
 
@@ -136,19 +136,14 @@ The **Boilerplates** repository is my personal Yeoman. I organize and setup my s
 
 ### Building
 
-Transpilers | Compilers    | Frameworks  | Libraries   | Template Engine | CSS Supersets  | Others
------------ | ------------ | ----------- | ----------- | --------------- | -------------- | ----------
-Babel       | Electron     | AngularJS   | jQuery      | Pug             | Sass           | WordPress
-            | Cordova      | BackboneJS  | ReactJS     | ERB             | Stylus         | WooCommerce
-            |              | Ionic       |             | Haml            | PostCSS        | Sinatra
-            |              | Express     |             | EJS             |                | Rack
-            |              | Slim        |             |                 |                |
-            |              | Laravel     |             |                 |                |
-            |              |             |             |                 |                |
-            |              |             |             |                 |                |
-            |              |             |             |                 |                |
-            |              |             |             |                 |                |
-            |              |             |             |                 |                |
+Transpilers | Compilers | Frameworks | Libraries | Template Engine | CSS Supersets | Others
+----------- | --------- | ---------- | --------- | --------------- | ------------- | -----------
+Babel       | Electron  | AngularJS  | jQuery    | Pug             | Sass          | WordPress
+TypeScript  | Cordova   | BackboneJS | ReactJS   | ERB             | Stylus        | WooCommerce
+            |           | Ionic      |           | Haml            | PostCSS       | Sinatra
+            |           | Express    |           | EJS             |               | Rack
+            |           | Slim       |           |                 |               |
+            |           | Laravel    |           |                 |               |
 
 ... [and much more](http://stackshare.io/vitorbritto/vb-web-studio)!
 
@@ -198,8 +193,10 @@ Babel       | Electron     | AngularJS   | jQuery      | Pug             | Sass 
 
 **Unit**
 
+- [Karma](http://karma-runner.github.io/)
 - [Mocha](https://github.com/visionmedia/mocha)
-- [Chai](http://chaijs.com/)
+- [Jasmine](http://jasmine.github.io/)
+- [Protactor](http://www.protractortest.org/)
 - [PHPUnit](https://phpunit.de/)
 - [RSpec](http://rspec.info/)
 
@@ -212,7 +209,7 @@ Babel       | Electron     | AngularJS   | jQuery      | Pug             | Sass 
 
 **Cross-Devices/Browsers and Interfaces**
 
-- [Browser-sync](http://browsersync.io/)
+- [Browser Sync](http://browsersync.io/)
 - [Capybara](https://jnicklas.github.io/capybara/)
 
 **Performance**
@@ -238,8 +235,8 @@ Babel       | Electron     | AngularJS   | jQuery      | Pug             | Sass 
 
 **Mobile**
 
-- [GenyMotion](https://www.genymotion.com/)
-- iOS Emulator
+- [GenyMotion](https://www.genymotion.com/) - Android
+- [XCode Simulator](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/iOS_Simulator_Guide/Introduction/Introduction.html) - iOS
 
 **[⬆ back to top](#table-of-contents)**
 
@@ -247,17 +244,19 @@ Babel       | Electron     | AngularJS   | jQuery      | Pug             | Sass 
 
 - [Just](http://vitorbritto.github.io/just/)
 - [Makefy](http://vitorbritto.github.io/makefy/)
+- [Grunt](http://gruntjs.com/)
 - [Gulp](http://gulpjs.com/)
 - [Rake](http://rake.rubyforge.org/doc/rakefile_rdoc.html)
 - [Make](http://en.wikipedia.org/wiki/Make_(software))
 
 **[⬆ back to top](#table-of-contents)**
 
-## Package Managers
+## Modules (bundle/load/manage)
 
-- [Bower](https://bower.io/)
+- [Bower](https://bower.io/) - _deprecated_
 - [NPM](https://www.npmjs.org/)
 - [JSPM](http://jspm.io/)
+- [Webpack](https://webpack.github.io/)
 - [Bundler](http://bundler.io/)
 - [RubyGems](https://rubygems.org/)
 - [Composer](https://getcomposer.org/)
@@ -313,7 +312,7 @@ Babel       | Electron     | AngularJS   | jQuery      | Pug             | Sass 
 
 **[⬆ back to top](#table-of-contents)**
 
-## CI and Code Coverage
+## Continuous Integration and Code Coverage
 
 - [Travis CI](https://travis-ci.org/)
 - [Code Climate](https://codeclimate.com/)
@@ -332,7 +331,7 @@ Babel       | Electron     | AngularJS   | jQuery      | Pug             | Sass 
 
 **[⬆ back to top](#table-of-contents)**
 
----
+--------------------------------------------------------------------------------
 
 # Guides
 
@@ -341,9 +340,11 @@ Babel       | Electron     | AngularJS   | jQuery      | Pug             | Sass 
 - JavaScript
   - [ES5](guies/es5.md)
   - [ES6](guies/es6.md)
-  - ReactJS - _work in progress_
-  - [AngularJS](guides/angularjs.md)
-  - [NodeJS](guides/nodejs.md)
+- ReactJS - _work in progress_
+- AngularJS
+  - [ES5](guides/angularjs-es5.md)
+  - [ES6](guides/angularjs-es6.md)
+- [NodeJS](guides/nodejs.md)
 - [Ruby](guides/ruby.md)
 - [Git](guides/git.md)
 - [Shell](guides/shell.md)
@@ -369,8 +370,10 @@ Babel       | Electron     | AngularJS   | jQuery      | Pug             | Sass 
 - [Code Guide by @mdo](https://github.com/mdo/code-guide)
 - [Airbnb CSS Style Guide](https://github.com/airbnb/css)
 - [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript)
-- [Google JavaScript Style Guide](http://google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml)
+- [John Papa Angular Style Guide](https://github.com/johnpapa/angular-styleguide)
+- [Todd Motto Angular Style Guide](https://github.com/toddmotto/angular-styleguide)
 - [Douglas Crockford's Code Conventions for JavaScript](http://javascript.crockford.com/code.html)
+- [Felix Geisendörfer Node.js Style Guide](https://github.com/felixge/node-style-guide)
 - [Airbnb Ruby Style Guide](https://github.com/airbnb/ruby)
 - [Bozhidar Batsov Style Guide](https://github.com/bbatsov/ruby-style-guide)
 - [Github Ruby Style Guide](https://github.com/styleguide/ruby)
