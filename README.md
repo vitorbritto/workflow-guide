@@ -104,7 +104,8 @@ Timeline   | Usability   |              | Database    |
 
 ## Strategy and Management
 
-- [Trello](https://trello.com/) - _Task Management_
+- [Trello](https://trello.com/) - _Task Management for Old Projects only_
+- [MeisterTask](https://www.meistertask.com/app) - _Task Management from now on_
 - [Wunderlist](https://www.wunderlist.com/pt/) - _Daily Tasks_
 - [On the Job](http://stuntsoftware.com/onthejob/) - _Track time and Expenses_
 - [Forest](http://www.forestapp.cc/) - _Stay focused on tasks_
@@ -160,6 +161,12 @@ TypeScript  | Cordova   | BackboneJS | ReactJS   | ERB             | Stylus     
 - NodeJS
 - Ruby
 - PHP
+
+### Editors
+
+- [Visual Studio Code]()
+- [Xamarin Studio]()
+- [MacVim]()
 
 ### Lint, Optimize and Style Checker
 
@@ -235,6 +242,7 @@ TypeScript  | Cordova   | BackboneJS | ReactJS   | ERB             | Stylus     
 
 **Mobile**
 
+- [Xamarin Android Player]()
 - [GenyMotion](https://www.genymotion.com/) - Android
 - [XCode Simulator](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/iOS_Simulator_Guide/Introduction/Introduction.html) - iOS
 
@@ -267,7 +275,7 @@ TypeScript  | Cordova   | BackboneJS | ReactJS   | ERB             | Stylus     
 
 - [MySQL WorkBench](https://www.mysql.com/products/workbench/)
 - [Sequel Pro](http://www.sequelpro.com/)
-- [Mongotron](http://mongotron.io)
+- [Robomongo](https://robomongo.org/)
 - [CouchDB](http://couchdb.apache.org)
 - [PSequel](http://www.psequel.com/)
 
@@ -276,7 +284,7 @@ TypeScript  | Cordova   | BackboneJS | ReactJS   | ERB             | Stylus     
 ## Documentation
 
 - [RAML](http://raml.org/)
-- [Blueprint](https://apiblueprint.org)
+- [API Blueprint](https://apiblueprint.org)
 - [ESDoc](https://esdoc.org/)
 - [JSDoc](http://usejsdoc.org/)
 - [ngDoc](https://github.com/angular/angular.js/wiki/Writing-AngularJS-Documentation)
@@ -321,6 +329,12 @@ TypeScript  | Cordova   | BackboneJS | ReactJS   | ERB             | Stylus     
 - [Wercker](wercker.com)
 
 **[⬆ back to top](#table-of-contents)**
+
+## Virtual Machines and Containers
+
+- [Docker](https://www.docker.com)
+- [Vagrant](https://www.vagrantup.com/)
+- [Virtual Box](https://www.virtualbox.org/)
 
 ## Post-Project / SEO
 
