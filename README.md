@@ -25,7 +25,7 @@ Not only have a code style guide, but relevant informations about my Workflow. T
 
 > In the last projects, Grunt shows some unstable performance in my Wofklow. I'm not saying that grunt is worse than Gulp. No! Unfortunately, it doesn't fits on my workflow anymore.
 
-> I've been working a lot with ~~Isomorphic Applications using JavaScript both on client and server-side~~ Universal javaScript Applications. Gulp, is programmatically closer to NodeJS. I love the pipe flow at Gulp. It reminds me the UNIX System :heart:.
+> I've been working a lot with ~~Isomorphic Applications using JavaScript both on client and server-side~~ Universal JavaScript Applications. Gulp, is programmatically closer to NodeJS. I love the pipe flow at Gulp. It reminds me the UNIX System :heart:.
 
 # Table of Contents
 
@@ -76,11 +76,6 @@ Buddy is a powerful Git Hosting with Continuous Delivery tools. I create an acco
 
 With Stamplay I can chain together APIs as if they are Lego blocks arranging them into service based apps. If can automate tasks, connection some tools and triggering actions to build a data flow on Back-End. So, you can "create web applications without writing tons os backend codes".
 
-## [Hotjar](https://www.hotjar.com/)
-
-An amazing all-in-one tool for Analytics & Feedback. Hotjar combines 7 tools in one to deliver more user insight for less.
-
-I started to use this tool about 1 month. You can understand what your website users do and don't do, and why. You cant track every action.
 
 **[⬆ back to top](#table-of-contents)**
 
