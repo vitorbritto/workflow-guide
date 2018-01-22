@@ -21,11 +21,11 @@ Not only have a code style guide, but relevant informations about my Workflow. T
 1. My workflow context with approaches and methods that I use.
 2. Tools that makes my Workflow easy.
 3. My own code conventions, which is inspired by what is popular within the community and flavored with some personal opinions.
-4. Major dependencies that I use with ~~Grunt~~, Gulp, ~~Bower~~, JSPM, Karma and NodeJS/CLI.
+4. Major dependencies that I use.
 
 > In the last projects, Grunt shows some unstable performance in my Wofklow. I'm not saying that grunt is worse than Gulp. No! Unfortunately, it doesn't fits on my workflow anymore.
 
-> I've been working a lot with Isomorphic Applications using JavaScript both on client and server-side. Gulp, is programmatically closer to NodeJS. I love the pipe flow at Gulp. It reminds me the UNIX System :heart:.
+> I've been working a lot with ~~Isomorphic Applications using JavaScript both on client and server-side~~ Universal javaScript Applications. Gulp, is programmatically closer to NodeJS. I love the pipe flow at Gulp. It reminds me the UNIX System :heart:.
 
 # Table of Contents
 
@@ -105,7 +105,6 @@ Timeline   | Usability   |              | Database    |
 ## Strategy and Management
 
 - [Trello](https://trello.com/) - _Task Management for Old Projects only_
-- [MeisterTask](https://www.meistertask.com/app) - _Task Management from now on_
 - [Wunderlist](https://www.wunderlist.com/pt/) - _Daily Tasks_
 - [On the Job](http://stuntsoftware.com/onthejob/) - _Track time and Expenses_
 - [Forest](http://www.forestapp.cc/) - _Stay focused on tasks_
@@ -135,19 +134,6 @@ The **Boilerplates** repository is my personal Yeoman. I organize and setup my s
 
 - [Boilerplates](https://github.com/vitorbritto/boilerplates)
 
-### Building
-
-Transpilers | Compilers | Frameworks | Libraries | Template Engine | CSS Supersets | Others
------------ | --------- | ---------- | --------- | --------------- | ------------- | -----------
-Babel       | Electron  | AngularJS  | jQuery    | Pug             | Sass          | WordPress
-TypeScript  | Cordova   | BackboneJS | ReactJS   | ERB             | Stylus        | WooCommerce
-            |           | Ionic      |           | Haml            | PostCSS       | Sinatra
-            |           | Express    |           | EJS             |               | Rack
-            |           | Slim       |           |                 |               |
-            |           | Laravel    |           |                 |               |
-
-... [and much more](http://stackshare.io/vitorbritto/vb-web-studio)!
-
 ### Coding
 
 **Front-End:**
@@ -159,189 +145,35 @@ TypeScript  | Cordova   | BackboneJS | ReactJS   | ERB             | Stylus     
 **Back-End:**
 
 - NodeJS
-- Ruby
 - PHP
+
+**Database**
+
+- MySQL
+- SQLite
+- PostgreSQL
+- Redis
+- MongoDB
+- GraphQL
 
 ### Editors
 
-- [Visual Studio Code]()
-- [Xamarin Studio]()
-- [MacVim]()
+- Visual Studio Code
+- MacVim
 
-### Lint, Optimize and Style Checker
+### Building
 
-- [StyleLint](http://stylelint.io/)
-- [SassLint](https://github.com/sasstools/sass-lint)
-- [JSHint](http://jshint.com/)
-- [ESLint](http://eslint.org/)
-- [JSCS](http://jscs.info/)
-- [Rubocop](http://batsov.com/rubocop/)
-- [PHPfmt](http://www.cirello.org/php.tools/)
-- [PHPCS](http://pear.php.net/package/PHP_CodeSniffer)
+Transpilers | Frameworks | Libraries | Template Engine | CSS Supersets | Others
+----------- | ---------- | --------- | --------------- | ------------- | -----------
+Babel       | Angular    | jQuery    | Pug             | Sass          | WordPress
+TypeScript  | Express    | ReactJS   | EJS             | Stylus        | WooCommerce
+            | Slim       |           |                 | PostCSS       | React Native
+            | Laravel    |           |                 |               | 
+            |            |           |                 |               |
+            |            |           |                 |               |
 
-**[⬆ back to top](#table-of-contents)**
+... [and much more](http://stackshare.io/vitorbritto/vb-web-studio)!
 
-### Debug and Inspection
-
-- [DevTools](https://developer.mozilla.org/en-US/docs/Tools)
-- [JSFiddle](http://jsfiddle.net/)
-- [Plunker](https://plnkr.co)
-
-**[⬆ back to top](#table-of-contents)**
-
-### Metrics and Performance
-
-- [JSPerf](http://jsperf.com/)
-- [Page Speed](https://developers.google.com/speed/pagespeed/insights/)
-
-**[⬆ back to top](#table-of-contents)**
-
-### Tests
-
-**Unit**
-
-- [Karma](http://karma-runner.github.io/)
-- [Mocha](https://github.com/visionmedia/mocha)
-- [Jasmine](http://jasmine.github.io/)
-- [Protactor](http://www.protractortest.org/)
-- [PHPUnit](https://phpunit.de/)
-- [RSpec](http://rspec.info/)
-
-**REST/API**
-
-- [Superagent](https://github.com/visionmedia/superagent)
-- [Supertest](https://github.com/visionmedia/supertest)
-- [Postman](https://www.getpostman.com/)
-- [cURL](http://curl.haxx.se/)
-
-**Cross-Devices/Browsers and Interfaces**
-
-- [Browser Sync](http://browsersync.io/)
-- [Capybara](https://jnicklas.github.io/capybara/)
-
-**Performance**
-
-- [OpenBeat](opbeat.com)
-- [New Relic](newrelic.com)
-
-**Load/Stress**
-
-- [Gremlins](https://github.com/marmelab/gremlins.js)
-
-**Integration**
-
-- [Pioneer](http://pioneerjs.com/)
-
-**E2E**
-
-- [DalekJS](http://dalekjs.com/)
-
-**Regression**
-
-- [BackToStopJS](https://garris.github.io/BackstopJS/)
-
-**Mobile**
-
-- [Xamarin Android Player]()
-- [GenyMotion](https://www.genymotion.com/) - Android
-- [XCode Simulator](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/iOS_Simulator_Guide/Introduction/Introduction.html) - iOS
-
-**[⬆ back to top](#table-of-contents)**
-
-## Automation
-
-- [Just](http://vitorbritto.github.io/just/)
-- [Makefy](http://vitorbritto.github.io/makefy/)
-- [Grunt](http://gruntjs.com/)
-- [Gulp](http://gulpjs.com/)
-- [Rake](http://rake.rubyforge.org/doc/rakefile_rdoc.html)
-- [Make](http://en.wikipedia.org/wiki/Make_(software))
-
-**[⬆ back to top](#table-of-contents)**
-
-## Modules (bundle/load/manage)
-
-- [Bower](https://bower.io/) - _deprecated_
-- [NPM](https://www.npmjs.org/)
-- [JSPM](http://jspm.io/)
-- [Webpack](https://webpack.github.io/)
-- [Bundler](http://bundler.io/)
-- [RubyGems](https://rubygems.org/)
-- [Composer](https://getcomposer.org/)
-
-**[⬆ back to top](#table-of-contents)**
-
-## Database
-
-- [MySQL WorkBench](https://www.mysql.com/products/workbench/)
-- [Sequel Pro](http://www.sequelpro.com/)
-- [Robomongo](https://robomongo.org/)
-- [CouchDB](http://couchdb.apache.org)
-- [PSequel](http://www.psequel.com/)
-
-**[⬆ back to top](#table-of-contents)**
-
-## Documentation
-
-- [RAML](http://raml.org/)
-- [API Blueprint](https://apiblueprint.org)
-- [ESDoc](https://esdoc.org/)
-- [JSDoc](http://usejsdoc.org/)
-- [ngDoc](https://github.com/angular/angular.js/wiki/Writing-AngularJS-Documentation)
-- [SassDoc](http://sassdoc.com/)
-- [PHPDocumentor](http://www.phpdoc.org/)
-
-**[⬆ back to top](#table-of-contents)**
-
-## Deployment
-
-- [Capistrano](http://capistranorb.com/) - _used for remote server automation too_
-- [Surge.sh](https://surge.sh/)
-
-**[⬆ back to top](#table-of-contents)**
-
-## Versioning
-
-- [Bitbucket](http://www.bitbucket.com/)
-- [Github](http://github.com)
-
-**[⬆ back to top](#table-of-contents)**
-
-## PaaS
-
-- [Heroku](https://www.heroku.com/)
-- [OpenShift](https://www.openshift.com/)
-
-**[⬆ back to top](#table-of-contents)**
-
-## BaaS
-
-- [Firebase](https://www.firebase.com)
-
-**[⬆ back to top](#table-of-contents)**
-
-## Continuous Integration and Code Coverage
-
-- [Travis CI](https://travis-ci.org/)
-- [Code Climate](https://codeclimate.com/)
-- [CodeShip](https://codeship.com)
-- [Coveralls](https://coveralls.io/)
-- [Wercker](wercker.com)
-
-**[⬆ back to top](#table-of-contents)**
-
-## Virtual Machines and Containers
-
-- [Docker](https://www.docker.com)
-- [Vagrant](https://www.vagrantup.com/)
-- [Virtual Box](https://www.virtualbox.org/)
-
-## Post-Project / SEO
-
-- [MailChimp](http://mailchimp.com)
-- [Mandrill](https://www.mandrill.com/)
-- Google AdWords
-- Google Analytics
 
 **[⬆ back to top](#table-of-contents)**
 
@@ -355,11 +187,10 @@ TypeScript  | Cordova   | BackboneJS | ReactJS   | ERB             | Stylus     
   - [ES5](guies/es5.md)
   - [ES6](guies/es6.md)
 - ReactJS - _work in progress_
-- AngularJS
+- Angular
   - [ES5](guides/angularjs-es5.md)
   - [ES6](guides/angularjs-es6.md)
 - [NodeJS](guides/nodejs.md)
-- [Ruby](guides/ruby.md)
 - [Git](guides/git.md)
 - [Shell](guides/shell.md)
 
