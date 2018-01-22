@@ -24,7 +24,6 @@ Not only have a code style guide, but relevant informations about my Workflow. T
 4. Major dependencies that I use.
 
 > In the last projects, Grunt shows some unstable performance in my Wofklow. I'm not saying that grunt is worse than Gulp. No! Unfortunately, it doesn't fits on my workflow anymore.
-
 > I've been working a lot with ~~Isomorphic Applications using JavaScript both on client and server-side~~ Universal JavaScript Applications. Gulp, is programmatically closer to NodeJS. I love the pipe flow at Gulp. It reminds me the UNIX System :heart:.
 
 # Table of Contents
