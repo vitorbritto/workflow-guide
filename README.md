@@ -28,7 +28,6 @@ Not only have a code style guide, but relevant informations about my Workflow. T
 
 # Table of Contents
 
-- [Candidate Tools](#candidate-tools)
 - [Workflow](#workflow)
 
   - [Strategy and Management](#strategy-and-management)
@@ -59,24 +58,6 @@ Not only have a code style guide, but relevant informations about my Workflow. T
 - [General Notes](#general-notes)
 - [References](#references)
 
---------------------------------------------------------------------------------
-
-# Candidate Tools
-
-## [Zapier](https://zapier.com)
-
-The first tool in the list and a strong candidate to get into my workflow. So far, I'm comfortable with the free plan. I really like the way to trigger actions between apps.
-
-## [Buddy](https://buddy.works)
-
-Buddy is a powerful Git Hosting with Continuous Delivery tools. I create an account on the platform, but I have not tested yet.
-
-## [Stamplay](https://stamplay.com)
-
-With Stamplay I can chain together APIs as if they are Lego blocks arranging them into service based apps. If can automate tasks, connection some tools and triggering actions to build a data flow on Back-End. So, you can "create web applications without writing tons os backend codes".
-
-
-**[⬆ back to top](#table-of-contents)**
 
 --------------------------------------------------------------------------------
 
@@ -99,9 +80,7 @@ Timeline   | Usability   |              | Database    |
 ## Strategy and Management
 
 - [Trello](https://trello.com/) - _Task Management for Old Projects only_
-- [Wunderlist](https://www.wunderlist.com/pt/) - _Daily Tasks_
-- [On the Job](http://stuntsoftware.com/onthejob/) - _Track time and Expenses_
-- [Forest](http://www.forestapp.cc/) - _Stay focused on tasks_
+- [TicTac](https://github.com/vitorbritto/tictac) - _Daily Tasks_
 - [Google Drive](https://drive.google.com/) - _Share documents and files_
 - [Dropbox](https://www.dropbox.com/) - _Share documents and files_
 - [Wakatime](https://wakatime.com) - _Quantify my coding_
@@ -113,8 +92,7 @@ Timeline   | Usability   |              | Database    |
 
 ## Blueprint and Visual
 
-- [Axure RP](http://www.axure.com/) - _Prototyping and Wireframes_
-- [Sketch](https://www.sketchapp.com/) - _Professional digital design_
+- [Sketch](https://www.sketchapp.com/) - _Prototyping and Wireframes_
 - [Photoshop](http://www.photoshop.com/products/photoshop)
 - [Illustrator](http://www.adobe.com/products/illustrator)
 
@@ -127,6 +105,8 @@ Timeline   | Usability   |              | Database    |
 The **Boilerplates** repository is my personal Yeoman. I organize and setup my stacks for every kind of project. It's a kick start structure and configuration. With this guy, I can start coding in a few minutes.
 
 - [Boilerplates](https://github.com/vitorbritto/boilerplates)
+
+> I am developing a new fresh CLI tool to manage the kickstart for my projects  =]
 
 ### Coding
 
@@ -160,8 +140,9 @@ The **Boilerplates** repository is my personal Yeoman. I organize and setup my s
 Transpilers | Frameworks | Libraries | Template Engine | CSS Supersets | Others
 ----------- | ---------- | --------- | --------------- | ------------- | -----------
 Babel       | Angular    | jQuery    | Pug             | Sass          | WordPress
-TypeScript  | Express    | ReactJS   | EJS             | Stylus        | WooCommerce
-            | Slim       |           |                 | PostCSS       | React Native
+            | Express    | React     | EJS             | Stylus        | WooCommerce
+            | AdonisJS   |           |                 | PostCSS       | React Native
+            | Slim       |           |                 |               | 
             | Laravel    |           |                 |               | 
             |            |           |                 |               |
             |            |           |                 |               |
@@ -180,7 +161,7 @@ TypeScript  | Express    | ReactJS   | EJS             | Stylus        | WooComm
 - JavaScript
   - [ES5](guies/es5.md)
   - [ES6](guies/es6.md)
-- ReactJS - _work in progress_
+- ReactJS
 - Angular
   - [ES5](guides/angularjs-es5.md)
   - [ES6](guides/angularjs-es6.md)
