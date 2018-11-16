@@ -4,27 +4,30 @@
 
 # Introduction
 
-Hello there! I'm Vitor Britto, a Full Stack Developer extremely passionate about my work. I discovered the world of code almost two decades ago and kept the same passion from the first day of this discovery. I have worked full time as a freelancer for nearly 4 years developing projects for the web, and I direct part of my time to researchs, collaborative projects, development of personal projects and writing some articles for my blog.
+Hello there! I'm Vitor Britto, a Full Stack Developer extremely passionate about my work. I discovered the world of code almost two decades ago and kept the same passion from the first moment of this discovery. I have worked full time as a freelancer for nearly 4 years developing projects for the web, and I focus part of my time on researchs, collaborative projects, personal projects and writing some articles for my blog.
 
-But enough about me! I would like to present this project and why it was created.
+But, enough about me! I would like to present you this project.
 
-**First reason:**
 
-Apply rules and be based on a principle and methodology of process which could maintain the structure of my standards.
-
-**Second reason:**
-
-Not only have a code style guide, but relevant informations about my Workflow. Thus I always keep the same logic process and can initiate the development of my projects without any questions when making a scaffolding, building process, automation rotines, unit testing and others tasks.
-
-**This guide consists in four parts:** :ghost:
+## What this is about?
 
 1. My workflow context with approaches and methods that I use.
 2. Tools that makes my Workflow easy.
 3. My own code conventions, which is inspired by what is popular within the community and flavored with some personal opinions.
 4. Major dependencies that I use.
 
-> In the last projects, Grunt shows some unstable performance in my Wofklow. I'm not saying that grunt is worse than Gulp. No! Unfortunately, it doesn't fits on my workflow anymore.
-> I've been working a lot with ~~Isomorphic Applications using JavaScript both on client and server-side~~ Universal JavaScript Applications. Gulp, is programmatically closer to NodeJS. I love the pipe flow at Gulp. It reminds me the UNIX System :heart:.
+
+## Why was it created?
+
+**Reason #01**
+
+Apply rules and be based on a principle and methodology of process which could maintain the structure of my standards.
+
+**Reason #02**
+
+Not only have a code style guide, but relevant informations about my Workflow. Thus I always keep the same logic process and can initiate the development of my projects without any questions when making a scaffolding, building process, automation rotines, unit testing and others tasks.
+
+--------------------------------------------------------------------------------
 
 # Table of Contents
 
@@ -102,11 +105,11 @@ Timeline   | Usability   |              | Database    |
 
 ### Scaffolding
 
-The **Boilerplates** repository is my personal Yeoman. I organize and setup my stacks for every kind of project. It's a kick start structure and configuration. With this guy, I can start coding in a few minutes.
+The **Kickstarts** repository is my personal Yeoman. I organize and setup my stacks for every kind of project. It's a kick start structure and configuration. With this guy, I can start coding in a few minutes.
 
-- [Boilerplates](https://github.com/vitorbritto/boilerplates)
+- [Kickstarts](https://github.com/vitorbritto/kickstarts)
 
-> I am developing a new fresh CLI tool to manage the kickstart for my projects  =]
+> Boilerplates is now **Kickstarts**. =]
 
 ### Coding
 
@@ -124,7 +127,6 @@ The **Boilerplates** repository is my personal Yeoman. I organize and setup my s
 **Database**
 
 - MySQL
-- SQLite
 - PostgreSQL
 - Redis
 - MongoDB
@@ -135,17 +137,18 @@ The **Boilerplates** repository is my personal Yeoman. I organize and setup my s
 - Visual Studio Code
 - MacVim
 
-### Building
+### Build
 
-Transpilers | Frameworks | Libraries | Template Engine | CSS Supersets | Others
------------ | ---------- | --------- | --------------- | ------------- | -----------
-Babel       | Angular    | jQuery    | Pug             | Sass          | WordPress
-            | Express    | React     | EJS             | Stylus        | WooCommerce
-            | AdonisJS   |           |                 | PostCSS       | React Native
-            | Slim       |           |                 |               | 
-            | Laravel    |           |                 |               | 
-            |            |           |                 |               |
-            |            |           |                 |               |
+Frameworks   | Libraries | Template Engine | CSS Supersets | Others
+------------ | --------- | --------------- | ------------- | -----------
+React Native | React     | Pug             | Sass          | WordPress
+Angular      | jQuery    | EJS             | PostCSS       | WooCommerce
+Ionic        |           |                 |               | Typescript
+AdonisJS     |           |                 |               |
+Express      |           |                 |               |
+Laravel      |           |                 |               |
+Lumen        |           |                 |               |
+Slim         |           |                 |               |
 
 ... [and much more](http://stackshare.io/vitorbritto/vb-web-studio)!
 
@@ -159,12 +162,10 @@ Babel       | Angular    | jQuery    | Pug             | Sass          | WordPre
 - [HTML](guides/html.md)
 - [CSS](guides/css.md)
 - JavaScript
-  - [ES5](guies/es5.md)
-  - [ES6](guies/es6.md)
-- ReactJS
-- Angular
-  - [ES5](guides/angularjs-es5.md)
-  - [ES6](guides/angularjs-es6.md)
+  - [ES5](guides/es5.md) - *used in obsolete projects*
+  - [ES6](guides/es6.md)
+- [ReactJS](guides/reactjs.md)
+- Angular - *work in progress*
 - [NodeJS](guides/nodejs.md)
 - [Git](guides/git.md)
 - [Shell](guides/shell.md)
@@ -173,7 +174,7 @@ Babel       | Angular    | jQuery    | Pug             | Sass          | WordPre
 
 # General Notes
 
-- **[STRATEGY]**: a mix of [GTD](http://pt.wikipedia.org/wiki/Getting_Things_Done) and [Scrum](http://scrummethodology.com/) methods.
+- **[STRATEGY]**: Kanban or [Scrum](http://scrummethodology.com/) method.
 - **[DEVELOPMENT]**: use the [SOLID](http://en.wikipedia.org/wiki/SOLID_(object-oriented_design)) principles.
 - **[BUILD]**: all files must have two spaces (soft tab) for indentation.
 

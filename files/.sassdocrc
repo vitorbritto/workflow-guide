@@ -1,3 +1,0 @@
-dest: "../docs/sass"
-theme: "default"
-package: "./package.json"
