@@ -1,4 +1,4 @@
-![Workflow Guide Logo](logo-wg.jpg "Workflow Guide")
+![Workflow Guide Logo](source/logo.jpg)
 
 > This is a work in progress and I will likely add (or replace) more functionality in the future.
 
