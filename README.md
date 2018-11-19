@@ -1,4 +1,8 @@
-![Workflow Guide Logo](source/logo.jpg)
+<h1 align="center">Workflow Guide</h1>
+<br>
+<p align="center">
+<img src="https://github.com/vitorbritto/kickstarts/raw/master/source/logo.jpg" alt="Workflow Guide" width="750">
+</p>
 
 > This is a work in progress and I will likely add (or replace) more functionality in the future.
 
