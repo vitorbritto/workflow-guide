@@ -107,11 +107,7 @@ Timeline   | Usability   |              | Database    |
 
 ### Scaffolding
 
-The **Kickstarts** repository is my personal Yeoman. I organize and setup my stacks for every kind of project. It's a kick start structure and configuration. With this guy, I can start coding in a few minutes.
-
-- [Kickstarts](https://github.com/vitorbritto/kickstarts)
-
-> Boilerplates is now **Kickstarts**. =]
+Check the [Kickstarts](https://github.com/kickstarts/kickstarts) organization where I organize and setup my stacks for every kind of project. It's a initial structure and configuration where I can start coding in a few minutes.
 
 ### Coding
 
@@ -132,7 +128,6 @@ The **Kickstarts** repository is my personal Yeoman. I organize and setup my sta
 - PostgreSQL
 - Redis
 - MongoDB
-- GraphQL
 
 ### Editors
 
@@ -141,13 +136,15 @@ The **Kickstarts** repository is my personal Yeoman. I organize and setup my sta
 
 ### Build
 
-Frameworks   | Libraries | Template Engine | CSS Supersets | Others
+Frameworks   | Libraries | Template Engine | Supersets     | Others
 ------------ | --------- | --------------- | ------------- | -----------
 React Native | React     | Pug             | Sass          | WordPress
 Angular      | jQuery    | EJS             | PostCSS       | WooCommerce
-Ionic        |           |                 |               | Typescript
-AdonisJS     |           |                 |               |
-Express      |           |                 |               |
+Ionic        |           |                 | Typescript    | Strapi
+AdonisJS     |           |                 |               | GraphQL
+Gatsby       |           |                 |               | AWS
+NextJS       |           |                 |               | Vercel
+Express      |           |                 |               | Netlify
 Laravel      |           |                 |               |
 Lumen        |           |                 |               |
 Slim         |           |                 |               |
@@ -160,6 +157,8 @@ Slim         |           |                 |               |
 --------------------------------------------------------------------------------
 
 # Guides
+
+For web projects in which I work from planning to delivery, I use the guides below. If I am on a team that already has established guides, I'll follow the rules already adopted.already adopted. No bullshit, just follow the rules.
 
 - [HTML](guides/html.md)
 - [CSS](guides/css.md)
@@ -178,7 +177,7 @@ Slim         |           |                 |               |
 
 - **[STRATEGY]**: Kanban or [Scrum](http://scrummethodology.com/) method.
 - **[DEVELOPMENT]**: use the [SOLID](http://en.wikipedia.org/wiki/SOLID_(object-oriented_design)) principles.
-- **[BUILD]**: all files must have two spaces (soft tab) for indentation.
+- **[BUILD]**: all javascript files must have two spaces (soft tab) and PHP files musta have four spaces (soft tab) FOR INDENTATION.
 
 **Be Consistent**
 
