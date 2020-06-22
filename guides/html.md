@@ -11,20 +11,20 @@
 
 ## Syntax
 
-Use soft tabs with 4 (four) spaces. You can configure your editor for this.
+Use soft tabs with 2 (two) spaces. You can configure your editor for this or using `.editroconfig`.
 
 ```html
 <!-- Good -->
 <nav class="nav">
-      <ul class="nav-menu">
-            <li class="nav-item">
-                  <a class="nav-link">
-
-<!-- Bad -->
-<nav class="nav">
   <ul class="nav-menu">
     <li class="nav-item">
       <a class="nav-link">
+
+<!-- Bad -->
+<nav class="nav">
+      <ul class="nav-menu">
+            <li class="nav-item">
+                  <a class="nav-link">
 ```
 
 Always use double quotes.

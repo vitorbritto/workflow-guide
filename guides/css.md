@@ -28,9 +28,7 @@ It was inspired by [Airbnb's CSS Style Guide](https://github.com/airbnb/css).
 
 ## PrePostCSS
 
-Currently I'm using `Sass` on stacks with Ruby or PHP and `Stylus` on Full Stack JavaScript.
-
-Also, my CSS Stack includes some PostCSS plugins and other libs which take care of the maintainable and consistent style code for each project.
+My CSS Stack includes some PostCSS plugins and other libs which take care of the maintainable and consistent style code for each project.
 
 Check out:
 
