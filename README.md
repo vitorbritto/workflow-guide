@@ -85,21 +85,18 @@ Timeline   | Usability   |              | Database    |
 ## Strategy and Management
 
 - [Trello](https://trello.com/) - _Task Management for Old Projects only_
-- [TicTac](https://github.com/vitorbritto/tictac) - _Daily Tasks_
 - [Google Drive](https://drive.google.com/) - _Share documents and files_
-- [Dropbox](https://www.dropbox.com/) - _Share documents and files_
 - [Wakatime](https://wakatime.com) - _Quantify my coding_
 - [Skype](http://www.skype.com) - _Business Conferences and Chats_
+- [Google Meet](https://meet.google.com/) - _Business Conferences and Chats_
 - [Slack](https://slack.com/) - _Team Messaging_
-- [Gitter](https://gitter.im/) - _Open Source Communications_
 
 **[⬆ back to top](#table-of-contents)**
 
 ## Blueprint and Visual
 
-- [Sketch](https://www.sketchapp.com/) - _Prototyping and Wireframes_
-- [Photoshop](http://www.photoshop.com/products/photoshop)
-- [Illustrator](http://www.adobe.com/products/illustrator)
+- [Adobe XD](https://www.adobe.com/br/products/xd.html) - _Prototyping and Wireframes_
+- [Miro](https://miro.com) - _Online collaborative whiteboard_
 
 **[⬆ back to top](#table-of-contents)**
 
@@ -131,7 +128,7 @@ Check the [Kickstarts](https://github.com/kickstarts/kickstarts) organization wh
 
 ### Editors
 
-- Visual Studio Code
+- [Visual Studio Code](https://code.visualstudio.com/) - _Code editing_
 - MacVim
 
 ### Build
@@ -144,7 +141,7 @@ Ionic        |           |                 | Typescript    | Strapi
 AdonisJS     |           |                 |               | GraphQL
 Gatsby       |           |                 |               | AWS
 NextJS       |           |                 |               | Vercel
-Express      |           |                 |               | Netlify
+Express      |           |                 |               | 
 Laravel      |           |                 |               |
 Lumen        |           |                 |               |
 Slim         |           |                 |               |
@@ -175,7 +172,7 @@ For web projects in which I work from planning to delivery, I use the guides bel
 
 # General Notes
 
-- **[STRATEGY]**: Kanban or [Scrum](http://scrummethodology.com/) method.
+- **[STRATEGY]**: Kanban and/or [Scrum](http://scrummethodology.com/) method.
 - **[DEVELOPMENT]**: use the [SOLID](http://en.wikipedia.org/wiki/SOLID_(object-oriented_design)) principles.
 - **[BUILD]**: all javascript files must have two spaces (soft tab) and PHP files musta have four spaces (soft tab) FOR INDENTATION.
 
