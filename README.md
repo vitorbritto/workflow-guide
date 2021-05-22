@@ -70,7 +70,7 @@ Not only have a code style guide, but relevant informations about my Workflow. T
 
 # Workflow
 
-> You can find a complete list of applications, utilities, DevOps and Business Tools here: [![Stack Share](http://img.shields.io/badge/tech-stack-0690fa.svg?style=flat)](http://stackshare.io/vitorbritto/vb-web-studio)
+> You can find a complete list of applications, utilities, DevOps and Business Tools here: [![Stack Share](http://img.shields.io/badge/tech-stack-0690fa.svg?style=flat)](https://stackshare.io/vitorbritto/vbwebstudio)
 
 This is a simple table with approaches and methods that I use at my Workflow.
 
@@ -148,7 +148,7 @@ Laravel      |           |                 |               |
 Lumen        |           |                 |               |
 Slim         |           |                 |               |
 
-... [and much more](http://stackshare.io/vitorbritto/vb-web-studio)!
+... [and much more](https://stackshare.io/vitorbritto/vbwebstudio)!
 
 
 **[⬆ back to top](#table-of-contents)**
