@@ -6,9 +6,9 @@
 
 # Introduction
 
-Hello there! I'm Vitor Britto, a Full Stack Developer extremely passionate about my work. I discovered the world of code almost two decades ago and kept the same passion from the first moment of this discovery. I have worked full time as a freelancer for nearly 4 years developing projects for the web, and I focus part of my time on researchs, collaborative projects, personal projects and writing some articles for my blog.
-
-But, enough about me! I would like to present you this project.
+Hello there! I'm a Software Developer based in Brazil with over 20 years of experience in the software industry.
+I'm passionate about improving skills, learning new technologies, enjoy influencing others and always advocate for technical excellence while being open to change.
+I have strong experience building SaaS applications and developing software products.
 
 :rocket: Feel free to visit my website: https://vitorbritto.dev
 
@@ -86,7 +86,7 @@ Timeline   | Usability   |              | Database    |
 
 ## Strategy and Management
 
-- [Trello](https://trello.com/) - _Task Management for Old Projects only_
+- [Trello](https://trello.com/) - _Task Management for projects_
 - [Google Drive](https://drive.google.com/) - _Share documents and files_
 - [Wakatime](https://wakatime.com) - _Quantify my coding_
 - [Skype](http://www.skype.com) - _Business Conferences and Chats_
@@ -140,12 +140,11 @@ Frameworks   | Libraries | Template Engine | Supersets     | Others
 React Native | React     | Pug             | Sass          | WordPress
 Angular      | jQuery    | EJS             | PostCSS       | WooCommerce
 Ionic        |           |                 | Typescript    | Strapi
-AdonisJS     |           |                 |               | GraphQL
-Gatsby       |           |                 |               | AWS
-NextJS       |           |                 |               | Vercel
-Express      |           |                 |               | 
-Laravel      |           |                 |               |
-Lumen        |           |                 |               |
+AdonisJS     |           |                 |               | AWS
+NextJS       |           |                 |               | Jest
+Express      |           |                 |               | Mocha
+Laravel      |           |                 |               | Cypress
+Lumen        |           |                 |               | Detox
 Slim         |           |                 |               |
 
 ... [and much more](https://stackshare.io/vitorbritto/vbwebstudio)!
@@ -175,8 +174,7 @@ For web projects in which I work from planning to delivery, I use the guides bel
 # General Notes
 
 - **[STRATEGY]**: Kanban and/or [Scrum](http://scrummethodology.com/) method.
-- **[DEVELOPMENT]**: use the [SOLID](http://en.wikipedia.org/wiki/SOLID_(object-oriented_design)) principles.
-- **[BUILD]**: all javascript files must have two spaces (soft tab) and PHP files musta have four spaces (soft tab) FOR INDENTATION.
+- **[DEVELOPMENT]**: Clean architecture and [The Twelve-factor app](https://12factor.net/)
 
 **Be Consistent**
 
