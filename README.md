@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://github.com/vitorbritto/workflow-guide/raw/master/source/logo-wg.png" alt="Workflow Guide" width="280">
+<img src="https://github.com/vitorbritto/workflow-guide/raw/master/source/logo-wg.png" alt="Workflow Guide" width="180">
 </p>
 <p align="center">Workflow Guide</p>
 
