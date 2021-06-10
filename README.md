@@ -1,6 +1,7 @@
 <p align="center">
 <img src="https://github.com/vitorbritto/workflow-guide/raw/master/source/logo.png" alt="Workflow Guide" width="388">
 </p>
+<p align="center">Workflow Guide</p>
 
 > This is a work in progress and I will likely add (or replace) more functionality in the future.
 
