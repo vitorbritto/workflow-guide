@@ -7,7 +7,7 @@
 
 # Introduction
 
-Hello there! I'm a Software Developer based in Brazil with over 20 years of experience in the software industry.
+Hello there! I'm a Software Developer based in Brazil with over 15 years of experience in the software industry.
 I'm passionate about improving skills, learning new technologies, enjoy influencing others and always advocate for technical excellence while being open to change.
 I have strong experience building SaaS applications and developing software products.
 
