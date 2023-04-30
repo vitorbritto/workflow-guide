@@ -3,7 +3,7 @@
 </p>
 <p align="center">Workflow Guide</p>
 
-> This is a work in progress and I will likely add (or replace) more functionality in the future.
+> WIP - 30/04/2023: I'm updating my stack.
 
 # Introduction
 
