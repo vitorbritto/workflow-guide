@@ -1,18 +1,35 @@
+<div id="#top"></div>
+<br />
+
 <p align="center">
-<img src="https://github.com/vitorbritto/workflow-guide/raw/master/source/logo-wg.png" alt="Workflow Guide" width="180">
+<img src="https://github.com/vitorbritto/workflow-guide/raw/master/source/logo-wg.png" alt="Workflow Guide" width="320">
 </p>
-<p align="center">Workflow Guide</p>
+
+<h1 align="center">Workflow Guide</h1>
+
+<br />
+<br />
+<details>
+  <summary>Summary</summary>
+  <ol>
+    <li><a href="#workflow-lifecycle)">Workflow Lifecycle</a></li>
+    <li><a href="#tools">Tools</a></li>
+    <li><a href="#guides">Guides</a></li>
+  </ol>
+</details>
+<br />
+<br />
 
 # Introduction
 
-Hello there! I'm a Senior Software Engineer based in Brazil with over 15 years of experience in the software industry.
+Hello there! I'm Vitor Britto, a Senior Software Engineer based in Brazil with over 15 years of experience in the software industry.
 I'm passionate about improving skills, learning new technologies, enjoy influencing others and always advocate for technical excellence while being open to change.
 I have strong experience building SaaS applications and developing software products.
 
-:rocket: Feel free to visit my website: https://vitorbritto.dev
+:rocket: Feel free to visit my personal website: https://vitorbritto.dev
 
 
-## What this is about?
+## About this Guide
 
 1. A personal Framework with approaches and methods that I use to delivery high-quality softwares.
 2. Tools that makes my Workflow easy.
@@ -20,28 +37,11 @@ I have strong experience building SaaS applications and developing software prod
 4. Major dependencies that I use.
 
 
-## Why was it created?
+## The main reasons
 
-**Reason #01**
+- Apply rules and be based on a principle and methodology of process which could maintain the structure of my standards.
 
-Apply rules and be based on a principle and methodology of process which could maintain the structure of my standards.
-
-**Reason #02**
-
-Not only have a code style guide, but relevant informations about my Workflow. Thus I always keep the same logic process and can initiate the development of my projects without any questions when making a scaffolding, building process, automation rotines, unit testing and others tasks.
-
---------------------------------------------------------------------------------
-
-# Table of Content
-
-- [Workflow Lifecycle](#workflow-lifecycle)
-- [Tools](#tools)
-- [Guides](#guides)
-- [General Notes](#general-notes)
-- [References](#references)
-
-
---------------------------------------------------------------------------------
+- Not only have a code style guide, but relevant informations about my Workflow. Thus I always keep the same logic process and can initiate the development of my projects without any questions when making a scaffolding, building process, automation rotines, unit testing and others tasks.
 
 # Workflow Lifecycle
 
@@ -57,7 +57,7 @@ Understand | Refine      | Build       |
 Analyze    | Style Guide | QA          |
 Timeline   | Approval    | Deploy      |
 
-**[⬆ back to top](#table-of-content)**
+<p style="font-size: 14px;" align="right">[<a href="#top">back to top</a>]</p>
 
 # Tools
 
@@ -69,7 +69,7 @@ Timeline   | Approval    | Deploy      |
 - [Google Meet](https://meet.google.com/) - _Business Conferences and Chats_
 - [Slack](https://slack.com/) - _Team Messaging_
 
-**[⬆ back to top](#table-of-content)**
+<p style="font-size: 14px;" align="right">[<a href="#top">back to top</a>]</p>
 
 ## Design
 
@@ -77,7 +77,7 @@ Timeline   | Approval    | Deploy      |
 - [Figma](https://www.figma.com/) - _Prototyping and Layouts Presentations_
 - [Miro](https://miro.com) - _Used for System Design Diagrams and Flows_
 
-**[⬆ back to top](#table-of-content)**
+<p style="font-size: 14px;" align="right">[<a href="#top">back to top</a>]</p>
 
 ## Develop
 
@@ -102,7 +102,7 @@ Check the [Kickstarts](https://github.com/kickstarts/kickstarts) organization wh
 ... [and much more](https://stackshare.io/vitorbritto/vbwebstudio)!
 
 
-**[⬆ back to top](#table-of-content)**
+<p style="font-size: 14px;" align="right">[<a href="#top">back to top</a>]</p>
 
 --------------------------------------------------------------------------------
 
@@ -117,7 +117,7 @@ For web projects in which I work from planning to delivery, I use the guides bel
 
 > The point of having style guidelines is to have a common vocabulary of coding so people can concentrate on what you're saying rather than on how you're saying it. We present global style rules here so people know the vocabulary, but local style is also important. If code you add to a file looks drastically different from the existing code around it, it throws readers out of their rhythm when they go to read it. Avoid this.
 
-**[⬆ back to top](#table-of-content)**
+<p style="font-size: 14px;" align="right">[<a href="#top">back to top</a>]</p>
 
 # License
 
