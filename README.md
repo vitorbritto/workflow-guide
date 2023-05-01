@@ -12,7 +12,7 @@
 <details>
   <summary>Summary</summary>
   <ol>
-    <li><a href="#workflow-lifecycle)">Workflow Lifecycle</a></li>
+    <li><a href="#workflow-lifecycle">Workflow Lifecycle</a></li>
     <li><a href="#tools">Tools</a></li>
     <li><a href="#guides">Guides</a></li>
   </ol>
