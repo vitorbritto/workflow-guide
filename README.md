@@ -5,7 +5,7 @@
 <img src="https://github.com/vitorbritto/workflow-guide/raw/master/source/logo-wg.png" alt="Workflow Guide" width="320">
 </p>
 
-<h1 align="center">Workflow Guide</h1>
+<h3 align="center">Workflow Guide</h3>
 
 <br />
 <br />
@@ -17,7 +17,6 @@
     <li><a href="#guides">Guides</a></li>
   </ol>
 </details>
-<br />
 <br />
 
 # Introduction
